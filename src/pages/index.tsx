@@ -1,5 +1,9 @@
 import Head from "next/head";
 import localFont from "next/font/local";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Mousewheel } from "swiper";
+import React, { useEffect, useState } from "react";
+import { FirstSlide } from "@/components/desktop/FirstSlide";
 
 const FaktumTest = localFont({
   variable: "--font-faktumTest",
@@ -69,6 +73,18 @@ const Pretendard = localFont({
 });
 
 export default function Home() {
+  const [currentHeight, setCurrentHeight] = useState("0px");
+  const [currentIndex, setCurrentIndex] = React.useState(0);
+
+  const onSlideChage = (index: number) => {
+    setCurrentIndex(index);
+  };
+
+  useEffect(() => {
+    setCurrentHeight(`${window.innerHeight}px`);
+  }, []);
+
+  console.log("currentIndex", currentIndex);
   return (
     <>
       <Head>
@@ -77,16 +93,31 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main
-        className={`bg-black h-screen w-screen ${FaktumTest.variable} ${Pretendard.variable}`}
+      <Swiper
+        className={`bg-black overflow-hidden ${Pretendard.variable} ${FaktumTest.variable}`}
+        style={{ height: currentHeight }}
+        direction="vertical"
+        modules={[Mousewheel]}
+        speed={800}
+        mousewheel={true}
+        slidesPerView={1}
+        onScroll={(scroll) => onSlideChage(scroll.activeIndex)}
+        onSlideChange={(slide) => onSlideChage(slide.activeIndex)}
+        scrollbar={{ hide: false, dragSize: 0 }}
       >
-        <div className="text-white text-7xl font-pretendard font-[100]">
-          pretendard go!
-        </div>
-        <div className="text-white font-faktumTest font-[400] text-7xl">
-          faktum test go!
-        </div>
-      </main>
+        <SwiperSlide>
+          <FirstSlide />
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="w-screen h-full flex-center text-white">slide2</div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="w-screen h-full flex-center text-white">slide3</div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="w-screen h-full flex-center text-white">slide4</div>
+        </SwiperSlide>
+      </Swiper>
     </>
   );
 }
