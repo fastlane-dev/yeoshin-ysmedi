@@ -6,7 +6,7 @@ export const FirstSlide = () => {
   return (
     <section className="relative h-screen w-screen  font-faktumTest text-[30px] font-[600] text-white">
       <div className="absolute bottom-[68px] left-[373px] z-[-1] opacity-[0.7]">
-        <Image src={planetImg} alt="planet" />
+        <Image src={planetImg} alt="planet" priority />
       </div>
       <div className="flex-center w-full justify-between px-[160px] pt-[80px]">
         <div>
