@@ -95,7 +95,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Swiper
-        className={`bg-black overflow-hidden ${Pretendard.variable} ${FaktumTest.variable}`}
+        className={`overflow-hidden bg-black ${Pretendard.variable} ${FaktumTest.variable}`}
         style={{ height: currentHeight }}
         direction="vertical"
         modules={[Mousewheel]}
@@ -113,10 +113,10 @@ export default function Home() {
           <SecondSlide />
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-screen h-full flex-center text-white">slide3</div>
+          <div className="flex-center h-full w-screen text-white">slide3</div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-screen h-full flex-center text-white">slide4</div>
+          <div className="flex-center h-full w-screen text-white">slide4</div>
         </SwiperSlide>
       </Swiper>
     </>

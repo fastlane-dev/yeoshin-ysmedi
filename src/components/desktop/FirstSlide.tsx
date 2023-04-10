@@ -4,15 +4,15 @@ import planetImg from "../../../public/img/planet.png";
 
 export const FirstSlide = () => {
   return (
-    <section className="relative w-screen h-screen  text-white font-faktumTest font-[600] text-[30px]">
-      <div className="absolute z-[-1] left-[373px] bottom-[68px] opacity-[0.7]">
+    <section className="relative h-screen w-screen  font-faktumTest text-[30px] font-[600] text-white">
+      <div className="absolute bottom-[68px] left-[373px] z-[-1] opacity-[0.7]">
         <Image src={planetImg} alt="planet" />
       </div>
-      <div className="flex-center justify-between w-full px-[160px] pt-[80px]">
+      <div className="flex-center w-full justify-between px-[160px] pt-[80px]">
         <div>
           <Image src={"/img/logo.png"} alt="logo" width={189} height={35} />
         </div>
-        <nav className="flex-center gap-[41px] cursor-pointer">
+        <nav className="flex-center cursor-pointer gap-[41px]">
           <div>
             <Image
               src={"/img/shopping_mall.png"}
@@ -28,8 +28,8 @@ export const FirstSlide = () => {
           </div>
         </nav>
       </div>
-      <div className="absolute bottom-[317px] left-[160px] flex-center-column items-start gap-[40px]">
-        <p className=" font-[400] whitespace-pre-wrap text-[100px] leading-[100px] tracking-[-0.02em]">
+      <div className="flex-center-column absolute bottom-[317px] left-[160px] items-start gap-[40px]">
+        <p className=" whitespace-pre-wrap text-[100px] font-[400] leading-[100px] tracking-[-0.02em]">
           {"Your beauty,\nour priority"}
         </p>
         <p className="font-pretendard text-[26px] leading-[33px] tracking-[-0.02em]">
