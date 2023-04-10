@@ -16,7 +16,7 @@ export const FourthSlide = () => {
             height={67}
           />
         </div>
-        <p className="text-[40px] font-[100] leading-[70px]">COMING SOON</p>
+        <p className="text-[40px] font-[200] leading-[70px]">COMING SOON</p>
       </div>
     </section>
   );

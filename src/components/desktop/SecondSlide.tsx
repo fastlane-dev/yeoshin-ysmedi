@@ -3,8 +3,8 @@ import React from "react";
 
 export const SecondSlide = () => {
   return (
-    <section className="relative h-screen w-screen font-faktumTest text-[30px] font-[100] tracking-[-0.02em] text-white">
-      <div className="absolute right-[430px] whitespace-pre-wrap ">
+    <section className="relative h-screen w-screen font-faktumTest text-[30px] font-[100]  tracking-[-0.02em] text-white">
+      <div className="absolute right-[430px] whitespace-pre-wrap font-[200] ">
         <p className="mb-[10px] text-[30px] leading-[60px]">What we do</p>
         <p className="mb-[40px] text-[50px] leading-[60px]">
           {"EXPERT MEDICAL\nBEAUTY INSIGHTS"}
@@ -28,7 +28,7 @@ export const SecondSlide = () => {
 
           <div>
             <div className="text-[20px]">1</div>
-            <div className="mb-[23px] text-[40px] leading-[60px]">
+            <div className="mb-[23px] text-[40px] font-[200] leading-[60px]">
               Reliability
             </div>
             <div className="text-pretendard text-[16px] leading-[27.2px]">
@@ -50,7 +50,7 @@ export const SecondSlide = () => {
 
           <div>
             <div className="text-[20px]">2</div>
-            <div className="mb-[23px] text-[40px] leading-[60px]">
+            <div className="mb-[23px] text-[40px] font-[200] leading-[60px]">
               Collaboration
             </div>
             <div className="text-pretendard text-[16px] leading-[27.2px]">
@@ -72,7 +72,7 @@ export const SecondSlide = () => {
 
           <div>
             <div className="text-[20px]">3</div>
-            <div className="mb-[23px] text-[40px] leading-[60px]">
+            <div className="mb-[23px] text-[40px] font-[200] leading-[60px]">
               Transparency
             </div>
             <div className="text-pretendard text-[16px] leading-[27.2px]">
