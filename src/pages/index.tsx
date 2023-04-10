@@ -7,6 +7,16 @@ const FaktumTest = localFont({
   variable: "--font-faktumTest",
   src: [
     {
+      path: "../../public/fonts/FaktumTest/Faktum_Test_Thin.otf",
+      weight: "100",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/FaktumTest/Faktum_Test_Light.otf",
+      weight: "200",
+      style: "normal",
+    },
+    {
       path: "../../public/fonts/FaktumTest/Faktum_Test_Regular.otf",
       weight: "400",
       style: "normal",
