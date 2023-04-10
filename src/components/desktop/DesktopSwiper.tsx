@@ -5,6 +5,7 @@ import { SecondSlide } from "./SecondSlide";
 import { Mousewheel } from "swiper";
 import { ThirdSlide } from "./ThirdSlide";
 import { FourthSlide } from "./FourthSlide";
+import { FooterSlide } from "./FooterSlide";
 
 const DesktopSwiper = () => {
   const [currentHeight, setCurrentHeight] = useState("0px");
@@ -43,9 +44,9 @@ const DesktopSwiper = () => {
       <SwiperSlide>
         <FourthSlide />
       </SwiperSlide>
-      {/* <SwiperSlide>
-        <FourthSlide />
-      </SwiperSlide> */}
+      <SwiperSlide>
+        <FooterSlide />
+      </SwiperSlide>
     </Swiper>
   );
 };
