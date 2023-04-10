@@ -1,10 +1,7 @@
 import Head from "next/head";
 import localFont from "next/font/local";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Mousewheel } from "swiper";
-import React, { useEffect, useState } from "react";
-import { FirstSlide } from "@/components/desktop/FirstSlide";
-import { SecondSlide } from "@/components/desktop/SecondSlide";
+import React from "react";
+import DesktopSwiper from "@/components/desktop/DesktopSwiper";
 
 const FaktumTest = localFont({
   variable: "--font-faktumTest",
@@ -74,18 +71,6 @@ const Pretendard = localFont({
 });
 
 export default function Home() {
-  const [currentHeight, setCurrentHeight] = useState("0px");
-  const [currentIndex, setCurrentIndex] = React.useState(0);
-
-  const onSlideChage = (index: number) => {
-    setCurrentIndex(index);
-  };
-
-  useEffect(() => {
-    setCurrentHeight(`${window.innerHeight}px`);
-  }, []);
-
-  console.log("currentIndex", currentIndex);
   return (
     <>
       <Head>
@@ -94,31 +79,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Swiper
-        className={`overflow-hidden bg-black ${Pretendard.variable} ${FaktumTest.variable}`}
-        style={{ height: currentHeight }}
-        direction="vertical"
-        modules={[Mousewheel]}
-        speed={800}
-        mousewheel={true}
-        slidesPerView={1}
-        onScroll={(scroll) => onSlideChage(scroll.activeIndex)}
-        onSlideChange={(slide) => onSlideChage(slide.activeIndex)}
-        scrollbar={{ hide: false, dragSize: 0 }}
-      >
-        <SwiperSlide>
-          <FirstSlide />
-        </SwiperSlide>
-        <SwiperSlide>
-          <SecondSlide />
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="flex-center h-full w-screen text-white">slide3</div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="flex-center h-full w-screen text-white">slide4</div>
-        </SwiperSlide>
-      </Swiper>
+      <div className={`${FaktumTest.variable} ${Pretendard.variable}`}>
+        <DesktopSwiper />
+      </div>
     </>
   );
 }
