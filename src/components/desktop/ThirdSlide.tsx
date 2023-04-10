@@ -9,6 +9,7 @@ export const ThirdSlide = () => {
           src={"/img/therfect_background.png"}
           alt="therfect_backgrond"
           fill
+          priority
         />
       </div>
       <div className="flex-center-column absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] items-start gap-[21px]">
@@ -18,6 +19,7 @@ export const ThirdSlide = () => {
             alt="therfect_word"
             width={318}
             height={67}
+            priority
           />
         </div>
         <p className="text-[40px] font-[200] leading-[70px]">COMING SOON</p>

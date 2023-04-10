@@ -23,6 +23,7 @@ export const SecondSlide = () => {
               alt="reliability_icon"
               width={142}
               height={107}
+              priority
             />
           </div>
 
@@ -45,6 +46,7 @@ export const SecondSlide = () => {
               alt="collaboration_icon"
               width={84}
               height={126}
+              priority
             />
           </div>
 
@@ -67,6 +69,7 @@ export const SecondSlide = () => {
               alt="transparency_icon"
               width={130}
               height={130}
+              priority
             />
           </div>
 

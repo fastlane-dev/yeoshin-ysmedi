@@ -18,7 +18,13 @@ export const FooterSlide = () => {
           </div>
         </div>
         <div>
-          <Image src={"/img/logo.png"} alt="logo" width={486} height={91} />
+          <Image
+            src={"/img/logo.png"}
+            alt="logo"
+            width={486}
+            height={91}
+            priority
+          />
         </div>
       </div>
     </footer>
