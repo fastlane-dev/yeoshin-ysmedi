@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
+
+import { Mousewheel } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 import { FirstSlide } from "./FirstSlide";
 import { SecondSlide } from "./SecondSlide";
-import { Mousewheel } from "swiper";
 import { ThirdSlide } from "./ThirdSlide";
 import { FourthSlide } from "./FourthSlide";
 import { FooterSlide } from "./FooterSlide";
@@ -30,7 +32,6 @@ const DesktopSwiper = () => {
       slidesPerView={1}
       onScroll={(scroll) => onSlideChage(scroll.activeIndex)}
       onSlideChange={(slide) => onSlideChage(slide.activeIndex)}
-      scrollbar={{ hide: false, dragSize: 0 }}
     >
       <SwiperSlide>
         <FirstSlide />
