@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { FirstSlide } from "./FirstSlide";
 import { SecondSlide } from "./SecondSlide";
 import { Mousewheel } from "swiper";
+import { ThirdSlide } from "./ThirdSlide";
 
 const DesktopSwiper = () => {
   const [currentHeight, setCurrentHeight] = useState("0px");
@@ -36,7 +37,7 @@ const DesktopSwiper = () => {
         <SecondSlide />
       </SwiperSlide>
       <SwiperSlide>
-        <div className="flex-center h-screen w-screen text-white">slide3</div>
+        <ThirdSlide />
       </SwiperSlide>
       <SwiperSlide>
         <div className="flex-center h-screen w-screen text-white">slide4</div>
