@@ -3,7 +3,7 @@ import React from "react";
 
 export const ThirdSlide = () => {
   return (
-    <section className="flex-center relative h-screen w-screen items-end font-faktumTest text-[30px] font-[600] tracking-[-0.02em] text-white">
+    <section className="flex-center relative h-screen w-screen items-end font-faktumTest tracking-[-0.02em] text-white">
       <div className="absolute h-[77%] w-[57%]">
         <Image
           src={"/img/therfect_background.png"}
