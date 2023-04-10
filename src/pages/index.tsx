@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel } from "swiper";
 import React, { useEffect, useState } from "react";
 import { FirstSlide } from "@/components/desktop/FirstSlide";
+import { SecondSlide } from "@/components/desktop/SecondSlide";
 
 const FaktumTest = localFont({
   variable: "--font-faktumTest",
@@ -109,7 +110,7 @@ export default function Home() {
           <FirstSlide />
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-screen h-full flex-center text-white">slide2</div>
+          <SecondSlide />
         </SwiperSlide>
         <SwiperSlide>
           <div className="w-screen h-full flex-center text-white">slide3</div>
