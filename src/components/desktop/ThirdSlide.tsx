@@ -9,6 +9,7 @@ export const ThirdSlide = () => {
           src={"/img/therfect_background.png"}
           alt="therfect_backgrond"
           fill
+          style={{ objectFit: "contain" }}
           priority
         />
       </div>
