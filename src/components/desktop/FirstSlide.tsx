@@ -13,14 +13,14 @@ export const FirstSlide = () => {
           <Image src={"/img/logo.png"} alt="logo" width={189} height={35} />
         </div>
         <nav className="flex-center cursor-pointer gap-[41px]">
-          <div>
+          <a href="https://mall.ysmedi.kr/" target="_blank">
             <Image
               src={"/img/shopping_mall.png"}
               alt="shopping_mall"
               width={179}
               height={36}
             />
-          </div>
+          </a>
           <div className="flex-center gap-[10px] font-[100]">
             <span>KR</span>
             <span>|</span>
@@ -28,7 +28,7 @@ export const FirstSlide = () => {
           </div>
         </nav>
       </div>
-      <div className="flex-center-column absolute bottom-[317px] left-[160px] items-start gap-[40px]">
+      <div className="flex-center-column absolute bottom-[317px] left-[160px] animate-opacityChange items-start gap-[40px] opacity-0">
         <p className=" whitespace-pre-wrap text-[100px] font-[400] leading-[100px] tracking-[-0.02em]">
           {"Your beauty,\nour priority"}
         </p>
