@@ -28,7 +28,7 @@ export const FirstSlide = () => {
           </div>
         </nav>
       </div>
-      <div className="flex-center-column absolute bottom-[317px] left-[160px] animate-opacityChange items-start gap-[40px] opacity-0">
+      <div className="flex-center-column absolute bottom-[317px] left-[160px] animate-smoothUp items-start gap-[40px] opacity-0">
         <p className=" whitespace-pre-wrap text-[100px] font-[400] leading-[100px] tracking-[-0.02em]">
           {"Your beauty,\nour priority"}
         </p>
