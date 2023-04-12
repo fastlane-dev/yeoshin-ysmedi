@@ -1,12 +1,22 @@
+import React, { useEffect, useState } from "react";
+
 import Image from "next/image";
-import React from "react";
+
+import { useSwiperSlide } from "swiper/react";
 
 export const SecondSlide = () => {
+  const swiperSlide = useSwiperSlide();
+  const [isFirstAnimation, setIsFirstAnimation] = useState(false);
+
+  useEffect(() => {
+    setIsFirstAnimation(swiperSlide.isActive);
+  }, [swiperSlide.isActive]);
+
   return (
     <section className="relative h-screen w-screen font-faktumTest text-[30px] font-[100]  tracking-[-0.02em] text-white">
-      <div className="absolute right-[430px] whitespace-pre-wrap font-[200] ">
-        <p className="mb-[10px] text-[30px] leading-[60px]">What we do</p>
-        <p className="mb-[40px] text-[50px] leading-[60px]">
+      <div className="absolute right-[430px] top-[10vh] whitespace-pre-wrap font-[200] ">
+        <p className="mb-[10px] h-[3vh] w-[11vw] leading-[4vh]">What we do</p>
+        <p className="mb-[40px] h-[8vh] w-[22vw] leading-[4vh]">
           {"EXPERT MEDICAL\nBEAUTY INSIGHTS"}
         </p>
         <p className="text-[26px] leading-[39px]">
@@ -15,22 +25,35 @@ export const SecondSlide = () => {
           }
         </p>
       </div>
-      <div className="flex-center absolute bottom-0 w-full whitespace-pre-wrap ">
-        <div className="flex-center-column h-[590px] w-[600px] justify-end gap-[88px] border-r-[1px] border-solid border-[#666666] pb-[78px]">
-          <div>
-            <Image
+      <div className="flex-center absolute bottom-0 w-full whitespace-pre-wrap pb-[12vh]">
+        <div className="flex-center-column relative h-[45vh] w-[31vw] justify-end gap-[6vh] pb-[5vh]">
+          <span
+            className={
+              isFirstAnimation
+                ? "absolute left-0 top-0 h-full w-full animate-lineAppear border-r-[1px] border-r-[#666666] "
+                : "absolute left-0 top-0 h-full w-full border-r-[1px] border-r-[#666666] "
+            }
+          ></span>
+          <div
+            className={
+              isFirstAnimation
+                ? "w-[7vw] animate-moveFromDownToUp0_7s opacity-0"
+                : "w-[7vw]"
+            }
+          >
+            <img
               src={"/img/reliability_icon.png"}
               alt="reliability_icon"
-              width={142}
-              height={107}
-              priority
+              style={{ objectFit: "contain" }}
             />
           </div>
 
-          <div>
-            <div className="text-[20px]">1</div>
-            <div className="mb-[23px] text-[40px] font-[200] leading-[60px]">
-              Reliability
+          <div className="flex flex-col items-start justify-start gap-[23px]">
+            <div>
+              <div className="text-[20px]">1</div>
+              <div className="text-[40px] font-[200] leading-[60px]">
+                Reliability
+              </div>
             </div>
             <div className="text-pretendard text-[16px] leading-[27.2px]">
               {
@@ -39,21 +62,34 @@ export const SecondSlide = () => {
             </div>
           </div>
         </div>
-        <div className="flex-center-column h-[590px] w-[600px] justify-end gap-[88px] border-r-[1px] border-solid border-[#666666] pb-[78px]">
-          <div>
-            <Image
+        <div className="flex-center-column relative h-[45vh] w-[31vw] justify-end gap-[6vh] pb-[5vh]">
+          <span
+            className={
+              isFirstAnimation
+                ? "absolute left-0 top-0 h-full w-full animate-lineAppear border-r-[1px] border-r-[#666666] "
+                : "absolute left-0 top-0 h-full w-full border-r-[1px] border-r-[#666666] "
+            }
+          ></span>
+          <div
+            className={
+              isFirstAnimation
+                ? "w-[4vw] animate-moveFromDownToUp0_7s opacity-0"
+                : "w-[4vw]"
+            }
+          >
+            <img
               src={"/img/collaboration_icon.png"}
               alt="collaboration_icon"
-              width={84}
-              height={126}
-              priority
+              style={{ objectFit: "contain" }}
             />
           </div>
 
-          <div>
-            <div className="text-[20px]">2</div>
-            <div className="mb-[23px] text-[40px] font-[200] leading-[60px]">
-              Collaboration
+          <div className="flex flex-col items-start justify-start gap-[23px]">
+            <div>
+              <div className="text-[20px]">2</div>
+              <div className="text-[40px] font-[200] leading-[60px]">
+                Collaboration
+              </div>
             </div>
             <div className="text-pretendard text-[16px] leading-[27.2px]">
               {
@@ -62,25 +98,31 @@ export const SecondSlide = () => {
             </div>
           </div>
         </div>
-        <div className="flex-center-column h-[590px] w-[600px] justify-end gap-[88px] pb-[78px] ">
-          <div>
-            <Image
+        <div className="flex-center-column relative h-[45vh] w-[31vw] justify-end gap-[6vh] pb-[5vh] ">
+          <div
+            className={
+              isFirstAnimation
+                ? "w-[6vw] animate-moveFromDownToUp0_7s opacity-0"
+                : "w-[6vw]"
+            }
+          >
+            <img
               src={"/img/transparency_icon.png"}
               alt="transparency_icon"
-              width={130}
-              height={130}
-              priority
+              style={{ objectFit: "contain" }}
             />
           </div>
 
-          <div>
-            <div className="text-[20px]">3</div>
-            <div className="mb-[23px] text-[40px] font-[200] leading-[60px]">
-              Transparency
+          <div className="flex flex-col items-start justify-start gap-[23px]">
+            <div>
+              <div className="text-[20px]">3</div>
+              <div className="text-[40px] font-[200] leading-[60px]">
+                Transparency
+              </div>
             </div>
             <div className="text-pretendard text-[16px] leading-[27.2px]">
               {
-                "파트너사의 의견에 귀 기울이며, 투명한 소통으로\n파트너사의 만족을 최선으로 생각하겠습니다."
+                "파트너사의 의견에 귀 기울이며, 투명한 소통으로\n파트너사의 만족을 최선으로 생각하겠습니다.\n "
               }
             </div>
           </div>
