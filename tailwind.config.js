@@ -19,9 +19,9 @@ module.exports = {
       },
       animation: {
         moveFromDownToUp0_7s: "moveFromDownToUp 0.7s forwards 0.6s ease-in-out",
-        moveFromDownToUp0_6s: "moveFromDownToUp 0.6s forwards 0.5s ease-in-out",
+        moveFromDownToUp0_8s: "moveFromDownToUp 0.8s forwards 0.7s ease-in-out",
         moveFromDownToUp0_5s: "moveFromDownToUp 0.5s forwards 0.4s ease-in-out",
-        smoothUp: "smoothUp 0.7s forwards 0.6s ease-in-out",
+        smoothUp: "smoothUp 0.9s forwards 1s ease-in-out",
         lineAppear: "lineAppear 1s linear",
       },
       keyframes: {

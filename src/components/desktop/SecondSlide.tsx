@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 
-import Image from "next/image";
-
 import { useSwiperSlide } from "swiper/react";
 
 export const SecondSlide = () => {
@@ -13,11 +11,13 @@ export const SecondSlide = () => {
   }, [swiperSlide.isActive]);
 
   return (
-    <section className="relative h-screen w-screen font-faktumTest text-[30px] font-[100]  tracking-[-0.02em] text-white">
+    <section
+      className={`relative h-screen w-screen font-faktumTest text-[30px] font-[100]  tracking-[-0.02em] text-white `}
+    >
       {/* 타이틀 */}
       <div
         className={`absolute left-[50vw] top-[10vh] whitespace-pre-wrap font-[200] ${
-          isFirstAnimation ? "animate-moveFromDownToUp0_5s opacity-0" : ""
+          isFirstAnimation ? "animate-moveFromDownToUp0_7s opacity-0" : ""
         }`}
       >
         <p className="mb-[10px] text-[2vmin] leading-[4vh]">What we do</p>
@@ -44,7 +44,7 @@ export const SecondSlide = () => {
           <div
             className={
               isFirstAnimation
-                ? "w-[7vw] animate-moveFromDownToUp0_5s opacity-0"
+                ? "w-[7vw] animate-moveFromDownToUp0_7s opacity-0"
                 : "w-[7vw]"
             }
           >
@@ -57,7 +57,7 @@ export const SecondSlide = () => {
 
           <div
             className={`flex flex-col items-start justify-start gap-[23px] ${
-              isFirstAnimation ? " animate-moveFromDownToUp0_6s opacity-0" : ""
+              isFirstAnimation ? " animate-moveFromDownToUp0_8s opacity-0" : ""
             }`}
           >
             <div>
@@ -86,7 +86,7 @@ export const SecondSlide = () => {
           <div
             className={
               isFirstAnimation
-                ? "w-[4vw] animate-moveFromDownToUp0_5s opacity-0"
+                ? "w-[4vw] animate-moveFromDownToUp0_7s opacity-0"
                 : "w-[4vw]"
             }
           >
@@ -99,7 +99,7 @@ export const SecondSlide = () => {
 
           <div
             className={`flex flex-col items-start justify-start gap-[23px] ${
-              isFirstAnimation ? " animate-moveFromDownToUp0_6s opacity-0" : ""
+              isFirstAnimation ? " animate-moveFromDownToUp0_8s opacity-0" : ""
             }`}
           >
             <div>
@@ -121,7 +121,7 @@ export const SecondSlide = () => {
           <div
             className={
               isFirstAnimation
-                ? "w-[6vw] animate-moveFromDownToUp0_5s opacity-0"
+                ? "w-[6vw] animate-moveFromDownToUp0_7s opacity-0"
                 : "w-[6vw]"
             }
           >
@@ -134,7 +134,7 @@ export const SecondSlide = () => {
 
           <div
             className={`flex flex-col items-start justify-start gap-[23px] ${
-              isFirstAnimation ? " animate-moveFromDownToUp0_6s opacity-0" : ""
+              isFirstAnimation ? " animate-moveFromDownToUp0_8s opacity-0" : ""
             }`}
           >
             <div>
