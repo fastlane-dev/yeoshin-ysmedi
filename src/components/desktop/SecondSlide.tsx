@@ -14,18 +14,25 @@ export const SecondSlide = () => {
 
   return (
     <section className="relative h-screen w-screen font-faktumTest text-[30px] font-[100]  tracking-[-0.02em] text-white">
-      <div className="absolute right-[430px] top-[10vh] whitespace-pre-wrap font-[200] ">
-        <p className="mb-[10px] h-[3vh] w-[11vw] leading-[4vh]">What we do</p>
-        <p className="mb-[40px] h-[8vh] w-[22vw] leading-[4vh]">
+      {/* 타이틀 */}
+      <div
+        className={`absolute left-[50vw] top-[10vh] whitespace-pre-wrap font-[200] ${
+          isFirstAnimation ? "animate-moveFromDownToUp0_5s opacity-0" : ""
+        }`}
+      >
+        <p className="mb-[10px] text-[2vmin] leading-[4vh]">What we do</p>
+        <p className="mb-[40px] text-[3vmin] font-[400] leading-[4vh]">
           {"EXPERT MEDICAL\nBEAUTY INSIGHTS"}
         </p>
-        <p className="text-[26px] leading-[39px]">
+        <p className="text-[2vmin] leading-[3vh]">
           {
             "한국의 최신 트렌드를 주도하는 미용 의료 기기를\n유통하여 국내 및 글로벌 파트너사의 동반 성장을\n도모합니다."
           }
         </p>
       </div>
+
       <div className="flex-center absolute bottom-0 w-full whitespace-pre-wrap pb-[12vh]">
+        {/* 첫번째 섹션 */}
         <div className="flex-center-column relative h-[45vh] w-[31vw] justify-end gap-[6vh] pb-[5vh]">
           <span
             className={
@@ -66,6 +73,8 @@ export const SecondSlide = () => {
             </div>
           </div>
         </div>
+
+        {/* 두번째 섹션 */}
         <div className="flex-center-column relative h-[45vh] w-[31vw] justify-end gap-[6vh] pb-[5vh]">
           <span
             className={
@@ -106,6 +115,8 @@ export const SecondSlide = () => {
             </div>
           </div>
         </div>
+
+        {/* 세번째 섹션 */}
         <div className="flex-center-column relative h-[45vh] w-[31vw] justify-end gap-[6vh] pb-[5vh] ">
           <div
             className={
