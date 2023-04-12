@@ -37,7 +37,7 @@ export const SecondSlide = () => {
           <div
             className={
               isFirstAnimation
-                ? "w-[7vw] animate-moveFromDownToUp0_7s opacity-0"
+                ? "w-[7vw] animate-moveFromDownToUp0_5s opacity-0"
                 : "w-[7vw]"
             }
           >
@@ -48,7 +48,11 @@ export const SecondSlide = () => {
             />
           </div>
 
-          <div className="flex flex-col items-start justify-start gap-[23px]">
+          <div
+            className={`flex flex-col items-start justify-start gap-[23px] ${
+              isFirstAnimation ? " animate-moveFromDownToUp0_6s opacity-0" : ""
+            }`}
+          >
             <div>
               <div className="text-[20px]">1</div>
               <div className="text-[40px] font-[200] leading-[60px]">
@@ -73,7 +77,7 @@ export const SecondSlide = () => {
           <div
             className={
               isFirstAnimation
-                ? "w-[4vw] animate-moveFromDownToUp0_7s opacity-0"
+                ? "w-[4vw] animate-moveFromDownToUp0_5s opacity-0"
                 : "w-[4vw]"
             }
           >
@@ -84,7 +88,11 @@ export const SecondSlide = () => {
             />
           </div>
 
-          <div className="flex flex-col items-start justify-start gap-[23px]">
+          <div
+            className={`flex flex-col items-start justify-start gap-[23px] ${
+              isFirstAnimation ? " animate-moveFromDownToUp0_6s opacity-0" : ""
+            }`}
+          >
             <div>
               <div className="text-[20px]">2</div>
               <div className="text-[40px] font-[200] leading-[60px]">
@@ -102,7 +110,7 @@ export const SecondSlide = () => {
           <div
             className={
               isFirstAnimation
-                ? "w-[6vw] animate-moveFromDownToUp0_7s opacity-0"
+                ? "w-[6vw] animate-moveFromDownToUp0_5s opacity-0"
                 : "w-[6vw]"
             }
           >
@@ -113,7 +121,11 @@ export const SecondSlide = () => {
             />
           </div>
 
-          <div className="flex flex-col items-start justify-start gap-[23px]">
+          <div
+            className={`flex flex-col items-start justify-start gap-[23px] ${
+              isFirstAnimation ? " animate-moveFromDownToUp0_6s opacity-0" : ""
+            }`}
+          >
             <div>
               <div className="text-[20px]">3</div>
               <div className="text-[40px] font-[200] leading-[60px]">
