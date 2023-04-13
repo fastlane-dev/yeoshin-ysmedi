@@ -5,7 +5,9 @@ export const SecondSlide = ({
 }) => {
   return (
     <section
-      className={`relative h-screen w-screen font-faktumTest text-[30px] font-[100]  tracking-[-0.02em] text-white `}
+      className={`relative h-screen w-screen font-faktumTest text-[30px] font-[100]  tracking-[-0.02em] text-white  ${
+        isFirstAnimation ? "opacity-100" : "opacity-0"
+      }`}
     >
       {/* 타이틀 */}
       <div
