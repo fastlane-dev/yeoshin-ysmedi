@@ -1,15 +1,8 @@
-import React, { useEffect, useState } from "react";
-
-import { useSwiperSlide } from "swiper/react";
-
-export const SecondSlide = () => {
-  const swiperSlide = useSwiperSlide();
-  const [isFirstAnimation, setIsFirstAnimation] = useState(false);
-
-  useEffect(() => {
-    setIsFirstAnimation(swiperSlide.isActive);
-  }, [swiperSlide.isActive]);
-
+export const SecondSlide = ({
+  isFirstAnimation,
+}: {
+  isFirstAnimation: boolean;
+}) => {
   return (
     <section
       className={`relative h-screen w-screen font-faktumTest text-[30px] font-[100]  tracking-[-0.02em] text-white `}
