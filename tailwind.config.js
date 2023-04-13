@@ -18,10 +18,16 @@ module.exports = {
         faktumTest: ["var(--font-faktumTest)"],
       },
       animation: {
-        moveFromUpToDown0_7s: "moveFromUpToDown 0.7s forwards 0.6s ease-in-out",
-        moveFromUpToDown0_8s: "moveFromUpToDown 0.8s forwards 0.7s ease-in-out",
+        moveFromUpToDownStartAfter0_5s:
+          "moveFromUpToDown 0.6s forwards 0.5s ease-in-out",
+        moveFromUpToDownStartAfter0_9s:
+          "moveFromUpToDown 0.6s forwards 0.9s ease-in-out",
+        moveFromUpToDownStartAfter1_1s:
+          "moveFromUpToDown 0.6s forwards 1.1s ease-in-out",
+        moveFromUpToDownStartAfter1_3s:
+          "moveFromUpToDown 0.6s forwards 1.3s ease-in-out",
         smoothUp: "smoothUp 0.9s forwards 1s ease-in-out",
-        lineAppear: "lineAppear 1s linear",
+        lineAppear: "lineAppear 0.6s backwards 0.7s linear",
       },
       keyframes: {
         moveFromUpToDown: {
@@ -50,18 +56,7 @@ module.exports = {
           "0%": {
             height: "0%",
           },
-          "5%": {
-            height: "5%",
-          },
-          "10%": {
-            height: "10%",
-          },
-          "20%": {
-            height: "20%",
-          },
-          "50%": {
-            height: "50%",
-          },
+
           "100%": {
             height: "100%",
           },
