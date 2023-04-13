@@ -13,8 +13,8 @@ export const SecondSlide = ({
           isFirstAnimation ? "animate-moveFromUpToDown0_7s opacity-0" : ""
         }`}
       >
-        <p className="mb-[10px] text-[2vmin] leading-[4vh]">What we do</p>
-        <p className="mb-[40px] text-[3vmin] font-[400] leading-[4vh]">
+        <p className="mb-[0.6vh] text-[2vmin] leading-[4vh]">What we do</p>
+        <p className="mb-[2.7vh] text-[3vmin] font-[400] leading-[4vh]">
           {"EXPERT MEDICAL\nBEAUTY INSIGHTS"}
         </p>
         <p className="text-[2vmin] leading-[3vh]">
