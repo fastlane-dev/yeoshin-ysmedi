@@ -34,8 +34,8 @@ export const SecondSlide = ({
           <span
             className={
               isFirstAnimation
-                ? "animate- absolute left-0 top-0 h-full w-full  animate-lineAppear border-r-[1px] border-r-[#666666]"
-                : "absolute left-0 top-0 h-full w-full border-r-[1px] border-r-[#666666] "
+                ? "absolute bottom-0 left-0 h-full w-full animate-lineAppear border-r-[1px] border-r-[#666666]"
+                : "absolute bottom-0 left-0 h-full w-full border-r-[1px] border-r-[#666666] "
             }
           ></span>
           <div
@@ -86,8 +86,8 @@ export const SecondSlide = ({
           <span
             className={
               isFirstAnimation
-                ? "absolute left-0 top-0 h-full w-full animate-lineAppear border-r-[1px] border-r-[#666666] "
-                : "absolute left-0 top-0 h-full w-full border-r-[1px] border-r-[#666666] "
+                ? "absolute bottom-0 left-0 h-full w-full animate-lineAppear border-r-[1px] border-r-[#666666] "
+                : "absolute bottom-0 left-0 h-full w-full border-r-[1px] border-r-[#666666] "
             }
           ></span>
           <div
