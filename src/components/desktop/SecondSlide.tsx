@@ -5,13 +5,15 @@ export const SecondSlide = ({
 }) => {
   return (
     <section
-      className={`relative h-screen w-screen font-faktumTest text-[30px] font-[100]  tracking-[-0.02em] text-white `}
+      className={`relative h-screen w-screen font-faktumTest text-[30px] font-[100]  tracking-[-0.02em] text-white  ${
+        isFirstAnimation ? "opacity-100" : "opacity-0"
+      }`}
     >
       {/* 타이틀 */}
       <div
-        className={`absolute left-[50vw] top-[10vh] whitespace-pre-wrap font-[200] ${
+        className={`absolute left-[50vw] top-[3vh] whitespace-pre-wrap font-[200] ${
           isFirstAnimation
-            ? "animate-moveFromUpToDownStartAfter0_5s opacity-0"
+            ? "animate-moveFromDownToUpStartAfter0_5s opacity-0"
             : ""
         }`}
       >
@@ -32,14 +34,14 @@ export const SecondSlide = ({
           <span
             className={
               isFirstAnimation
-                ? "animate- absolute left-0 top-0 h-full w-full animate-lineAppear border-r-[1px] border-r-[#666666]"
-                : "absolute left-0 top-0 h-full w-full border-r-[1px] border-r-[#666666] "
+                ? "absolute bottom-0 left-0 h-full w-full animate-lineAppear border-r-[1px] border-r-[#666666]"
+                : "absolute bottom-0 left-0 h-full w-full border-r-[1px] border-r-[#666666] "
             }
           ></span>
           <div
             className={
               isFirstAnimation
-                ? "w-[7vw] animate-moveFromUpToDownStartAfter0_9s opacity-0"
+                ? "w-[7vw] animate-moveFromDownToUpStartAfter0_9s opacity-0"
                 : "w-[7vw]"
             }
           >
@@ -50,23 +52,25 @@ export const SecondSlide = ({
             />
           </div>
 
-          <div className={`flex flex-col items-start justify-start gap-[23px]`}>
+          <div
+            className={`flex flex-col items-start justify-start gap-[1.6vh]`}
+          >
             <div
               className={
                 isFirstAnimation
-                  ? "animate-moveFromUpToDownStartAfter1_1s opacity-0"
+                  ? "animate-moveFromDownToUpStartAfter1_1s opacity-0"
                   : ""
               }
             >
-              <div className="text-[20px]">1</div>
-              <div className="text-[40px] font-[200] leading-[60px]">
+              <div className="text-[1vw]">1</div>
+              <div className="text-[2vw] font-[200] leading-[3.1vw]">
                 Reliability
               </div>
             </div>
             <div
-              className={`text-pretendard text-[16px] leading-[27.2px] ${
+              className={`text-pretendard text-[1.6vh] leading-[1.4vw] ${
                 isFirstAnimation
-                  ? "animate-moveFromUpToDownStartAfter1_3s opacity-0"
+                  ? "animate-moveFromDownToUpStartAfter1_3s opacity-0"
                   : ""
               }`}
             >
@@ -82,14 +86,14 @@ export const SecondSlide = ({
           <span
             className={
               isFirstAnimation
-                ? "absolute left-0 top-0 h-full w-full animate-lineAppear border-r-[1px] border-r-[#666666] "
-                : "absolute left-0 top-0 h-full w-full border-r-[1px] border-r-[#666666] "
+                ? "absolute bottom-0 left-0 h-full w-full animate-lineAppear border-r-[1px] border-r-[#666666] "
+                : "absolute bottom-0 left-0 h-full w-full border-r-[1px] border-r-[#666666] "
             }
           ></span>
           <div
             className={
               isFirstAnimation
-                ? "w-[4vw] animate-moveFromUpToDownStartAfter0_9s opacity-0"
+                ? "w-[4vw] animate-moveFromDownToUpStartAfter0_9s opacity-0"
                 : "w-[4vw]"
             }
           >
@@ -101,22 +105,22 @@ export const SecondSlide = ({
           </div>
 
           <div
-            className={`flex flex-col items-start justify-start gap-[23px] ${
+            className={`flex flex-col items-start justify-start gap-[1.6vh] ${
               isFirstAnimation
-                ? " animate-moveFromUpToDownStartAfter1_1s opacity-0"
+                ? " animate-moveFromDownToUpStartAfter1_1s opacity-0"
                 : ""
             }`}
           >
             <div>
-              <div className="text-[20px]">2</div>
-              <div className="text-[40px] font-[200] leading-[60px]">
+              <div className="text-[1vw]">2</div>
+              <div className="text-[2vw] font-[200] leading-[3.1vw]">
                 Collaboration
               </div>
             </div>
             <div
-              className={`text-pretendard text-[16px] leading-[27.2px] ${
+              className={`text-pretendard text-[1.6vh] leading-[1.4vw] ${
                 isFirstAnimation
-                  ? "animate-moveFromUpToDownStartAfter1_3s opacity-0"
+                  ? "animate-moveFromDownToUpStartAfter1_3s opacity-0"
                   : ""
               }`}
             >
@@ -132,7 +136,7 @@ export const SecondSlide = ({
           <div
             className={
               isFirstAnimation
-                ? "w-[6vw] animate-moveFromUpToDownStartAfter0_9s opacity-0"
+                ? "w-[6vw] animate-moveFromDownToUpStartAfter0_9s opacity-0"
                 : "w-[6vw]"
             }
           >
@@ -144,22 +148,22 @@ export const SecondSlide = ({
           </div>
 
           <div
-            className={`flex flex-col items-start justify-start gap-[23px] ${
+            className={`flex flex-col items-start justify-start gap-[1.6vh] ${
               isFirstAnimation
-                ? " animate-moveFromUpToDownStartAfter1_1s opacity-0"
+                ? " animate-moveFromDownToUpStartAfter1_1s opacity-0"
                 : ""
             }`}
           >
             <div>
-              <div className="text-[20px]">3</div>
-              <div className="text-[40px] font-[200] leading-[60px]">
+              <div className="text-[1vw]">3</div>
+              <div className="text-[2vw] font-[200] leading-[3.1vw]">
                 Transparency
               </div>
             </div>
             <div
-              className={`text-pretendard text-[16px] leading-[27.2px] ${
+              className={`text-pretendard text-[1.6vh] leading-[1.4vw] ${
                 isFirstAnimation
-                  ? " animate-moveFromUpToDownStartAfter1_3s opacity-0"
+                  ? " animate-moveFromDownToUpStartAfter1_3s opacity-0"
                   : ""
               }`}
             >
