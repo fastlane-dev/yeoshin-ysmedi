@@ -26,9 +26,9 @@ module.exports = {
           "moveFromDownToUp 0.6s forwards 1.1s ease-in-out",
         moveFromDownToUpStartAfter1_3s:
           "moveFromDownToUp 0.6s forwards 1.3s ease-in-out",
-        smoothUpStartFirst: "smoothUp 0.7s forwards 0.5s linear",
-        smoothUpStartSecond: "smoothUp 0.7s forwards 0.9s linear",
-        lineAppear: "lineAppear 0.6s reverse backwards 0.7s linear",
+        smoothUpStartFirst: "smoothUp 0.7s forwards 0.5s ease-in-out",
+        smoothUpStartSecond: "smoothUp 0.7s forwards 0.9s ease-in-out",
+        lineAppear: "lineAppear 0.6s backwards 0.7s linear",
       },
       keyframes: {
         moveFromDownToUp: {
@@ -54,11 +54,11 @@ module.exports = {
         },
 
         lineAppear: {
-          "100%": {
+          "0%": {
             height: "0%",
           },
 
-          "0%": {
+          "100%": {
             height: "100%",
           },
         },
