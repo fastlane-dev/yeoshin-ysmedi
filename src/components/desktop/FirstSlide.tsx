@@ -21,19 +21,19 @@ export const FirstSlide = () => {
               height={36}
             />
           </a>
-          <div className="flex-center gap-[10px] font-[100]">
+          <div className="flex-center gap-[10px] text-[20px] font-[200]">
             <span>KR</span>
-            <span>|</span>
+            <span className="text-[#888888]">|</span>
             <span className="text-[#888888]">EN</span>
           </div>
         </nav>
       </div>
-      <div className="flex-center-column absolute bottom-[317px] left-[160px] animate-smoothUp items-start gap-[40px] opacity-0">
-        <p className=" whitespace-pre-wrap text-[100px] font-[400] leading-[100px] tracking-[-0.02em]">
+      <div className="flex-center-column absolute bottom-[317px] left-[160px]  items-start gap-[40px]">
+        <p className=" animate-smoothUpStartFirst whitespace-pre-wrap text-[100px] font-[400] leading-[100px] tracking-[-0.02em]  opacity-0">
           {"Your beauty,\nour priority"}
         </p>
-        <p className="font-pretendard text-[26px] font-[100] leading-[33px] tracking-[-0.02em]">
-          우리는 당신의 아름다움을 극대화하는 방법을 연구합니다
+        <p className="animate-smoothUpStartSecond whitespace-pre-wrap font-pretendard text-[26px] font-[100] leading-[33px] tracking-[-0.02em]  opacity-0">
+          {"우리는 당신의 아름다움을 극대화하는\n방법을 연구합니다"}
         </p>
       </div>
     </section>
