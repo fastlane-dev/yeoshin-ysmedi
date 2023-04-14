@@ -11,7 +11,7 @@ export const SecondSlide = ({
     >
       {/* 타이틀 */}
       <div
-        className={`absolute left-[50vw] top-[10vh] whitespace-pre-wrap font-[200] ${
+        className={`absolute left-[50vw] top-[3vh] whitespace-pre-wrap font-[200] ${
           isFirstAnimation
             ? "animate-moveFromDownToUpStartAfter0_5s opacity-0"
             : ""
