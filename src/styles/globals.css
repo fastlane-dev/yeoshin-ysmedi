@@ -28,3 +28,32 @@ body {
 body::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera*/
 }
+
+.swiper-container {
+  height: 300px;
+  color: white;
+}
+
+.swiper-mobile {
+  width: 100%;
+  height: 100% !important;
+  max-height: 100vh;
+}
+
+.swiper-slide-mobile {
+  text-align: center;
+  font-size: 18px;
+  max-height: 100vh;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide-mobile img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
