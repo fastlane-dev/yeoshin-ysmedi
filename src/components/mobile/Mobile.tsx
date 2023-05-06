@@ -2,7 +2,16 @@ import Head from "next/head";
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import { Mousewheel, Pagination } from "swiper";
+import { FreeMode, Mousewheel, Scrollbar } from "swiper";
+
+import { FirstMobileSlide } from "./FirstMobileSlide";
+import { SecondMobileSlide } from "./SecondMobileSlide";
+import { ThirdMobildSlide } from "./ThirdMobildSlide";
+import { FourthMobildSlide } from "./FourthMobildSlide";
+import { FifthMobildSlide } from "./FifthMobildSlide";
+import { SixthMobildSlide } from "./SixthMobildSlide";
+import { SeventhMobildSlide } from "./SeventhMobildSlide";
+import { EighthMobildSlide } from "./EighthMobildSlide";
 
 const Mobile = () => {
   return (
@@ -10,7 +19,6 @@ const Mobile = () => {
       <Swiper
         direction={"vertical"}
         slidesPerView={1}
-        spaceBetween={30}
         mousewheel={true}
         pagination={{
           clickable: true,
@@ -20,19 +28,40 @@ const Mobile = () => {
         speed={800}
       >
         <SwiperSlide>
-          <div className="relative h-screen w-screen  font-faktumTest text-[30px] text-white">
-            slide 1
-          </div>
+          <FirstMobileSlide />
         </SwiperSlide>
         <SwiperSlide>
-          <div className="relative h-screen w-screen  font-faktumTest text-[30px] text-white">
-            slide 2
-          </div>
+          <SecondMobileSlide />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <Swiper
+            direction={"vertical"}
+            freeMode={true}
+            scrollbar={true}
+            mousewheel={true}
+            modules={[FreeMode, Scrollbar, Mousewheel]}
+          >
+            <SwiperSlide>
+              <ThirdMobildSlide />
+            </SwiperSlide>
+            <SwiperSlide>
+              <FourthMobildSlide />
+            </SwiperSlide>
+            <SwiperSlide>
+              <FifthMobildSlide />
+            </SwiperSlide>
+          </Swiper>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <SixthMobildSlide />
         </SwiperSlide>
         <SwiperSlide>
-          <div className="relative h-screen w-screen  font-faktumTest text-[30px] text-white">
-            slide 3
-          </div>
+          <SeventhMobildSlide />
+        </SwiperSlide>
+        <SwiperSlide>
+          <EighthMobildSlide />
         </SwiperSlide>
       </Swiper>
     </>
