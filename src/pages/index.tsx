@@ -1,8 +1,8 @@
 import Head from "next/head";
 import localFont from "next/font/local";
 import React, { useEffect, useState } from "react";
-import DesktopSwiper from "@/components/desktop/DesktopSwiper";
-import { Mobile } from "@/components/mobile/Mobile";
+import DesktopSwiper from "@/components/desktop";
+import Mobile from "@/components/mobile";
 
 const FaktumTest = localFont({
   variable: "--font-faktumTest",
