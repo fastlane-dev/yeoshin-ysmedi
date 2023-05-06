@@ -25,13 +25,10 @@ const DesktopSwiper = () => {
 
   return (
     <Swiper
-      className={`max-h-screen overflow-hidden bg-black`}
       direction="vertical"
       modules={[Mousewheel]}
-      // scrollbar={{ draggable: true }}
       speed={800}
       mousewheel={true}
-      // slidesPerView={1}
       onScroll={(scroll) => onSlideChage(scroll.activeIndex)}
       onSlideChange={(slide) => onSlideChage(slide.activeIndex)}
     >
