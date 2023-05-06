@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import Image from "next/image";
 
@@ -16,6 +16,53 @@ import { SeventhMobildSlide } from "./SeventhMobildSlide";
 import { EighthMobildSlide } from "./EighthMobildSlide";
 
 const Mobile = () => {
+  const [scrollSectionHeight, setScrollSectionHeight] = useState(0);
+
+  useEffect(() => {
+    const viewWidth = window.innerWidth;
+    if (viewWidth <= 600) {
+      setScrollSectionHeight(600);
+    } else if (viewWidth > 600 && viewWidth <= 700) {
+      setScrollSectionHeight(700);
+    } else if (viewWidth > 700 && viewWidth <= 800) {
+      setScrollSectionHeight(800);
+    } else if (viewWidth > 800 && viewWidth <= 900) {
+      setScrollSectionHeight(900);
+    } else if (viewWidth > 900) {
+      setScrollSectionHeight(1000);
+    }
+    window.addEventListener("resize", () => {
+      const viewWidth = window.innerWidth;
+      if (viewWidth <= 600) {
+        setScrollSectionHeight(600);
+      } else if (viewWidth > 600 && viewWidth <= 700) {
+        setScrollSectionHeight(700);
+      } else if (viewWidth > 700 && viewWidth <= 800) {
+        setScrollSectionHeight(800);
+      } else if (viewWidth > 800 && viewWidth <= 900) {
+        setScrollSectionHeight(900);
+      } else if (viewWidth > 900) {
+        setScrollSectionHeight(1000);
+      }
+    });
+
+    return () => {
+      window.removeEventListener("resize", () => {
+        const viewWidth = window.innerWidth;
+        if (viewWidth <= 600) {
+          setScrollSectionHeight(600);
+        } else if (viewWidth > 600 && viewWidth <= 700) {
+          setScrollSectionHeight(700);
+        } else if (viewWidth > 700 && viewWidth <= 800) {
+          setScrollSectionHeight(800);
+        } else if (viewWidth > 800 && viewWidth <= 900) {
+          setScrollSectionHeight(900);
+        } else if (viewWidth > 900) {
+          setScrollSectionHeight(1000);
+        }
+      });
+    };
+  }, [window.innerWidth]);
   return (
     <>
       <div className="fixed bottom-[66px] right-[22px] z-10 cursor-pointer">
@@ -53,14 +100,15 @@ const Mobile = () => {
             scrollbar={true}
             mousewheel={true}
             modules={[FreeMode, Scrollbar, Mousewheel]}
+            height={scrollSectionHeight}
           >
-            <SwiperSlide>
+            <SwiperSlide className="flex-center">
               <ThirdMobildSlide />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className="flex-center">
               <FourthMobildSlide />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className="flex-center">
               <FifthMobildSlide />
             </SwiperSlide>
           </Swiper>
