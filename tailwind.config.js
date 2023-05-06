@@ -12,6 +12,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        msm: { raw: "(min-width: 480px)" },
+        mmd: { raw: "(min-width: 768px)" },
+        mlg: { raw: "(min-width: 992px)" },
+      },
       fontFamily: {
         sans: [...fontFamily.sans],
         pretendard: ["var(--font-pretendard)"],
