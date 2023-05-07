@@ -3,7 +3,7 @@ import { InView } from "react-intersection-observer";
 
 export const FourthMobildSlide = () => {
   return (
-    <InView triggerOnce threshold={0}>
+    <InView triggerOnce threshold={0.4}>
       {({ inView, ref }) => {
         return (
           <section
@@ -21,7 +21,7 @@ export const FourthMobildSlide = () => {
               <div
                 className={
                   inView
-                    ? "mb-[5vh] w-[33vw] animate-mobileMoveFromDownToUpStartAfter0_6s justify-self-center opacity-0"
+                    ? "mb-[5vh] w-[33vw] animate-mobileIconMoveFromDownToUp justify-self-center opacity-0"
                     : "w-[7vw]"
                 }
               >
@@ -38,7 +38,7 @@ export const FourthMobildSlide = () => {
                 <div
                   className={
                     inView
-                      ? "animate-mobileMoveFromDownToUpStartAfter0_8s opacity-0"
+                      ? "animate-mobileIconTitleMoveFromDownToUp opacity-0"
                       : ""
                   }
                 >
@@ -48,7 +48,7 @@ export const FourthMobildSlide = () => {
                 <div
                   className={`text-pretendard font-pretendard text-[4vw] font-[100]  ${
                     inView
-                      ? "animate-mobileMoveFromDownToUpStartAfter1s opacity-0"
+                      ? "animate-mobileIconDescriptionMoveFromDownToUp opacity-0"
                       : ""
                   }`}
                 >
