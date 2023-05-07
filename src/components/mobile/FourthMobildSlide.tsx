@@ -21,13 +21,13 @@ export const FourthMobildSlide = () => {
               <div
                 className={
                   inView
-                    ? "mb-[5vh] w-[33vw] animate-mobileIconMoveFromDownToUp justify-self-center opacity-0"
+                    ? "mb-[5vh] w-[18vw] animate-mobileIconMoveFromDownToUp justify-self-center opacity-0"
                     : "w-[7vw]"
                 }
               >
                 <img
-                  src={"/img/reliability_icon.png"}
-                  alt="reliability_icon"
+                  src={"/img/collaboration_icon.png"}
+                  alt="collaboration_icon"
                   style={{ objectFit: "contain" }}
                 />
               </div>
@@ -42,8 +42,8 @@ export const FourthMobildSlide = () => {
                       : ""
                   }
                 >
-                  <div className="text-[5.3vw]">1</div>
-                  <div className="text-[5.3vw] font-[200]">Reliability</div>
+                  <div className="text-[5.3vw]">2</div>
+                  <div className="text-[5.3vw] font-[200]">Collaboration</div>
                 </div>
                 <div
                   className={`text-pretendard font-pretendard text-[4vw] font-[100]  ${
@@ -53,7 +53,7 @@ export const FourthMobildSlide = () => {
                   }`}
                 >
                   {
-                    "지속적인 연구와 개선을 통해, 복잡하고 어려운\n의료 미용 기기 시장에서 신뢰하고 의지할 수 있는\n파트너가 되어드립니다."
+                    "피부 시술을 받는 고객들부터 직접 제품을 시장에\n소개하는 파트너사까지, 협력을 통해 새로운 아이디\n어를 반영하고 경쟁력 높은 서비스를 제공합니다."
                   }
                 </div>
               </div>
