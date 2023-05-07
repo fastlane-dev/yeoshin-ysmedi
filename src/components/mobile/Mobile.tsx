@@ -20,7 +20,9 @@ const Mobile = () => {
 
   useEffect(() => {
     const viewWidth = window.innerWidth;
-    if (viewWidth <= 600) {
+    if (viewWidth <= 500) {
+      setScrollSectionHeight(500);
+    } else if (viewWidth > 500 && viewWidth <= 600) {
       setScrollSectionHeight(600);
     } else if (viewWidth > 600 && viewWidth <= 700) {
       setScrollSectionHeight(700);
@@ -33,7 +35,9 @@ const Mobile = () => {
     }
     window.addEventListener("resize", () => {
       const viewWidth = window.innerWidth;
-      if (viewWidth <= 600) {
+      if (viewWidth <= 500) {
+        setScrollSectionHeight(500);
+      } else if (viewWidth > 500 && viewWidth <= 600) {
         setScrollSectionHeight(600);
       } else if (viewWidth > 600 && viewWidth <= 700) {
         setScrollSectionHeight(700);
@@ -49,7 +53,9 @@ const Mobile = () => {
     return () => {
       window.removeEventListener("resize", () => {
         const viewWidth = window.innerWidth;
-        if (viewWidth <= 600) {
+        if (viewWidth <= 500) {
+          setScrollSectionHeight(500);
+        } else if (viewWidth > 500 && viewWidth <= 600) {
           setScrollSectionHeight(600);
         } else if (viewWidth > 600 && viewWidth <= 700) {
           setScrollSectionHeight(700);
