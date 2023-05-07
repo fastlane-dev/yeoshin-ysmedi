@@ -23,12 +23,13 @@ module.exports = {
         faktumTest: ["var(--font-faktumTest)"],
       },
       animation: {
-        mobileMoveFromDownToUpStartAfter0_6s:
-          "moveFromDownToUp 0.6s forwards 0.6s ease-in-out",
-        mobileMoveFromDownToUpStartAfter0_8s:
+        mobileIconMoveFromDownToUp:
+          "moveFromDownToUp 0.6s forwards 0.2s ease-in-out",
+        mobileIconTitleMoveFromDownToUp:
+          "moveFromDownToUp 0.6s forwards 0.5s ease-in-out",
+        mobileIconDescriptionMoveFromDownToUp:
           "moveFromDownToUp 0.6s forwards 0.8s ease-in-out",
-        mobileMoveFromDownToUpStartAfter1s:
-          "moveFromDownToUp 0.6s forwards 1s ease-in-out",
+        mobileLineAppear: "mobileLineAppear 0.8s forwards 1.3s linear",
         moveFromDownToUpStartAfter0_5s:
           "moveFromDownToUp 0.6s forwards 0.5s ease-in-out",
         moveFromDownToUpStartAfter0_9s:
@@ -42,8 +43,6 @@ module.exports = {
         lineAppear: "lineAppear 0.6s backwards 0.7s linear",
 
         wholeSectionAppear: "opacityAppear 0.6s forwards linear",
-
-        mobileLineAppear: "mobileLineAppear 0.6s forwards 1.3s linear",
       },
       keyframes: {
         moveFromDownToUp: {
