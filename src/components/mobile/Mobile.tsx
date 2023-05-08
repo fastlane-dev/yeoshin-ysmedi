@@ -15,6 +15,8 @@ import { SixthMobildSlide } from "./SixthMobildSlide";
 import { SeventhMobildSlide } from "./SeventhMobildSlide";
 import { EighthMobildSlide } from "./EighthMobildSlide";
 
+import shoppingImgPath from "../../../public/img/shopping_mall.svg";
+
 const Mobile = () => {
   const [scrollSectionHeight, setScrollSectionHeight] = useState(0);
 
@@ -71,10 +73,10 @@ const Mobile = () => {
   }, [window.innerWidth]);
   return (
     <>
-      <div className="fixed bottom-[66px] right-[22px] z-10 cursor-pointer">
+      <div className="fixed bottom-[22px] right-[22px] z-10 cursor-pointer">
         <a href="https://mall.ysmedi.kr/" target="_blank">
           <Image
-            src={"/img/shopping_mall.png"}
+            src={shoppingImgPath}
             alt="shopping_mall"
             width={179}
             height={36}
