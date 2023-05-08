@@ -4,12 +4,12 @@ import React from "react";
 export const SixthMobildSlide = () => {
   return (
     <section className="flex-center relative h-screen w-screen items-end font-faktumTest tracking-[-0.02em] text-white">
-      <div className="absolute h-full w-full">
+      <div className="absolute h-[100vh] w-[260vw]">
         <Image
           src={"/img/therfect_background.png"}
           alt="therfect_backgrond"
           fill
-          // style={{ objectFit: "contain" }}
+          style={{ objectFit: "contain" }}
           priority
         />
       </div>

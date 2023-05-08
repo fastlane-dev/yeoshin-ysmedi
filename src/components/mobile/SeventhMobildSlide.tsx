@@ -9,7 +9,7 @@ export const SeventhMobildSlide = () => {
           src={"/img/lala_background.png"}
           alt="lala_background"
           fill
-          // style={{ objectFit: "contain" }}
+          style={{ objectFit: "cover" }}
           priority
         />
       </div>
