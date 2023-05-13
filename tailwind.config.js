@@ -12,12 +12,24 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        msm: { raw: "(min-width: 480px)" },
+        mmd: { raw: "(min-width: 768px)" },
+        mlg: { raw: "(min-width: 992px)" },
+      },
       fontFamily: {
         sans: [...fontFamily.sans],
         pretendard: ["var(--font-pretendard)"],
         faktumTest: ["var(--font-faktumTest)"],
       },
       animation: {
+        mobileIconMoveFromDownToUp:
+          "moveFromDownToUp 0.6s forwards ease-in-out",
+        mobileIconTitleMoveFromDownToUp:
+          "moveFromDownToUp 0.6s forwards 0.2s ease-in-out",
+        mobileIconDescriptionMoveFromDownToUp:
+          "moveFromDownToUp 0.6s forwards 0.4s ease-in-out",
+        mobileLineAppear: "mobileLineAppear 0.6s forwards 0.8s linear",
         moveFromDownToUpStartAfter0_5s:
           "moveFromDownToUp 0.6s forwards 0.5s ease-in-out",
         moveFromDownToUpStartAfter0_9s:
@@ -29,6 +41,8 @@ module.exports = {
         smoothUpStartFirst: "smoothUp 0.7s forwards 0.5s ease-in-out",
         smoothUpStartSecond: "smoothUp 0.7s forwards 0.9s ease-in-out",
         lineAppear: "lineAppear 0.6s backwards 0.7s linear",
+
+        wholeSectionAppear: "opacityAppear 0.6s forwards linear",
       },
       keyframes: {
         moveFromDownToUp: {
@@ -39,6 +53,15 @@ module.exports = {
           "100%": {
             opacity: 1,
             transform: "translateY(0%)",
+          },
+        },
+
+        opacityAppear: {
+          "0%": {
+            opacity: 0,
+          },
+          "100%": {
+            opacity: 1,
           },
         },
 
@@ -60,6 +83,16 @@ module.exports = {
 
           "100%": {
             height: "100%",
+          },
+        },
+
+        mobileLineAppear: {
+          "0%": {
+            width: "0%",
+          },
+
+          "100%": {
+            width: "100%",
           },
         },
       },

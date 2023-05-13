@@ -1,7 +1,8 @@
 import Head from "next/head";
 import localFont from "next/font/local";
-import React from "react";
-import DesktopSwiper from "@/components/desktop/DesktopSwiper";
+import React, { useEffect, useState } from "react";
+import DesktopSwiper from "@/components/desktop";
+import Mobile from "@/components/mobile";
 
 const FaktumTest = localFont({
   variable: "--font-faktumTest",
@@ -81,6 +82,28 @@ const Pretendard = localFont({
 });
 
 export default function Home() {
+  const [isWeb, setIsWeb] = useState(true);
+
+  useEffect(() => {
+    setIsWeb(window.innerWidth > 1024);
+    window.addEventListener("resize", () => {
+      if (window.innerWidth < 1024) {
+        setIsWeb(false);
+      } else {
+        setIsWeb(true);
+      }
+    });
+
+    return () => {
+      window.removeEventListener("resize", () => {
+        if (window.innerWidth < 1024) {
+          setIsWeb(false);
+        } else {
+          setIsWeb(true);
+        }
+      });
+    };
+  }, []);
   return (
     <>
       <Head>
@@ -90,7 +113,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={`${FaktumTest.variable} ${Pretendard.variable}`}>
-        <DesktopSwiper />
+        {isWeb ? <DesktopSwiper /> : <Mobile />}
       </div>
     </>
   );

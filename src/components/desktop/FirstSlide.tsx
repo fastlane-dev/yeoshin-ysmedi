@@ -15,7 +15,7 @@ export const FirstSlide = () => {
         <nav className="flex-center cursor-pointer gap-[41px]">
           <a href="https://mall.ysmedi.kr/" target="_blank">
             <Image
-              src={"/img/shopping_mall.png"}
+              src={"/img/shopping_mall.svg"}
               alt="shopping_mall"
               width={179}
               height={36}
