@@ -1,8 +1,17 @@
 import Head from "next/head";
 import localFont from "next/font/local";
 import React, { useEffect, useState } from "react";
-import DesktopSwiper from "@/components/desktop";
-import Mobile from "@/components/mobile";
+// import DesktopSwiper from "@/components/desktop";
+// import Mobile from "@/components/mobile";
+import dynamic from "next/dynamic";
+
+const DesktopSwiper = dynamic(
+  () => import("../components/desktop/DesktopSwiper"),
+  { ssr: false }
+);
+const Mobile = dynamic(() => import("../components/mobile/Mobile"), {
+  ssr: false,
+});
 
 const FaktumTest = localFont({
   variable: "--font-faktumTest",
