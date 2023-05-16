@@ -4,7 +4,7 @@ import React from "react";
 export const FooterSlide = () => {
   return (
     <footer className="flex-center relative h-screen w-screen items-end font-faktumTest font-[400]  text-white">
-      <div className="flex-center absolute top-[196px] h-[110px] w-full justify-between px-[165px]">
+      <div className="flex-center absolute top-[196px] h-[110px] w-full justify-between px-[8.3vw]">
         <div className="flex-center-column items-start gap-[30px] text-[18px] leading-[24px]">
           <div className="flex-center gap-[50px] font-[200]">
             <p>TEL. 070-4858-4686</p>
@@ -12,18 +12,18 @@ export const FooterSlide = () => {
           </div>
           <div className="flex-center-column items-start gap-[5px]">
             <p className="font-pretendard font-[100]">
-              서울특별시 강남구 테헤란로 423 현대타워, 10층
+              경기도 용인시 기흥구 동백중앙로 191, 8층 A8323호 (중동,
+              씨티프라자)
             </p>
             <p className="font-[200]">Ⓒ Ysmedi Co. Ltd.</p>
           </div>
         </div>
-        <div>
+        <div className="relative h-[25vw] w-[25vw]">
           <Image
             src={"/img/logo.png"}
             alt="logo"
-            width={486}
-            height={91}
-            priority
+            fill
+            className="object-contain"
           />
         </div>
       </div>
