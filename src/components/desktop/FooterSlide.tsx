@@ -8,7 +8,7 @@ export const FooterSlide = () => {
         <div className="flex-center-column items-start gap-[30px] text-[18px] leading-[24px]">
           <div className="flex-center gap-[50px] font-[200]">
             <p>TEL. 070-4858-4686</p>
-            <p>email. beauty@ysmedi.kr</p>
+            <p>Email. beauty@ysmedi.kr</p>
           </div>
           <div className="flex-center-column items-start gap-[5px]">
             <p className="font-pretendard font-[100]">

@@ -23,7 +23,7 @@ export const EighthMobildSlide = () => {
       <div className="flex-center-column mt-[128px] items-start gap-[24px] pl-[22px] text-[12px] leading-[16px]">
         <div className="flex-center-column items-start  gap-[6px] font-[200]">
           <p>TEL. 070-4858-4686</p>
-          <p>email. beauty@ysmedi.kr</p>
+          <p>Email. beauty@ysmedi.kr</p>
         </div>
         <div className="flex-center-column items-start gap-[6px]">
           <p className="font-pretendard font-[100]">
