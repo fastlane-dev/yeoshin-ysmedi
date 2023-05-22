@@ -12,8 +12,8 @@ export const FooterSlide = () => {
           </div>
           <div className="flex-center-column items-start gap-[5px]">
             <p className="font-pretendard font-[100]">
-              경기도 용인시 기흥구 동백중앙로 191, 8층 A8323호 (중동,
-              씨티프라자)
+              경기도 용인시 기흥구 동백중앙로 191 (중동, 씨티프라자) 8층
+              에이8323호
             </p>
             <p className="font-[200]">Ⓒ Ysmedi Co. Ltd.</p>
           </div>
