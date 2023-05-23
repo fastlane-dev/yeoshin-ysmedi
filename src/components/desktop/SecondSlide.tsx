@@ -68,7 +68,7 @@ export const SecondSlide = ({
               </div>
             </div>
             <div
-              className={`text-pretendard text-[1.6vh] leading-[1.4vw] ${
+              className={`text-pretendard text-[1vw] leading-[2.5vh] mlg:leading-[3vh] ${
                 isFirstAnimation
                   ? "animate-moveFromDownToUpStartAfter1_3s opacity-0"
                   : ""
@@ -118,7 +118,7 @@ export const SecondSlide = ({
               </div>
             </div>
             <div
-              className={`text-pretendard text-[1.6vh] leading-[1.4vw] ${
+              className={`text-pretendard text-[1vw] leading-[2.5vh] mlg:leading-[3vh] ${
                 isFirstAnimation
                   ? "animate-moveFromDownToUpStartAfter1_3s opacity-0"
                   : ""
@@ -161,7 +161,7 @@ export const SecondSlide = ({
               </div>
             </div>
             <div
-              className={`text-pretendard text-[1.6vh] leading-[1.4vw] ${
+              className={`text-pretendard text-[1vw] leading-[2.5vh] mlg:leading-[3vh] ${
                 isFirstAnimation
                   ? " animate-moveFromDownToUpStartAfter1_3s opacity-0"
                   : ""

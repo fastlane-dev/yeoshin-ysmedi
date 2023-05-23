@@ -1,8 +1,17 @@
 import Head from "next/head";
 import localFont from "next/font/local";
 import React, { useEffect, useState } from "react";
-import DesktopSwiper from "@/components/desktop";
-import Mobile from "@/components/mobile";
+// import DesktopSwiper from "@/components/desktop";
+// import Mobile from "@/components/mobile";
+import dynamic from "next/dynamic";
+
+const DesktopSwiper = dynamic(
+  () => import("../components/desktop/DesktopSwiper"),
+  { ssr: false }
+);
+const Mobile = dynamic(() => import("../components/mobile/Mobile"), {
+  ssr: false,
+});
 
 const FaktumTest = localFont({
   variable: "--font-faktumTest",
@@ -85,9 +94,9 @@ export default function Home() {
   const [isWeb, setIsWeb] = useState(true);
 
   useEffect(() => {
-    setIsWeb(window.innerWidth > 1024);
+    setIsWeb(window.innerWidth > 800);
     window.addEventListener("resize", () => {
-      if (window.innerWidth < 1024) {
+      if (window.innerWidth < 800) {
         setIsWeb(false);
       } else {
         setIsWeb(true);
@@ -96,7 +105,7 @@ export default function Home() {
 
     return () => {
       window.removeEventListener("resize", () => {
-        if (window.innerWidth < 1024) {
+        if (window.innerWidth < 800) {
           setIsWeb(false);
         } else {
           setIsWeb(true);

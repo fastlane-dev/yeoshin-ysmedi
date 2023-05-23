@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import { FreeMode, Mousewheel, Scrollbar } from "swiper";
+import { FreeMode, Scrollbar } from "swiper";
 
 import { FirstMobileSlide } from "./FirstMobileSlide";
 import { SecondMobileSlide } from "./SecondMobileSlide";
@@ -86,11 +86,9 @@ const Mobile = () => {
       <Swiper
         direction={"vertical"}
         slidesPerView={1}
-        mousewheel={true}
         pagination={{
           clickable: true,
         }}
-        modules={[Mousewheel]}
         className="mySwiper"
         speed={800}
       >
@@ -107,7 +105,7 @@ const Mobile = () => {
             freeMode={true}
             scrollbar={true}
             mousewheel={true}
-            modules={[FreeMode, Scrollbar, Mousewheel]}
+            modules={[FreeMode, Scrollbar]}
             height={scrollSectionHeight}
           >
             <SwiperSlide className="flex-center">

@@ -8,7 +8,7 @@ export const FirstSlide = () => {
       <div className="absolute bottom-[68px] left-[373px] z-[-1] opacity-[0.7]">
         <Image src={planetImg} alt="planet" priority />
       </div>
-      <div className="flex-center w-full justify-between px-[160px] pt-[80px]">
+      <div className="flex-center w-full justify-between px-[9vw] pt-[80px]">
         <div>
           <Image src={"/img/logo.png"} alt="logo" width={189} height={35} />
         </div>
