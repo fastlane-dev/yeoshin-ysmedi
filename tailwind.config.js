@@ -15,16 +15,29 @@ module.exports = {
       colors: {
         orange: "#FE3B1F",
         gray: "#555555",
+        "main-orange": "#f68e0f",
       },
       screens: {
+        mhmw2: { raw: "(max-height: 665px) and (max-width: 480px)" },
+        mhmw1: { raw: "(max-height: 665px) and (max-width: 460px)" },
+        mshs: { raw: "(max-height: 665px)" },
+        mshm: { raw: "(min-height: 750px) and (min-width: 480px)" },
+        mmhd: { raw: "(min-height: 750px) and (min-width: 768px)" },
+
         msm: { raw: "(min-width: 480px)" },
         mmd: { raw: "(min-width: 768px)" },
         mlg: { raw: "(min-width: 992px)" },
+
+        sm: { raw: "(min-width: 800px)" },
+        md: { raw: "(min-width: 992px)" },
+        lg: { raw: "(min-width: 1200px)" },
+        xlg: { raw: "(min-width: 1400px)" },
       },
       fontFamily: {
         sans: [...fontFamily.sans],
         pretendard: ["var(--font-pretendard)"],
         faktumTest: ["var(--font-faktumTest)"],
+        futura: ["var(--font-futura)"],
       },
       animation: {
         // ys medi
@@ -77,6 +90,23 @@ module.exports = {
           "moveFromDownToUp 0.4s forwards 0.9s ease-in-out",
         keywordStartAt0_8s_lala:
           "moveFromDownToUp 0.4s forwards 1.1s ease-in-out",
+
+        // therfect
+        dotAppearFirst_therfect: "opacityAppear 0.6s forwards 0.6s ease-in-out",
+        dotAppearSecond_therfect:
+          "opacityAppear 0.6s forwards 0.9s ease-in-out",
+        dotAppearThird_therfect: "opacityAppear 0.6s forwards 1.2s ease-in-out",
+        smoothUpFirst_therfect:
+          "moveFromDownToUp 0.6s forwards 0.3s ease-in-out",
+        smoothUpSecond_therfect:
+          "moveFromDownToUp 0.6s forwards 0.5s ease-in-out",
+        smoothUpThird_therfect:
+          "moveFromDownToUp 0.6s forwards 0.8s ease-in-out",
+
+        mobileMainLogoAppear_therfect:
+          "moveFromDownToUp 0.8s forwards 1.5s ease-in-out",
+        mobileMainLogoDisappear_therfect:
+          "smoothDisappear 0.8s forwards 1.3s ease-in-out",
       },
       keyframes: {
         logoSpin: {
@@ -113,6 +143,17 @@ module.exports = {
           "100%": {
             width: "110vw",
             zIndex: 0,
+          },
+        },
+
+        smoothDisappear: {
+          "0%": {
+            opacity: 1,
+            transform: "translateY(0px)",
+          },
+          "100%": {
+            opacity: 0,
+            transform: "translateY(-20px)",
           },
         },
 
