@@ -12,22 +12,43 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        msm: { raw: "(min-width: 480px)" },
+        mmd: { raw: "(min-width: 768px)" },
+        mlg: { raw: "(min-width: 992px)" },
+      },
       fontFamily: {
         sans: [...fontFamily.sans],
         pretendard: ["var(--font-pretendard)"],
         faktumTest: ["var(--font-faktumTest)"],
       },
       animation: {
-        moveFromUpToDown0_7s: "moveFromUpToDown 0.7s forwards 0.6s ease-in-out",
-        moveFromUpToDown0_8s: "moveFromUpToDown 0.8s forwards 0.7s ease-in-out",
-        smoothUp: "smoothUp 0.9s forwards 1s ease-in-out",
-        lineAppear: "lineAppear 1s linear",
+        mobileIconMoveFromDownToUp:
+          "moveFromDownToUp 0.6s forwards ease-in-out",
+        mobileIconTitleMoveFromDownToUp:
+          "moveFromDownToUp 0.6s forwards 0.2s ease-in-out",
+        mobileIconDescriptionMoveFromDownToUp:
+          "moveFromDownToUp 0.6s forwards 0.4s ease-in-out",
+        mobileLineAppear: "mobileLineAppear 0.6s forwards 0.8s linear",
+        moveFromDownToUpStartAfter0_5s:
+          "moveFromDownToUp 0.6s forwards 0.5s ease-in-out",
+        moveFromDownToUpStartAfter0_9s:
+          "moveFromDownToUp 0.6s forwards 0.9s ease-in-out",
+        moveFromDownToUpStartAfter1_1s:
+          "moveFromDownToUp 0.6s forwards 1.1s ease-in-out",
+        moveFromDownToUpStartAfter1_3s:
+          "moveFromDownToUp 0.6s forwards 1.3s ease-in-out",
+        smoothUpStartFirst: "smoothUp 0.7s forwards 0.5s ease-in-out",
+        smoothUpStartSecond: "smoothUp 0.7s forwards 0.9s ease-in-out",
+        lineAppear: "lineAppear 0.6s backwards 0.7s linear",
+
+        wholeSectionAppear: "opacityAppear 0.6s forwards linear",
       },
       keyframes: {
-        moveFromUpToDown: {
+        moveFromDownToUp: {
           "0%": {
             opacity: 0,
-            transform: "translateY(-70%)",
+            transform: "translateY(70%)",
           },
           "100%": {
             opacity: 1,
@@ -35,14 +56,23 @@ module.exports = {
           },
         },
 
-        smoothUp: {
+        opacityAppear: {
           "0%": {
             opacity: 0,
-            transform: "translateY(10%)",
           },
           "100%": {
             opacity: 1,
-            transform: "translateY(0%)",
+          },
+        },
+
+        smoothUp: {
+          "0%": {
+            opacity: 0,
+            transform: "translateY(20px)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translateY(0px)",
           },
         },
 
@@ -50,20 +80,19 @@ module.exports = {
           "0%": {
             height: "0%",
           },
-          "5%": {
-            height: "5%",
-          },
-          "10%": {
-            height: "10%",
-          },
-          "20%": {
-            height: "20%",
-          },
-          "50%": {
-            height: "50%",
-          },
+
           "100%": {
             height: "100%",
+          },
+        },
+
+        mobileLineAppear: {
+          "0%": {
+            width: "0%",
+          },
+
+          "100%": {
+            width: "100%",
           },
         },
       },
