@@ -116,7 +116,7 @@ export default function Home({ pageIdentity }: { pageIdentity: any }) {
   console.log("pageIdentity", pageIdentity);
 
   const [renderedPageInfo, setRenderedPageInfo] = useState(
-    PAGE_INFOS[PAGE_IDENTITY.YS_MEDI]
+    PAGE_INFOS[PAGE_IDENTITY.LALA_PEEL]
   );
 
   const setComponentByUrl = (url: string) => {
@@ -147,7 +147,7 @@ export default function Home({ pageIdentity }: { pageIdentity: any }) {
         <link rel="icon" href={faviconPath} />
       </Head>
       <div
-        className={`${FaktumTest.variable} ${Pretendard.variable} ${Futura.variable}`}
+        className={`whitespace-pre-wrap ${FaktumTest.variable} ${Pretendard.variable} ${Futura.variable}`}
       >
         <Component />
       </div>
