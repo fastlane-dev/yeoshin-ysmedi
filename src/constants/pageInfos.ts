@@ -1,4 +1,5 @@
 import YsMedi from "@/components/Ysmedi";
+import LalaPeel from "@/components/LalaPeel";
 
 export const PAGE_IDENTITY = {
   YS_MEDI: "ysmedi",
@@ -14,8 +15,8 @@ export const PAGE_INFOS = {
   },
   [PAGE_IDENTITY.LALA_PEEL]: {
     title: "LHALALA",
-    Component: YsMedi,
-    faviconPath: "",
+    Component: LalaPeel,
+    faviconPath: "/lala_peel.ico",
   },
   [PAGE_IDENTITY.THERFECT]: {
     title: "Therfect",
