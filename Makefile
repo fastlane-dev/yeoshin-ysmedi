@@ -37,13 +37,13 @@ endif
 
 dev-deploy: kubectl kustomize
 	cd manifests/overlays/${PROFILE} && \
-	$(KUSTOMIZE) edit set image admin-fe=${DEV_IMAGE_REGISTRY}/ysmedi:${TAG} && \
+	$(KUSTOMIZE) edit set image ysmedi=${DEV_IMAGE_REGISTRY}/ysmedi:${TAG} && \
 	$(KUSTOMIZE) build && \
 	$(KUBECTL) apply -k .
 
 prod-deploy: kubectl kustomize
 	cd manifests/overlays/${PROFILE} && \
-	$(KUSTOMIZE) edit set image admin-fe=${PROD_IMAGE_REGISTRY}/ysmedi:${TAG} && \
+	$(KUSTOMIZE) edit set image ysmedi=${PROD_IMAGE_REGISTRY}/ysmedi:${TAG} && \
 	$(KUSTOMIZE) build && \
 	$(KUBECTL) apply -k .
 
