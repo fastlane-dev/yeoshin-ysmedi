@@ -6,7 +6,7 @@ export const SeventhMobildSlide = () => {
     <section className="flex-center relative h-screen w-screen items-end font-faktumTest tracking-[-0.02em] text-white">
       <div className="absolute h-full w-full">
         <Image
-          src={"/img/lala_background.png"}
+          src={"/img/ysmedi/lala_background.png"}
           alt="lala_background"
           fill
           style={{ objectFit: "cover" }}
@@ -16,7 +16,7 @@ export const SeventhMobildSlide = () => {
       <div className="flex-center-column  absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] items-center gap-[21px]">
         <div className="w-[31vw]">
           <img
-            src={"/img/lala_word.png"}
+            src={"/img/ysmedi/lala_word.png"}
             alt="lala_word"
             style={{ objectFit: "contain" }}
           />

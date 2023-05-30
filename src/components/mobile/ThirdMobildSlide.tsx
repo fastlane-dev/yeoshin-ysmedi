@@ -21,12 +21,12 @@ export const ThirdMobildSlide = () => {
               <div
                 className={
                   inView
-                    ? "animate-mobileIconMoveFromDownToUp mb-[5vh] w-[33vw] justify-self-center opacity-0"
+                    ? "mb-[5vh] w-[33vw] animate-mobileIconMoveFromDownToUp justify-self-center opacity-0"
                     : "w-[7vw]"
                 }
               >
                 <img
-                  src={"/img/reliability_icon.png"}
+                  src={"/img/ysmedi/reliability_icon.png"}
                   alt="reliability_icon"
                   style={{ objectFit: "contain" }}
                 />

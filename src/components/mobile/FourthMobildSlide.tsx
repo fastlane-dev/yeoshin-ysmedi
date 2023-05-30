@@ -26,7 +26,7 @@ export const FourthMobildSlide = () => {
                 }
               >
                 <img
-                  src={"/img/collaboration_icon.png"}
+                  src={"/img/ysmedi/collaboration_icon.png"}
                   alt="collaboration_icon"
                   style={{ objectFit: "contain" }}
                 />

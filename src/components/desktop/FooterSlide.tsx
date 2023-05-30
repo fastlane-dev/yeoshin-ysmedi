@@ -20,7 +20,7 @@ export const FooterSlide = () => {
         </div>
         <div className="relative h-[25vw] w-[25vw]">
           <Image
-            src={"/img/logo.png"}
+            src={"/img/ysmedi/logo.png"}
             alt="logo"
             fill
             className="object-contain"

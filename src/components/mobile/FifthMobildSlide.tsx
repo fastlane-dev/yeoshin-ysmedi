@@ -26,7 +26,7 @@ export const FifthMobildSlide = () => {
                 }
               >
                 <img
-                  src={"/img/transparency_icon.png"}
+                  src={"/img/ysmedi/transparency_icon.png"}
                   alt="transparency_icon"
                   style={{ objectFit: "contain" }}
                 />

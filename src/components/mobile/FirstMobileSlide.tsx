@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import mobilePlanet from "../../../public/img/mobile_planet.svg";
+import mobilePlanet from "../../../public/img/ysmedi/mobile_planet.svg";
 
 export const FirstMobileSlide = () => {
   return (
@@ -15,7 +15,12 @@ export const FirstMobileSlide = () => {
         />
       </div>
       <div className="pl-[31px] pt-[44px]">
-        <Image src={"/img/logo.png"} alt="logo" width={108} height={20} />
+        <Image
+          src={"/img/ysmedi/logo.png"}
+          alt="logo"
+          width={108}
+          height={20}
+        />
       </div>
       <div className="flex-center-column ml-[23px] mt-[50vh] items-start gap-[2.7vh] mmd:mt-[35vh] mmd:gap-[6vh]">
         <p className=" animate-smoothUpStartFirst text-[13vw] font-[400] leading-[7vh] tracking-[-0.02em]  opacity-0 msm:leading-[8.5vh]  mmd:leading-[12vh] mlg:leading-[15vh]">

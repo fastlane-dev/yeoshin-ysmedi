@@ -46,7 +46,7 @@ export const SecondSlide = ({
             }
           >
             <img
-              src={"/img/reliability_icon.png"}
+              src={"/img/ysmedi/reliability_icon.png"}
               alt="reliability_icon"
               style={{ objectFit: "contain" }}
             />
@@ -98,7 +98,7 @@ export const SecondSlide = ({
             }
           >
             <img
-              src={"/img/collaboration_icon.png"}
+              src={"/img/ysmedi/collaboration_icon.png"}
               alt="collaboration_icon"
               style={{ objectFit: "contain" }}
             />
@@ -141,7 +141,7 @@ export const SecondSlide = ({
             }
           >
             <img
-              src={"/img/transparency_icon.png"}
+              src={"/img/ysmedi/transparency_icon.png"}
               alt="transparency_icon"
               style={{ objectFit: "contain" }}
             />

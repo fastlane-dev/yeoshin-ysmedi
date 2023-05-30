@@ -7,7 +7,7 @@ export const EighthMobildSlide = () => {
       <div className="flex w-full justify-between px-[22px] pt-[64px]">
         <div>
           <Image
-            src={"/img/logo.png"}
+            src={"/img/ysmedi/logo.png"}
             alt="logo"
             width={123}
             height={23}

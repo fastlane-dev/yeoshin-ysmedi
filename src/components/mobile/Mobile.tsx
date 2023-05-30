@@ -15,7 +15,7 @@ import { SixthMobildSlide } from "./SixthMobildSlide";
 import { SeventhMobildSlide } from "./SeventhMobildSlide";
 import { EighthMobildSlide } from "./EighthMobildSlide";
 
-import shoppingImgPath from "../../../public/img/shopping_mall.svg";
+import shoppingImgPath from "../../../public/img/ysmedi/shopping_mall.svg";
 
 const Mobile = () => {
   const [scrollSectionHeight, setScrollSectionHeight] = useState(0);
