@@ -9,19 +9,19 @@ export const ThirdMobildSlide = () => {
           <section
             ref={ref}
             className={`flex-center relative font-faktumTest text-white opacity-0 ${
-              inView ? "animate-wholeSectionAppear" : ""
+              inView ? "animate-wholeSectionAppear_ysmedi" : ""
             }`}
           >
             <div className="flex-center-column relative h-fit ">
               <span
                 className={`absolute bottom-[-6.8vh] left-0 mt-[6.8vh] h-full border-b-[1px] border-r-[#666666] ${
-                  inView ? "animate-mobileLineAppear" : ""
+                  inView ? "animate-mobileLineAppear_ysmedi" : ""
                 }`}
               ></span>
               <div
                 className={
                   inView
-                    ? "mb-[5vh] w-[33vw] animate-mobileIconMoveFromDownToUp justify-self-center opacity-0"
+                    ? "mb-[5vh] w-[33vw] animate-mobileIconMoveFromDownToUp_ysmedi justify-self-center opacity-0"
                     : "w-[7vw]"
                 }
               >
@@ -38,7 +38,7 @@ export const ThirdMobildSlide = () => {
                 <div
                   className={
                     inView
-                      ? "animate-mobileIconTitleMoveFromDownToUp opacity-0"
+                      ? "animate-mobileIconTitleMoveFromDownToUp_ysmedi opacity-0"
                       : ""
                   }
                 >
@@ -48,7 +48,7 @@ export const ThirdMobildSlide = () => {
                 <div
                   className={`text-pretendard font-pretendard text-[4vw] font-[100]  ${
                     inView
-                      ? "animate-mobileIconDescriptionMoveFromDownToUp opacity-0"
+                      ? "animate-mobileIconDescriptionMoveFromDownToUp_ysmedi opacity-0"
                       : ""
                   }`}
                 >

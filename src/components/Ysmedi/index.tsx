@@ -11,6 +11,7 @@ const YsMedi = () => {
   const [isWeb, setIsWeb] = useState(true);
 
   useEffect(() => {
+    document.body.style.backgroundColor = "black";
     setIsWeb(window.innerWidth > 800);
     window.addEventListener("resize", () => {
       if (window.innerWidth < 800) {

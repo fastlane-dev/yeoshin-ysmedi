@@ -23,10 +23,10 @@ export const FirstMobileSlide = () => {
         />
       </div>
       <div className="flex-center-column ml-[23px] mt-[50vh] items-start gap-[2.7vh] mmd:mt-[35vh] mmd:gap-[6vh]">
-        <p className=" animate-smoothUpStartFirst text-[13vw] font-[400] leading-[7vh] tracking-[-0.02em]  opacity-0 msm:leading-[8.5vh]  mmd:leading-[12vh] mlg:leading-[15vh]">
+        <p className=" animate-smoothUpStartFirst_ysmedi text-[13vw] font-[400] leading-[7vh] tracking-[-0.02em]  opacity-0 msm:leading-[8.5vh]  mmd:leading-[12vh] mlg:leading-[15vh]">
           {"Your beauty,\nour priority"}
         </p>
-        <p className="animate-smoothUpStartSecond font-pretendard text-[3.7vw] font-[100]  tracking-[-0.02em]  opacity-0">
+        <p className="animate-smoothUpStartSecond_ysmedi font-pretendard text-[3.7vw] font-[100]  tracking-[-0.02em]  opacity-0">
           {"우리는 당신의 아름다움을 극대화하는 방법을 연구합니다"}
         </p>
       </div>

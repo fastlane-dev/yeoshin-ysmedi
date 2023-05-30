@@ -10,6 +10,10 @@
   .flex-center-column {
     @apply flex flex-col items-center justify-center;
   }
+
+  .flex-start-column {
+    @apply flex flex-col items-start justify-center;
+  }
 }
 
 * {
@@ -20,7 +24,6 @@
 
 html,
 body {
-  background-color: black;
   max-width: 100%;
   overflow-x: hidden;
   white-space: pre-wrap;
@@ -33,4 +36,9 @@ body::-webkit-scrollbar {
 .swiper {
   width: 100vw;
   height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  height: 0;
 }

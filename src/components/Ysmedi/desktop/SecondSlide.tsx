@@ -13,7 +13,7 @@ export const SecondSlide = ({
       <div
         className={`absolute left-[50vw] top-[3vh] whitespace-pre-wrap font-[200] ${
           isFirstAnimation
-            ? "animate-moveFromDownToUpStartAfter0_5s opacity-0"
+            ? "animate-moveFromDownToUpStartAfter0_5s_ysmedi opacity-0"
             : ""
         }`}
       >
@@ -34,14 +34,14 @@ export const SecondSlide = ({
           <span
             className={
               isFirstAnimation
-                ? "absolute bottom-0 left-0 h-full w-full animate-lineAppear border-r-[1px] border-r-[#666666]"
+                ? "animate-lineAppear_ysmedi absolute bottom-0 left-0 h-full w-full border-r-[1px] border-r-[#666666]"
                 : "absolute bottom-0 left-0 h-full w-full border-r-[1px] border-r-[#666666] "
             }
           ></span>
           <div
             className={
               isFirstAnimation
-                ? "w-[7vw] animate-moveFromDownToUpStartAfter0_9s opacity-0"
+                ? "w-[7vw] animate-moveFromDownToUpStartAfter0_9s_ysmedi opacity-0"
                 : "w-[7vw]"
             }
           >
@@ -58,7 +58,7 @@ export const SecondSlide = ({
             <div
               className={
                 isFirstAnimation
-                  ? "animate-moveFromDownToUpStartAfter1_1s opacity-0"
+                  ? "animate-moveFromDownToUpStartAfter1_1s_ysmedi opacity-0"
                   : ""
               }
             >
@@ -70,7 +70,7 @@ export const SecondSlide = ({
             <div
               className={`text-pretendard text-[1vw] leading-[2.5vh] mlg:leading-[3vh] ${
                 isFirstAnimation
-                  ? "animate-moveFromDownToUpStartAfter1_3s opacity-0"
+                  ? "animate-moveFromDownToUpStartAfter1_3s_ysmedi opacity-0"
                   : ""
               }`}
             >
@@ -86,14 +86,14 @@ export const SecondSlide = ({
           <span
             className={
               isFirstAnimation
-                ? "absolute bottom-0 left-0 h-full w-full animate-lineAppear border-r-[1px] border-r-[#666666] "
+                ? "animate-lineAppear_ysmedi absolute bottom-0 left-0 h-full w-full border-r-[1px] border-r-[#666666] "
                 : "absolute bottom-0 left-0 h-full w-full border-r-[1px] border-r-[#666666] "
             }
           ></span>
           <div
             className={
               isFirstAnimation
-                ? "w-[4vw] animate-moveFromDownToUpStartAfter0_9s opacity-0"
+                ? "w-[4vw] animate-moveFromDownToUpStartAfter0_9s_ysmedi opacity-0"
                 : "w-[4vw]"
             }
           >
@@ -107,7 +107,7 @@ export const SecondSlide = ({
           <div
             className={`flex flex-col items-start justify-start gap-[1.6vh] ${
               isFirstAnimation
-                ? " animate-moveFromDownToUpStartAfter1_1s opacity-0"
+                ? " animate-moveFromDownToUpStartAfter1_1s_ysmedi opacity-0"
                 : ""
             }`}
           >
@@ -120,7 +120,7 @@ export const SecondSlide = ({
             <div
               className={`text-pretendard text-[1vw] leading-[2.5vh] mlg:leading-[3vh] ${
                 isFirstAnimation
-                  ? "animate-moveFromDownToUpStartAfter1_3s opacity-0"
+                  ? "animate-moveFromDownToUpStartAfter1_3s_ysmedi opacity-0"
                   : ""
               }`}
             >
@@ -136,7 +136,7 @@ export const SecondSlide = ({
           <div
             className={
               isFirstAnimation
-                ? "w-[6vw] animate-moveFromDownToUpStartAfter0_9s opacity-0"
+                ? "w-[6vw] animate-moveFromDownToUpStartAfter0_9s_ysmedi opacity-0"
                 : "w-[6vw]"
             }
           >
@@ -150,7 +150,7 @@ export const SecondSlide = ({
           <div
             className={`flex flex-col items-start justify-start gap-[1.6vh] ${
               isFirstAnimation
-                ? " animate-moveFromDownToUpStartAfter1_1s opacity-0"
+                ? " animate-moveFromDownToUpStartAfter1_1s_ysmedi opacity-0"
                 : ""
             }`}
           >
@@ -163,7 +163,7 @@ export const SecondSlide = ({
             <div
               className={`text-pretendard text-[1vw] leading-[2.5vh] mlg:leading-[3vh] ${
                 isFirstAnimation
-                  ? " animate-moveFromDownToUpStartAfter1_3s opacity-0"
+                  ? " animate-moveFromDownToUpStartAfter1_3s_ysmedi opacity-0"
                   : ""
               }`}
             >
