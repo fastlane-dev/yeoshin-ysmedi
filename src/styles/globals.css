@@ -27,6 +27,7 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   white-space: pre-wrap;
+  height: -webkit-fill-available;
 }
 
 body::-webkit-scrollbar {
@@ -41,4 +42,43 @@ body::-webkit-scrollbar {
 ::-webkit-scrollbar {
   width: 0; /* Remove scrollbar space */
   height: 0;
+}
+
+.text-shadow {
+  text-shadow: 4px 4px 4px rgba(211, 76, 0, 0.25);
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table {
+  text-align: left;
+}
+
+table,
+tr {
+  border-top: 1.2px solid black;
+  border-bottom: 1.2px solid black;
+}
+
+td {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  vertical-align: baseline;
+}
+
+table.mobile td {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+table.mobile table {
+  border-top: 0px solid black;
+  border-bottom: 0px solid black;
+}
+
+table.mobile table tr {
+  border-top: 0px solid black;
+  border-bottom: 0px solid black;
 }
