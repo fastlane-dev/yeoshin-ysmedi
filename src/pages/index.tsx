@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import React, { useEffect, useState } from "react";
 
 import { PAGE_IDENTITY, PAGE_INFOS } from "@/constants/pageInfos";
+import { GetServerSideProps } from "next";
 
 const FaktumTest = localFont({
   variable: "--font-faktumTest",
@@ -111,7 +112,9 @@ const Pretendard = localFont({
   ],
 });
 
-export default function Home() {
+export default function Home({ pageIdentity }: { pageIdentity: any }) {
+  console.log("pageIdentity", pageIdentity);
+
   const [renderedPageInfo, setRenderedPageInfo] = useState(
     PAGE_INFOS[PAGE_IDENTITY.YS_MEDI]
   );
@@ -151,3 +154,13 @@ export default function Home() {
     </>
   );
 }
+
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const url = context.req.url;
+
+  return {
+    props: {
+      pageIdentity: "ysmedi",
+    },
+  };
+};
