@@ -1,0 +1,8 @@
+namespace: yeoshin-dev
+
+namePrefix: yeoshin-
+
+resources:
+  - networking.yml
+  - service.yml
+  - deployment.yml

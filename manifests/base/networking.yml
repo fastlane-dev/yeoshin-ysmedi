@@ -1,0 +1,14 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: ysmedi
+spec:
+  hosts:
+    - "host"
+  http:
+    - timeout: 15s
+      route:
+        - destination:
+            host: svc-name.namespace.svc.cluster.local
+            port:
+              number: 80
