@@ -116,7 +116,7 @@ export default function Home({ pageIdentity }: { pageIdentity: any }) {
   console.log("pageIdentity", pageIdentity);
 
   const [renderedPageInfo, setRenderedPageInfo] = useState(
-    PAGE_INFOS[PAGE_IDENTITY.LALA_PEEL]
+    PAGE_INFOS[PAGE_IDENTITY.THERFECT]
   );
 
   const setComponentByUrl = (url: string) => {
