@@ -16,10 +16,10 @@ const Mobile = () => {
             height={17}
           />
           <div className="relative h-[120px] w-screen">
-            <div className="absolute animate-mainLogoAppear_lala font-pretendard text-[50px] font-[600] leading-[59.67px] opacity-0">
+            <div className="absolute animate-mainLogoAppear_lala font-pretendard text-[50px] font-[300] leading-[59.67px] opacity-0">
               {"4세대 필링\n라라필"}
             </div>
-            <div className="absolute animate-mainLogoDisappear_lala font-pretendard text-[50px] font-[600] leading-[59.67px]">
+            <div className="absolute animate-mainLogoDisappear_lala font-pretendard text-[50px] font-[300] leading-[59.67px]">
               {"벗기지 않고\n채워주는"}
             </div>
           </div>
@@ -73,7 +73,7 @@ const Mobile = () => {
                 {({ inView, ref }) => (
                   <p
                     ref={ref}
-                    className={`font-pretendard text-[16px] font-[500] leading-[28.8px] opacity-0 ${
+                    className={`font-pretendard text-[16px] font-[400] leading-[28.8px] opacity-0 ${
                       inView ? "animate-smoothAppear_lala" : ""
                     }`}
                   >
@@ -91,7 +91,7 @@ const Mobile = () => {
           {({ inView, ref }) => (
             <div
               ref={ref}
-              className="flex-center mx-[30px] mt-[44px] h-fit min-w-[315px] flex-wrap justify-start gap-[8px]  border-[#FE3B1F]  font-pretendard text-[14px] font-[400] leading-[16.8px]"
+              className="flex-center mx-[30px] mt-[44px] h-fit min-w-[315px] flex-wrap justify-start gap-[8px]  border-[#FE3B1F]  font-pretendard text-[14px] font-[500] leading-[16.8px]"
             >
               <div
                 className={`flex-center h-[46px] min-w-[152px] rounded-[65px] border opacity-0  ${
@@ -209,7 +209,7 @@ const Mobile = () => {
                 <p className="mb-[32px] text-[30px] font-[300] leading-[40px]">
                   LHA
                 </p>
-                <p className="font-pretendard text-[16px] font-[500] leading-[24px]">
+                <p className="font-pretendard text-[16px] font-[400] leading-[24px]">
                   {
                     "표피 세포 사이를 통과하는 작은 LHA 성분은 진피까지 깊숙이 도달하여 진피층 재생을 유도하고, 자극 없이 피부 장벽을 보호합니다."
                   }
@@ -240,7 +240,7 @@ const Mobile = () => {
                     TM
                   </span>
                 </div>
-                <p className="font-pretendard text-[16px] font-[500] leading-[24px]">
+                <p className="font-pretendard text-[16px] font-[400] leading-[24px]">
                   {
                     "특허받은 알칼리 성분 P-sol은 섬유아세포를 활성화해 콜라겐과 피부 지지 구조의 복원을 돕고, LHA와 결합하여 멜라닌을 녹여 피부 투명도를 개선해줍니다."
                   }
@@ -263,7 +263,7 @@ const Mobile = () => {
                 <p className="mb-[32px] text-[30px] font-[300] leading-[40px]">
                   Lipids
                 </p>
-                <p className="font-pretendard text-[16px] font-[500] leading-[24px]">
+                <p className="font-pretendard text-[16px] font-[400] leading-[24px]">
                   {
                     "Lipids 성분은 각질층과 비슷한 천연 피부 구조체로 손상된 피부를 보호하여 회복을 돕습니다."
                   }
@@ -309,7 +309,7 @@ const Mobile = () => {
             alt="lala_last"
           />
         </div>
-        <article className="flex-start-column  gap-[20px] px-[39px] text-[16px] font-[500] leading-[22.4px]">
+        <article className="flex-start-column  gap-[20px] px-[39px] text-[16px] font-[400] leading-[22.4px]">
           <p className="w-full">세계 최초 4세대 필링제 LHALAPEEL 개발 </p>
           <p className="w-full">
             {
@@ -318,7 +318,7 @@ const Mobile = () => {
           </p>
           <p className="w-full">{"2020 LHA 제품 국내 첫 출시"}</p>
         </article>
-        <div className="mt-[60px] px-[30px] font-[600] text-gray">
+        <div className="mt-[60px] px-[30px] font-[300] text-gray">
           <p className="text-[12px]  leading-[21.6px]">
             {
               "본사의 유통 제품을 허가나 동의 없이 비정상 유통경로로 판매하는 업체들이 있습니다. 병의원이 아닌 곳에서 시술을 제공받을 시 피해를 입을 수 있으며, 품질 보증이나 고객지원이 불가하니 반드시 정식 유통 제품으로 서비스 받으시기 바랍니다."
@@ -347,7 +347,7 @@ const Mobile = () => {
           <div className="h-[23px] w-[123px]">
             <img src={"/img/lalaPeel/logo_black.png"} alt="logo_black" />
           </div>
-          <div className="flex-center gap-[6px] text-[16px] leading-[20px] tracking-[0.02em]">
+          <div className="flex-center gap-[6px] text-[16px] font-[400] leading-[20px] tracking-[0.02em]">
             <div>KR</div>
             <div className="text-[#CCCCCC]">|</div>
             <div className="text-[#CCCCCC]">EN</div>

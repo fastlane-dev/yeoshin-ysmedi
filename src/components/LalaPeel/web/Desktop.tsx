@@ -77,7 +77,7 @@ const Desktop = () => {
             width={137}
             height={37}
           />
-          <div className="flex-center gap-[10px] text-[20px] leading-[24.68px] tracking-[0.02em]">
+          <div className="flex-center gap-[10px] text-[20px] font-[400] leading-[24.68px] tracking-[0.02em]">
             <div>KR</div>
             <div className="text-[#CCCCCC]">|</div>
             <div className="text-[#CCCCCC]">EN</div>
@@ -89,10 +89,10 @@ const Desktop = () => {
             LHALHA PEEL
           </div>
           <div className="relative left-[11vw] top-[-6.5vw] w-[21vw]">
-            <div className="absolute z-[2] animate-mainLogoAppear_lala font-pretendard text-[4.5vw] font-[600] leading-[5.5vw] opacity-0">
+            <div className="absolute z-[2] animate-mainLogoAppear_lala font-pretendard text-[4.5vw] font-[300] leading-[5.5vw] opacity-0">
               {"4세대 필링\n라라필"}
             </div>
-            <div className="absolute z-[2] animate-mainLogoDisappear_lala font-pretendard text-[4.5vw] font-[600] leading-[5.5vw]">
+            <div className="absolute z-[2] animate-mainLogoDisappear_lala font-pretendard text-[4.5vw] font-[300] leading-[5.5vw]">
               {"벗기지 않고\n채워주는"}
             </div>
           </div>
@@ -126,12 +126,12 @@ const Desktop = () => {
                 );
               }}
             </InView>
-            <div className="flex-start-column gap-[30px]">
+            <div className="flex-start-column gap-[30px] font-[400]">
               <InView threshold={0.4} triggerOnce>
                 {({ inView, ref }) => (
                   <p
                     ref={ref}
-                    className={`font-faktumTest text-[70px] leading-[115.59px] opacity-0 ${
+                    className={`font-faktumTest text-[70px]  leading-[115.59px] opacity-0 ${
                       inView ? "animate-smoothAppear_lala" : ""
                     }`}
                   >
@@ -250,7 +250,7 @@ const Desktop = () => {
           {({ inView, ref }) => (
             <p
               ref={ref}
-              className={`text-[30px] font-[300] leading-[30px] opacity-0 ${
+              className={`text-[30px] font-[400] leading-[30px] opacity-0 ${
                 inView ? "animate-smoothAppear_lala" : ""
               }`}
             >
@@ -271,10 +271,10 @@ const Desktop = () => {
                 <p className="mb-[24px] text-[22px] font-[200] leading-[22px]">
                   1
                 </p>
-                <p className="mb-[30px] text-[70px] font-[300] leading-[80px]">
+                <p className="mb-[30px] text-[70px] font-[400] leading-[80px]">
                   LHA
                 </p>
-                <p className="font-pretendard text-[26px] font-[500] leading-[39px]">
+                <p className="font-pretendard text-[26px] font-[400] leading-[39px]">
                   {
                     "표피 세포 사이를 통과하는 작은 LHA 성분은 진피까지 깊숙이 도달하여 진피층 재생을 유도하고, 자극 없이 피부 장벽을 보호합니다."
                   }
@@ -297,14 +297,14 @@ const Desktop = () => {
                   <span className="align-top text-[24px] leading-[30px] tracking-[0.05em]">
                     H
                   </span>
-                  <p className="mb-[30px] inline-block text-[70px] font-[300] leading-[64px]">
+                  <p className="mb-[30px] inline-block text-[70px] font-[400] leading-[64px]">
                     P-Sol
                   </p>
                   <span className="align-top text-[24px] leading-[30px] tracking-[0.05em]">
                     TM
                   </span>
                 </div>
-                <p className="font-pretendard text-[26px] font-[500] leading-[39px]">
+                <p className="font-pretendard text-[26px] font-[400] leading-[39px]">
                   {
                     "특허받은 알칼리 성분 P-sol은 섬유아세포를 활성화해 콜라겐과 피부 지지 구조의 복원을 돕고, LHA와 결합하여 멜라닌을 녹여 피부 투명도를 개선해줍니다."
                   }
@@ -324,10 +324,10 @@ const Desktop = () => {
                 <p className="mb-[24px] text-[22px] font-[200] leading-[22px]">
                   3
                 </p>
-                <p className="mb-[30px] text-[70px] font-[300] leading-[80px]">
+                <p className="mb-[30px] text-[70px] font-[400] leading-[80px]">
                   Lipids
                 </p>
-                <p className="font-pretendard text-[26px] font-[500] leading-[39px]">
+                <p className="font-pretendard text-[26px] font-[400] leading-[39px]">
                   {
                     "Lipids 성분은 각질층과 비슷한 천연 피부 구조체로 손상된 피부를 보호하여 회복을 돕습니다."
                   }
@@ -378,7 +378,7 @@ const Desktop = () => {
               alt="lala_last"
             />
           </div>
-          <article className="flex-start-column gap-[2vw] text-[2vw] font-[500] leading-[50px]">
+          <article className="flex-start-column gap-[2vw] text-[2vw] font-[400] leading-[50px]">
             <p className="w-full">세계 최초 4세대 필링제 LHALAPEEL 개발 </p>
             <p className="w-full">
               {
@@ -388,7 +388,7 @@ const Desktop = () => {
             <p className="w-full">{"2020 LHA 제품 국내 첫 출시"}</p>
           </article>
         </div>
-        <div className="mt-[201px] pl-[160px] pr-[283px] text-[20px] font-[600] leading-[36px] text-gray">
+        <div className="mt-[201px] pl-[160px] pr-[283px] text-[20px] font-[300] leading-[36px] text-gray">
           <p className="">
             {
               "본사의 유통 제품을 허가나 동의 없이 비정상 유통경로로 판매하는 업체들이 있습니다.\n병의원이 아닌 곳에서 시술을 제공받을 시 피해를 입을 수 있으며, 품질 보증이나 고객지원이 불가하니 반드시 정식 유통 제품으로 서비스 받으시기 바랍니다."
