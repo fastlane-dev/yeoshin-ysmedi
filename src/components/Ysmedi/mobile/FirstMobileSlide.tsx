@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import mobilePlanet from "../../../public/img/ysmedi/mobile_planet.svg";
+import mobilePlanet from "../../../../public/img/ysmedi/mobile_planet.svg";
 
 export const FirstMobileSlide = () => {
   return (

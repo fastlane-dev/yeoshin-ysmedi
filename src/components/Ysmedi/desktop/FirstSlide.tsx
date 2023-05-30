@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import planetImg from "../../../public/img/ysmedi/planet.png";
+import planetImg from "../../../../public/img/ysmedi/planet.png";
 
 export const FirstSlide = () => {
   return (
