@@ -9,9 +9,9 @@ export const PAGE_IDENTITY = {
 } as const;
 
 export const PAGE_URL = {
-  YS_MEDI: "www.ysmedi.kr",
-  LALA_PEEL: "www.lhalala.kr",
-  THERFECT: "www.therfect.kr",
+  YS_MEDI: "www.ysmedi",
+  LALA_PEEL: "www.lhalala",
+  THERFECT: "www.therfect",
 } as const;
 
 export const PAGE_INFOS = {
