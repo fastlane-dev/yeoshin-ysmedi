@@ -1,0 +1,19 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: ysmedi
+spec:
+  gateways:
+    - istio-system/yeoshin-gateway
+  hosts:
+    - "www.ysmedidev.click"
+    - "www.lhalaladev.click"
+  http:
+    - timeout: 15s
+      route:
+        - destination:
+            host: yeoshin-ysmedi.yeoshin-dev.svc.cluster.local
+            port:
+              number: 10050
+      retries:
+        attempts: 0
