@@ -1,8 +1,8 @@
-name: Dev Build and Deploy Experiment Frontend
+name: Prod Build and Deploy Experiment Frontend
 
 on:
   workflow_dispatch:
-
+    
 jobs:
   build:
     name: build
@@ -31,8 +31,8 @@ jobs:
       - name: Configure AWS credentials
         uses: fastlane-dev/actions-configure-aws-credentials@v1
         with:
-          aws-access-key-id: ${{ secrets.AWS_DEV_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_DEV_SECRET_ACCESS_KEY }}
+          aws-access-key-id: ${{ secrets.AWS_PROD_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_PROD_SECRET_ACCESS_KEY }}
           aws-region: ap-northeast-2
       - name: Login to Amazon ECR
         id: login-ecr
@@ -41,7 +41,7 @@ jobs:
         id: meta
         uses: fastlane-dev/actions-metadata-action@v3
         with:
-          images: 699158113629.dkr.ecr.ap-northeast-2.amazonaws.com/ysmedi
+          images: 398909565079.dkr.ecr.ap-northeast-2.amazonaws.com/ysmedi
           tags: |
             type=ref,event=branch,enable=true,priority=1000,prefix=,suffix=-{{sha}}-{{date 'YYMMDDHHmmss'}},format=short
             type=ref,event=branch,enable=true,priority=1000,prefix=,suffix=-{{sha}},format=short
@@ -49,12 +49,14 @@ jobs:
         uses: fastlane-dev/actions-build-push-action@master
         with:
           context: ./
-          push: true
+          push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
       - name: Set KubeConfig
-        run: echo ${{ secrets.EKS_DEV_KUBECONFIG }} | base64 -d > /tmp/config
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: echo ${{ secrets.EKS_PROD_KUBECONFIG }} | base64 -d > /tmp/config
       - name: Deploy
-        run: export KUBECONFIG=/tmp/config && make dev-deploy PROFILE=dev TAG=${{ steps.meta.outputs.version }} DEV_IMAGE_REGISTRY=699158113629.dkr.ecr.ap-northeast-2.amazonaws.com
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: export KUBECONFIG=/tmp/config && make prod-deploy PROFILE=prod TAG=${{ steps.meta.outputs.version }} PROD_IMAGE_REGISTRY=398909565079.dkr.ecr.ap-northeast-2.amazonaws.com
