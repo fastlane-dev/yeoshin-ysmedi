@@ -66,7 +66,12 @@ export const FirstWebSlide = () => {
       </div>
       <nav className="flex-center mt-[64px] justify-between px-[162px]">
         <div className=" z-[20]">
-          <Image src={logoSvg} height={33} width={160} alt="therfect_logo" />
+          <Image
+            src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/therfect_logo.svg`}
+            height={33}
+            width={160}
+            alt="therfect_logo"
+          />
         </div>
         <div className="flex items-center gap-[10px] font-faktumTest font-[400]">
           <span className="text-[20px] tracking-[0.02em]">KR</span>
