@@ -6,9 +6,6 @@ metadata:
     app: ysmedi
     service.fastlane.co.kr/name: ysmedi
 spec:
-  ports:
-    - name: http
-      port: 10050
   selector:
     app: ysmedi
     service.fastlane.co.kr/name: ysmedi
