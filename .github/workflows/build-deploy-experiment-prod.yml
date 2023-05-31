@@ -49,14 +49,12 @@ jobs:
         uses: fastlane-dev/actions-build-push-action@master
         with:
           context: ./
-          push: ${{ github.event_name != 'pull_request' }}
+          push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
       - name: Set KubeConfig
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: echo ${{ secrets.EKS_PROD_KUBECONFIG }} | base64 -d > /tmp/config
       - name: Deploy
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: export KUBECONFIG=/tmp/config && make prod-deploy PROFILE=prod TAG=${{ steps.meta.outputs.version }} PROD_IMAGE_REGISTRY=398909565079.dkr.ecr.ap-northeast-2.amazonaws.com
