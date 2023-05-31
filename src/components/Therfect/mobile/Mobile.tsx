@@ -77,7 +77,7 @@ const Mobile = () => {
           scrollbar={true}
           mousewheel={true}
           modules={[FreeMode, Scrollbar]}
-          height={innerHeight + 100}
+          height={innerHeight}
         >
           <SwiperSlide className="flex-center">
             <ThirdMobileSlide innerHeight={innerHeight} />

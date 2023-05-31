@@ -44,9 +44,7 @@ export const ThirdMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
           </div>
           <InviewComponent animationClassName="animate-smoothUpFirst_therfect">
             <div>
-              <p className="mb-[0.1dvh] font-futura text-[30px] font-[500]">
-                5가지 팁
-              </p>
+              <p className="font-pretendard text-[30px] font-[500]">5가지 팁</p>
               <p className="mb-[3.5dvh] font-pretendard text-[30px] font-[500]">
                 3가지 시술방법
               </p>
@@ -65,7 +63,7 @@ export const ThirdMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
           </InviewComponent>
         </div>
         <InviewComponent animationClassName="animate-smoothUpThird_therfect">
-          <div className="absolute bottom-[-24dvh] right-[-14px] h-screen w-[400px] mshs:bottom-[-30dvh] mshs:right-[-22px] mshs:w-[400px] mshm:w-[450px] mmhd:w-[500px]">
+          <div className="absolute bottom-[-34dvh] right-[-14px] h-screen w-[400px] mshs:bottom-[-30dvh] mshs:right-[-22px] mshs:w-[400px] mshm:w-[450px] mmhd:w-[500px]">
             <Image
               style={{ objectFit: "contain" }}
               src={bigNozzle}

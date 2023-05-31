@@ -17,7 +17,7 @@ export const SixthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
         height: innerHeight,
       }}
     >
-      <div className="absolute  left-[50%] top-[50%] h-[5.3dvh] w-[79dvw] -translate-x-1/2 -translate-y-[350%]">
+      <div className="absolute  left-[50%] top-[50%] h-[5.3dvh] w-[79dvw] -translate-x-[49%] -translate-y-[350%]">
         <InviewComponent
           threshold={0}
           animationClassName={"animate-smoothUpFirst_therfect"}

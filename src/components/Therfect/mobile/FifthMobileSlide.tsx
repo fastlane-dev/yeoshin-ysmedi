@@ -21,7 +21,7 @@ export const FifthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
         style={{ bottom: "calc(80px + env(safe-area-inset-bottom))" }}
       >
         <div className="mb-[8.7dvh] flex items-center justify-start gap-[12px]">
-          <p className="font-sans text-[20px] font-[400] leading-[23px]">
+          <p className="font-sans text-[20px] font-[300] leading-[23px]">
             Principle
           </p>
           <InView triggerOnce>
