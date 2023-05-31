@@ -8,7 +8,7 @@ import ball from "../../../../public/img/therfect/ball.svg";
 
 export const FirstWebSlide = () => {
   return (
-    <section className="font-futura relative h-screen w-screen overflow-hidden bg-[#f68e0f]  text-[80px] font-[500] text-white">
+    <section className="relative h-screen w-screen overflow-hidden bg-[#f68e0f] font-futura  text-[80px] font-[500] text-white">
       <div className="absolute left-[26dvw] top-[78px] h-[2dvw] w-[2dvw]">
         <Image
           src={ball}
@@ -68,7 +68,7 @@ export const FirstWebSlide = () => {
         <div className=" z-[20]">
           <Image src={logoSvg} height={33} width={160} alt="therfect_logo" />
         </div>
-        <div className="flex items-center gap-[10px]">
+        <div className="flex items-center gap-[10px] font-faktumTest font-[400]">
           <span className="text-[20px] tracking-[0.02em]">KR</span>
           <span className="text-[20px] opacity-40">|</span>
           <span className="text-[20px] tracking-[0.02em] opacity-40">EN</span>
