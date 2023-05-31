@@ -20,24 +20,6 @@ const Mobile = () => {
     changeBodyBackground("#f68e0f");
   }, []);
   const [innerHeight, setInnerHeight] = useState(0);
-  const [scrollSectionHeight, setScrollSectionHeight] = useState(0);
-
-  useEffect(() => {
-    const viewWidth = window.innerHeight;
-    if (viewWidth <= 500) {
-      setScrollSectionHeight(800);
-    } else if (viewWidth > 500 && viewWidth <= 600) {
-      setScrollSectionHeight(1000);
-    } else if (viewWidth > 600 && viewWidth <= 700) {
-      setScrollSectionHeight(1200);
-    } else if (viewWidth > 700 && viewWidth <= 800) {
-      setScrollSectionHeight(1400);
-    } else if (viewWidth > 800 && viewWidth <= 900) {
-      setScrollSectionHeight(1600);
-    } else if (viewWidth > 900) {
-      setScrollSectionHeight(1800);
-    }
-  }, []);
 
   useEffect(() => {
     setInnerHeight(window.innerHeight);
@@ -55,6 +37,7 @@ const Mobile = () => {
       speed={800}
       height={innerHeight}
       onSlideChangeTransitionEnd={(swiper) => {
+        // NOTE: 아이폰에서 슬라이드 할때마다 배경을 바꿔주어야 함
         switch (swiper.activeIndex) {
           case 0:
             changeBodyBackground("#f68e0f");
