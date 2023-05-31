@@ -1,6 +1,6 @@
 import Head from "next/head";
 import localFont from "next/font/local";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import { PAGE_IDENTITY, PAGE_INFOS, PAGE_URL } from "@/constants/pageInfos";
 import { GetServerSideProps } from "next";
@@ -121,7 +121,7 @@ export default function Home({
 }) {
   const [renderedPageInfo] = useState(PAGE_INFOS[pageIdentity]);
 
-  const { Component, faviconPath, title } = renderedPageInfo;
+  const { Component, faviconPath, title } = PAGE_INFOS[PAGE_IDENTITY.YS_MEDI];
 
   return (
     <>
