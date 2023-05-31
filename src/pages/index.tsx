@@ -2,8 +2,10 @@ import Head from "next/head";
 import localFont from "next/font/local";
 import React, { useEffect, useState } from "react";
 
-import { PAGE_IDENTITY, PAGE_INFOS } from "@/constants/pageInfos";
+import { PAGE_IDENTITY, PAGE_INFOS, PAGE_URL } from "@/constants/pageInfos";
 import { GetServerSideProps } from "next";
+
+type valueOf<T> = T[keyof T];
 
 const FaktumTest = localFont({
   variable: "--font-faktumTest",
@@ -112,29 +114,12 @@ const Pretendard = localFont({
   ],
 });
 
-export default function Home({ pageIdentity }: { pageIdentity: any }) {
-  console.log("pageIdentity", pageIdentity);
-
-  const [renderedPageInfo, setRenderedPageInfo] = useState(
-    PAGE_INFOS[PAGE_IDENTITY.THERFECT]
-  );
-
-  const setComponentByUrl = (url: string) => {
-    switch (url) {
-      case PAGE_IDENTITY.YS_MEDI:
-        setRenderedPageInfo(PAGE_INFOS[PAGE_IDENTITY.YS_MEDI]);
-        break;
-      case PAGE_IDENTITY.LALA_PEEL:
-        setRenderedPageInfo(PAGE_INFOS[PAGE_IDENTITY.LALA_PEEL]);
-        break;
-      case PAGE_IDENTITY.THERFECT:
-        setRenderedPageInfo(PAGE_INFOS[PAGE_IDENTITY.THERFECT]);
-        break;
-      default:
-        setRenderedPageInfo(PAGE_INFOS[PAGE_IDENTITY.YS_MEDI]);
-        break;
-    }
-  };
+export default function Home({
+  pageIdentity,
+}: {
+  pageIdentity: valueOf<typeof PAGE_IDENTITY>;
+}) {
+  const [renderedPageInfo] = useState(PAGE_INFOS[pageIdentity]);
 
   const { Component, faviconPath, title } = renderedPageInfo;
 
@@ -156,11 +141,24 @@ export default function Home({ pageIdentity }: { pageIdentity: any }) {
 }
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-  const url = context.req.url;
+  const absoluteUrl = context.req.headers.host;
+
+  const getIdentityByUrl = (url: string) => {
+    switch (true) {
+      case url.includes(PAGE_URL.YS_MEDI):
+        return PAGE_IDENTITY.YS_MEDI;
+      case url.includes(PAGE_URL.LALA_PEEL):
+        return PAGE_IDENTITY.LALA_PEEL;
+      case url.includes(PAGE_URL.THERFECT):
+        return PAGE_IDENTITY.THERFECT;
+      default:
+        return PAGE_IDENTITY.YS_MEDI;
+    }
+  };
 
   return {
     props: {
-      pageIdentity: "ysmedi",
+      pageIdentity: getIdentityByUrl(absoluteUrl as string),
     },
   };
 };
