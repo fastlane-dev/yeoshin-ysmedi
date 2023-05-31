@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
 
 import { useEffect, useState } from "react";
+import { changeBodyBackground } from "../Therfect/common/changeBodyBackground";
 
 const Desktop = dynamic(() => import("./web"), {
   ssr: false,
@@ -13,7 +14,7 @@ export default function Home() {
   const [isWeb, setIsWeb] = useState(true);
 
   useEffect(() => {
-    document.body.style.backgroundColor = "white";
+    changeBodyBackground("white");
     setIsWeb(window.innerWidth > 800);
     window.addEventListener("resize", () => {
       if (window.innerWidth < 800) {
