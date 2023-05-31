@@ -43,7 +43,7 @@ jobs:
         id: meta
         uses: fastlane-dev/actions-metadata-action@v3
         with:
-          images: 398909565079.dkr.ecr.ap-northeast-2.amazonaws.com
+          images: 398909565079.dkr.ecr.ap-northeast-2.amazonaws.com/ysmedi
           tags: |
             type=ref,event=branch,enable=true,priority=1000,prefix=,suffix=-{{sha}}-{{date 'YYMMDDHHmmss'}},format=short
             type=ref,event=branch,enable=true,priority=1000,prefix=,suffix=-{{sha}},format=short
