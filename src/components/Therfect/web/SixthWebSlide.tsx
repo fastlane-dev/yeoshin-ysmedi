@@ -7,7 +7,7 @@ import { InviewComponent } from "../common/InviewComponent";
 export const SixthWebSlide = () => {
   return (
     <section className="relative h-screen w-screen overflow-hidden bg-black text-white">
-      <div className="absolute  left-[50%] top-[50%] h-fit w-fit -translate-x-1/2 -translate-y-[80%]">
+      <div className="absolute  left-[50%] top-[50%] h-fit w-fit -translate-x-[46%] -translate-y-[55%]">
         <InviewComponent animationClassName={"animate-smoothUpFirst_therfect"}>
           <div className="relative mx-auto h-[13dvh] sm:w-[29dvw] md:w-[20dvw]">
             <Image fill src={ntts} alt="ntts" priority />

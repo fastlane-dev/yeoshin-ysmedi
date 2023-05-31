@@ -8,7 +8,7 @@ export const FifthWebSlide = () => {
     <section className="relative h-screen w-screen overflow-hidden bg-white bg-[url('/img/therfect/skin_structure.png')] bg-cover bg-center bg-no-repeat font-pretendard font-[600] text-white">
       <div className="pl-[7dvw] pt-[15dvh]">
         <div className="flex-center justify-start gap-[20px]">
-          <p className="font-futura text-[30px] font-[500] leading-[39.84px]">
+          <p className="font-sans text-[30px] font-[400] leading-[34.5px]">
             Principle
           </p>
           <InView triggerOnce>
@@ -39,12 +39,12 @@ export const FifthWebSlide = () => {
           </InView>
         </div>
         <InviewComponent animationClassName={"animate-smoothUpFirst_therfect"}>
-          <p className="text-shadow mt-[106px] text-[4dvw] leading-[6.5dvh] md:leading-[8.5dvh]">
-            {"피부 속까지\n고주파 에너지를 전달"}
+          <p className="text-shadow mt-[106px] text-[4dvw] leading-[6.5dvh] md:leading-[8.5dvh] xlg:text-[100px] xlg:leading-[120px]">
+            {"피부 속까지\n고주파 에너지"}
           </p>
         </InviewComponent>
         <InviewComponent animationClassName={"animate-smoothUpSecond_therfect"}>
-          <p className="text-shadow mt-[29dvh] text-[2dvw] leading-[4dvh] md:text-[1.5dvw]">
+          <p className="text-shadow mt-[29dvh] text-[2dvw] font-[500] leading-[4dvh] md:text-[1.5dvw] xlg:mt-[24dvh] xlg:text-[26px] xlg:leading-[47px]">
             {
               "강력한 고주파 에너지로 조직의 응고를 일으켜 피부탄력에 도움을 줍니다.\n고주파 전달 > 피부속 깊이 고주파 전달 > 피부 저항 및 열 발생 > 피부응고 및 재생 > 피부탄력 도움"
             }

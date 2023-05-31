@@ -13,6 +13,7 @@ import { SixthWebSlide } from "./SixthWebSlide";
 import { SixthWebSlideBlue } from "./SixthWebSlideBlue";
 import { SeventhWebSlide } from "./SeventhWebSlide";
 import { EighthWebSlide } from "./EighthWebSlide";
+import { changeBodyBackground } from "../common/changeBodyBackground";
 
 export default function Web() {
   return (
@@ -27,6 +28,14 @@ export default function Web() {
         modules={[Mousewheel]}
         className="mySwiper"
         speed={800}
+        onSlideChangeTransitionEnd={(swiper) => {
+          const currentSlideNum = swiper.activeIndex + 1;
+          if (currentSlideNum === 6 || currentSlideNum === 7) {
+            changeBodyBackground("black");
+          } else {
+            changeBodyBackground("transparent");
+          }
+        }}
       >
         <SwiperSlide>
           <FirstWebSlide />

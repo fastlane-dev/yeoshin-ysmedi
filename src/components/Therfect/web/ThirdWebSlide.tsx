@@ -49,7 +49,7 @@ export const ThirdWebSlide = () => {
                     inView ? "animate-smoothUpFirst_therfect" : ""
                   } opacity-0`}
                 >
-                  <p className="mb-[36px] font-pretendard text-[4dvw] leading-[8.7dvh]">
+                  <p className="mb-[36px] font-pretendard text-[4dvw] leading-[8.7dvh] xlg:text-[80px] xlg:leading-[96px]">
                     {"5가지 팁,\n3가지 시술방법"}
                   </p>
                 </div>
