@@ -6,8 +6,8 @@ spec:
   gateways:
     - istio-system/yeoshin-gateway
   hosts:
-    - "www.ysmedidev.click"
-    - "www.lhalaladev.click"
+    - "www.ysmedi.click"
+    - "www.lhalala.click"
   http:
     - timeout: 15s
       route:
