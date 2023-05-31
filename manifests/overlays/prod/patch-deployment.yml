@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ysmedi
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+        - name: ysmedi
+          env:
+            - name: POD_NAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
+            - name: NEXT_PORT
+              value: "10150"
+          ports:
+            - name: http
+              containerPort: 10150

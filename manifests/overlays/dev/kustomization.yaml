@@ -1,0 +1,25 @@
+resources:
+  - ../../base
+
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: yeoshin-dev
+
+images:
+  - name: ysmedi
+    newName: 699158113629.dkr.ecr.ap-northeast-2.amazonaws.com/ysmedi
+    newTag: test
+
+patches:
+  - path: patch-deployment.yml
+    target:
+      kind: Deployment
+  - path: patch-networking.yml
+    target:
+      kind: VirtualService
+  - path: patch-service.yaml
+    target:
+      kind: Service
+
+generatorOptions:
+  disableNameSuffixHash: true

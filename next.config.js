@@ -1,5 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "d3gurpvil0se70.cloudfront.net",
+        port: "",
+        pathname: "/thirds/**",
+      },
+    ],
+  },
   reactStrictMode: true,
   async headers() {
     return [

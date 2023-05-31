@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ysmedi
+  labels:
+    app: ysmedi
+    service.fastlane.co.kr/name: ysmedi
+spec:
+  selector:
+    matchLabels:
+      app: ysmedi
+      service.fastlane.co.kr/name: ysmedi
+  template:
+    metadata:
+      labels:
+        app: ysmedi
+        service.fastlane.co.kr/name: ysmedi
+      annotations:
+        sidecar.istio.io/inject: "false"
+    spec:
+      serviceAccountName: default
+
+      containers:
+        - name: ysmedi
+          image: ysmedi:latest
+          imagePullPolicy: Always
+          command: ["/bin/sh"]
+          args: ["-c", "yarn start -p $(NEXT_PORT)"]
+          resources:
+            requests:
+              cpu: 0.5
+              memory: 512Mi
+            limits:
+              cpu: 1
+              memory: 1Gi
