@@ -66,7 +66,7 @@ export const SecondWebSlide = () => {
         <div className="absolute right-[-19dvw] h-screen w-screen">
           <Image
             className="object-contain"
-            src={entireRobot}
+            src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/therfect_entire_robot.png`}
             priority
             fill
             alt="entire_robot"
