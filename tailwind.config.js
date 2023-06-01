@@ -36,7 +36,7 @@ module.exports = {
       fontFamily: {
         sans: [...fontFamily.sans],
         pretendard: ["var(--font-pretendard)"],
-        faktumTest: ["var(--font-faktumTest)"],
+        faktumTest: ["faktumTest"],
         futura: ["var(--font-futura)"],
       },
       animation: {

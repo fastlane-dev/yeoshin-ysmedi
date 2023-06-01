@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "faktumTest";
+  font-style: normal;
+  font-weight: 100;
+  src: url("https://d3gurpvil0se70.cloudfront.net/thirds/fonts/FaktumTest/Faktum_Test_Thin.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "faktumTest";
+  font-style: normal;
+  font-weight: 200;
+  src: url("https://d3gurpvil0se70.cloudfront.net/thirds/fonts/FaktumTest/Faktum_Test_Light.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "faktumTest";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://d3gurpvil0se70.cloudfront.net/thirds/fonts/FaktumTest/Faktum_Test_Regular.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "faktumTest";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://d3gurpvil0se70.cloudfront.net/thirds/fonts/FaktumTest/Faktum_Test_Regular.otf")
+    format("opentype");
+}
