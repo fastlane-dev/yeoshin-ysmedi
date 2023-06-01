@@ -11,6 +11,14 @@ const nextConfig = {
     ],
   },
   reactStrictMode: true,
+  async rewrites() {
+    return [
+      {
+        source: "/",
+        destination: "https://d3gurpvil0se70.cloudfront.net/thirds/:path*",
+      },
+    ];
+  },
   async headers() {
     return [
       {
