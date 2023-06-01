@@ -31,7 +31,7 @@ export const EighthWebSlide = () => {
         </div>
         <div className="h-full">
           <Image
-            src={"/img/therfect/ys_medi_logo.svg"}
+            src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/ys_medi_logo.svg`}
             alt="logo"
             width={221}
             height={41}

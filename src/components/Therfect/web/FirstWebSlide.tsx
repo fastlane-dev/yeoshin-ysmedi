@@ -85,7 +85,12 @@ export const FirstWebSlide = () => {
           <p className="font-[600]">효과적으로</p>
         </div>
         <div className="relative z-[20] h-[83dvh] w-[41dvw]">
-          <Image src={therfectRobot} priority fill alt="therfect_robot" />
+          <Image
+            src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/therfect_robot_half.svg`}
+            priority
+            fill
+            alt="therfect_robot"
+          />
         </div>
         <div className="relative top-[-10dvh] flex flex-col gap-[17px]">
           <p className="font-[400]">열 에너지를</p>

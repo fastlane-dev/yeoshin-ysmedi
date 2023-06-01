@@ -68,7 +68,7 @@ export const ThirdWebSlide = () => {
         </div>
         <div className="absolute right-0 top-[30dvh] h-[60dvh] w-[66dvw] lg:w-[50dvw]">
           <Image
-            src={bigNozzle}
+            src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/big_nozzle.png`}
             priority
             fill
             alt="bigNozzle"
