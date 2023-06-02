@@ -8,6 +8,12 @@ const nextConfig = {
         port: "",
         pathname: "/thirds/**",
       },
+      {
+        protocol: "https",
+        hostname: "drklwd0v967bd.cloudfront.net",
+        port: "",
+        pathname: "/upfiles/images/**",
+      },
     ],
   },
   reactStrictMode: true,
