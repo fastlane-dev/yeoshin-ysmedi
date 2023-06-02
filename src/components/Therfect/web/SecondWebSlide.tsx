@@ -57,7 +57,7 @@ export const SecondWebSlide = () => {
                 className={`font-pretendard text-[1.3dvw] font-[300] leading-[4.5dvh] sm:text-[1.5dvw] sm:leading-[3dvh] md:leading-[3.5dvh] lg:leading-[4.5dvh] xlg:text-[26px] xlg:leading-[47px]`}
               >
                 {
-                  "식약처 허가와 논문, 그리고 12년간 검증된 고성능 고주파 열 에너지.\n자사 장비를 전세계 12개국에서 12년 동안 유통하며 효과적인 고주파를\n연구, 개발하였습니다."
+                  "식약처 허가와 논문, 그리고 12년간 검증된 고성능 고주파 열 에너지.\n자사 장비를 전세계 22개국에서 12년 동안 유통하며 효과적인 고주파를\n연구, 개발하였습니다."
                 }
               </p>
             </div>
@@ -70,15 +70,6 @@ export const SecondWebSlide = () => {
             priority
             fill
             alt="entire_robot_env"
-          />
-          <Image
-            className="object-contain"
-            src={
-              "https://d3gurpvil0se70.cloudfront.net/thirds/images/therfect/therfect_entire_robot.png"
-            }
-            width={100}
-            height={100}
-            alt="entire_robot_string"
           />
         </div>
       </div>

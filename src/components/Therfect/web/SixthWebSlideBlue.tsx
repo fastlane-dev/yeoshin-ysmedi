@@ -8,7 +8,7 @@ export const SixthWebSlideBlue = () => {
         <InviewComponent animationClassName={"animate-smoothUpFirst_therfect"}>
           <div className="mx-auto h-fit w-fit">
             <p className="font-sans text-[6.2dvw]">ACTIVE</p>
-            <p className="relative top-[-15px] mb-[1dvh] text-center font-pretendard text-[2.1dvw] font-[400] xlg:text-[40px]">
+            <p className="relative top-[-15px] mb-[31px] text-center font-pretendard text-[2.1dvw] font-[400] xlg:text-[40px]">
               온도 컨트롤
             </p>
           </div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-import ntts from "../../../../public/img/therfect/ntts.svg";
+import ntts from "../../../../public/img/therfect/ntts_new.svg";
 import Image from "next/image";
 import { InviewComponent } from "../common/InviewComponent";
 
@@ -14,7 +14,7 @@ export const SixthWebSlide = () => {
           </div>
         </InviewComponent>
         <InviewComponent animationClassName={"animate-smoothUpSecond_therfect"}>
-          <p className="relative left-[-9px] text-center font-pretendard font-[400] sm:text-[2dvw] sm:leading-[4dvw] md:text-[1.3dvw] md:leading-[2dvw]">
+          <p className="relative left-[-9px] text-center font-pretendard font-[400] leading-[46px] sm:text-[2dvw] md:text-[1.3dvw]">
             {"심부열을 효과적으로 전달하는 자체\n개발한 독특한 열전달 구조"}
           </p>
         </InviewComponent>

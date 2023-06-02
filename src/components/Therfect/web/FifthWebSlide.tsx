@@ -39,7 +39,7 @@ export const FifthWebSlide = () => {
           </InView>
         </div>
         <InviewComponent animationClassName={"animate-smoothUpFirst_therfect"}>
-          <p className="text-shadow mt-[106px] text-[4dvw] leading-[6.5dvh] md:leading-[8.5dvh] xlg:text-[100px] xlg:leading-[120px]">
+          <p className="text-shadow mt-[110px] text-[4dvw] leading-[6.5dvh] md:leading-[8.5dvh] xlg:text-[100px] xlg:leading-[120px]">
             {"피부 속까지\n고주파 에너지"}
           </p>
         </InviewComponent>
