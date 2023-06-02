@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    unoptimized: true,
+    domains: ["d3gurpvil0se70.cloudfront.net", "drklwd0v967bd.cloudfront.net"],
     remotePatterns: [
       {
         protocol: "https",
@@ -16,20 +18,20 @@ const nextConfig = {
       },
     ],
   },
-  reactStrictMode: true,
   async rewrites() {
     return [
       {
-        source: "/",
-        destination: "https://d3gurpvil0se70.cloudfront.net/thirds/:path*",
+        destination: "https://ysmedi.click/:path*",
+        source: "/proxy/:path*",
       },
     ];
   },
+  reactStrictMode: false,
   async headers() {
     return [
       {
         // matching all API routes
-        source: "/",
+        source: "/proxy/:path*",
         headers: [
           { key: "Access-Control-Allow-Credentials", value: "true" },
           { key: "Access-Control-Allow-Origin", value: "*" },
