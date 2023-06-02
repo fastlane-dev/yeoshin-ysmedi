@@ -5,6 +5,7 @@ import Image from "next/image";
 import logoSvg from "../../../../public/img/therfect/therfect_logo.svg";
 import therfectRobot from "../../../../public/img/therfect/therfect_robot_half.svg";
 import ball from "../../../../public/img/therfect/ball.svg";
+import { InviewComponent } from "../common/InviewComponent";
 
 export const FirstWebSlide = () => {
   return (
@@ -80,22 +81,21 @@ export const FirstWebSlide = () => {
         </div>
       </nav>
       <div className="flex-center absolute bottom-0 w-screen font-pretendard text-[4dvw] leading-[4dvw]">
-        <div className="relative top-[-10dvh] flex flex-col gap-[17px]">
-          <p className="font-[400]">정교하고</p>
-          <p className="font-[600]">효과적으로</p>
-        </div>
+        <InviewComponent animationClassName={"animate-smoothUpSecond_therfect"}>
+          <div className="relative top-[-10dvh] flex flex-col gap-[17px]">
+            <p className="font-[400]">정교하고</p>
+            <p className="font-[600]">효과적으로</p>
+          </div>
+        </InviewComponent>
         <div className="relative z-[20] h-[83dvh] w-[41dvw]">
-          <Image
-            src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/therfect_robot_half.svg`}
-            priority
-            fill
-            alt="therfect_robot"
-          />
+          <Image src={therfectRobot} priority fill alt="therfect_robot" />
         </div>
-        <div className="relative top-[-10dvh] flex flex-col gap-[17px]">
-          <p className="font-[400]">열 에너지를</p>
-          <p className="font-[600]">전달하다</p>
-        </div>
+        <InviewComponent animationClassName={"animate-smoothUpSecond_therfect"}>
+          <div className="relative top-[-10dvh] flex flex-col gap-[17px]">
+            <p className="font-[400]">열 에너지를</p>
+            <p className="font-[600]">전달하다</p>
+          </div>
+        </InviewComponent>
       </div>
     </section>
   );
