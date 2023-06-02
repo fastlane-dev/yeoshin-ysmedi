@@ -74,6 +74,15 @@ export const SecondWebSlide = () => {
           <Image
             className="object-contain"
             src={
+              "https://d3gurpvil0se70.cloudfront.net/thirds/images/therfect/therfect_entire_robot.png"
+            }
+            width={100}
+            height={100}
+            alt="entire_robot"
+          />
+          <Image
+            className="object-contain"
+            src={
               "https://drklwd0v967bd.cloudfront.net/upfiles/images/product/1201158331.jpg"
             }
             width={100}
