@@ -1,21 +1,21 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    unoptimized: true,
     domains: ["d3gurpvil0se70.cloudfront.net"],
   },
   async rewrites() {
     return [
       {
-        destination: "https://ysmedi.click/:path*",
-        source: "/proxy/:path*",
+        destination: "https://d3gurpvil0se70.cloudfront.net/:path*",
+        source: "/:path*",
       },
     ];
   },
   async headers() {
     return [
       {
-        // matching all API routes
-        source: "/proxy/:path*",
+        source: "/",
         headers: [
           { key: "Access-Control-Allow-Credentials", value: "true" },
           { key: "Access-Control-Allow-Origin", value: "*" },
