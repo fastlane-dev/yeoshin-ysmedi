@@ -2,21 +2,7 @@
 const nextConfig = {
   images: {
     unoptimized: true,
-    domains: ["d3gurpvil0se70.cloudfront.net", "drklwd0v967bd.cloudfront.net"],
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "d3gurpvil0se70.cloudfront.net",
-        port: "",
-        pathname: "/thirds/**",
-      },
-      {
-        protocol: "https",
-        hostname: "drklwd0v967bd.cloudfront.net",
-        port: "",
-        pathname: "/upfiles/images/**",
-      },
-    ],
+    domains: ["d3gurpvil0se70.cloudfront.net"],
   },
   async rewrites() {
     return [
@@ -26,7 +12,6 @@ const nextConfig = {
       },
     ];
   },
-  reactStrictMode: false,
   async headers() {
     return [
       {
@@ -48,6 +33,8 @@ const nextConfig = {
       },
     ];
   },
+  reactStrictMode: false,
+  swcMinify: true,
 };
 
 module.exports = nextConfig;

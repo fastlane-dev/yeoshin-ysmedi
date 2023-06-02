@@ -69,7 +69,7 @@ export const SecondWebSlide = () => {
             src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/therfect_entire_robot.png`}
             priority
             fill
-            alt="entire_robot"
+            alt="entire_robot_env"
           />
           <Image
             className="object-contain"
@@ -78,16 +78,7 @@ export const SecondWebSlide = () => {
             }
             width={100}
             height={100}
-            alt="entire_robot"
-          />
-          <Image
-            className="object-contain"
-            src={
-              "https://drklwd0v967bd.cloudfront.net/upfiles/images/product/1201158331.jpg"
-            }
-            width={100}
-            height={100}
-            alt="entire_robot"
+            alt="entire_robot_string"
           />
         </div>
       </div>
