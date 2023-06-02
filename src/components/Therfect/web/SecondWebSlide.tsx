@@ -64,6 +64,14 @@ export const SecondWebSlide = () => {
           </InviewComponent>
         </div>
         <div className="absolute right-[-19dvw] h-screen w-screen">
+          <Image
+            className="object-contain"
+            src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/therfect_entire_robot.png`}
+            priority
+            fill
+            alt="entire_robot"
+          />
+
           <img
             className="object-contain"
             src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/therfect_entire_robot.png`}
