@@ -20,7 +20,7 @@ export const FirstMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
           alt="therfect_logo"
         />
       </div>
-      <div className="absolute left-[17dvw] top-[273px] h-[9.3dvw] w-[9.3dvw]">
+      <div className="absolute left-[17dvw] top-[248px] h-[9.3dvw] w-[9.3dvw]">
         <Image
           src={ball}
           priority
@@ -62,7 +62,7 @@ export const FirstMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
         </div>
       </div>
 
-      <div className="relative bottom-[7dvh] mx-auto h-[60dvh] w-[100dvw] msm:bottom-[-4dvh] msm:h-[70dvh] mmd:bottom-[-6dvw]">
+      <div className="relative bottom-[3dvh] mx-auto h-[70dvh] w-[100dvw] msm:bottom-[-4dvh] msm:h-[70dvh] mmd:bottom-[-6dvw]">
         <Image
           src={therfectRobot}
           priority

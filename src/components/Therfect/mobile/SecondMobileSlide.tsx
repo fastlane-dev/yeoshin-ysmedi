@@ -11,7 +11,7 @@ export const SecondMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
       className="relative w-screen overflow-hidden bg-white"
       style={{ height: innerHeight }}
     >
-      <div className="relative z-[30] mt-[9.8dvh] self-start pl-[30px]">
+      <div className="relative z-[30] mt-[5dvh] self-start pl-[30px]">
         <div className="mb-[7.8dvh] flex items-center justify-start gap-[12px]">
           <p className="font-sans text-[20px] font-[400] leading-[23px]">
             Product
@@ -42,7 +42,9 @@ export const SecondMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
         </div>
         <InviewComponent animationClassName="animate-smoothUpFirst_therfect">
           <div>
-            <p className="mb-[0.1dvh] font-sans text-[30px] font-[400]">4MHz</p>
+            <p className="mb-[0.1dvh] font-sans text-[30px] font-[400] leading-[33px]">
+              4MHz
+            </p>
             <p className="mb-[3.9dvh] font-pretendard text-[30px] font-[500]">
               고성능 고주파
             </p>
@@ -54,7 +56,7 @@ export const SecondMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
               className={`pr-[30px] font-pretendard text-[16px] font-[400] leading-[30px]`}
             >
               {
-                "식약처 허가와 논문, 그리고 12년간 검증된\n고성능 고주파 열 에너지. 자사 장비를 전세계 22개국에서\n12년 동안 유통하며 효과적인 고주파를 연구,\n개발하였습니다."
+                "식약처 허가와 논문, 그리고 12년간 검증된 고성능 고주파 열 에너지. 자사 장비를 전세계 22개국에서 12년 동안 유통하며 효과적인 고주파를 연구,개발하였습니다."
               }
             </p>
           </div>

@@ -13,7 +13,7 @@ export const ThirdMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
       style={{ height: innerHeight }}
     >
       <div className="">
-        <div className="self-start pl-[30px] pt-[9.8dvh]">
+        <div className="mt-[5dvh] self-start pl-[30px]">
           <div className="mb-[7.8dvh] flex items-center justify-start gap-[12px]">
             <p className="font-sans text-[20px] font-[400] leading-[23px]">
               Cartridge
@@ -45,7 +45,7 @@ export const ThirdMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
           <InviewComponent animationClassName="animate-smoothUpFirst_therfect">
             <div>
               <p className="font-pretendard text-[30px] font-[500]">5가지 팁</p>
-              <p className="mb-[3.5dvh] font-pretendard text-[30px] font-[500]">
+              <p className="mb-[3.9dvh] font-pretendard text-[30px] font-[500]">
                 3가지 시술방법
               </p>
             </div>
@@ -63,7 +63,7 @@ export const ThirdMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
           </InviewComponent>
         </div>
         <InviewComponent animationClassName="animate-smoothUpThird_therfect">
-          <div className="absolute bottom-[-34dvh] right-[-14px] h-screen w-[400px] mshs:bottom-[-30dvh] mshs:right-[-22px] mshs:w-[400px] mshm:w-[450px] mmhd:w-[500px]">
+          <div className="absolute right-[-14px] h-screen w-[400px] mshs:bottom-[-33dvh] mshs:right-[-22px] mshs:w-[400px] mshm:w-[450px] mmhd:w-[500px]">
             <Image
               style={{ objectFit: "contain" }}
               src={bigNozzle}
