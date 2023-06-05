@@ -98,6 +98,7 @@ export const FirstWebSlide = () => {
             src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/therfect_robot_half.svg`}
             fill
             alt="therfect_robot"
+            priority
           />
         </div>
         <InviewComponent animationClassName={"animate-smoothUpSecond_therfect"}>
