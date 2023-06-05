@@ -9,7 +9,7 @@ import { InviewComponent } from "../common/InviewComponent";
 
 export const FirstWebSlide = () => {
   return (
-    <section className="relative h-screen w-screen overflow-hidden bg-[#f68e0f] font-futura  text-[80px] font-[500] text-white">
+    <section className="relative h-screen w-screen overflow-hidden bg-[#f68e0f] font-futura text-[80px] font-[500] text-white">
       <div className="absolute left-[26dvw] top-[78px] h-[2dvw] w-[2dvw]">
         <Image
           src={ball}
