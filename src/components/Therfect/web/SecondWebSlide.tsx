@@ -1,5 +1,4 @@
-import Image from "next/legacy/image";
-import NewImage from "next/image";
+import Image from "next/image";
 import React from "react";
 
 import entireRobot from "../../../../public/img/therfect/therfect_entire_robot.png";
@@ -69,26 +68,12 @@ export const SecondWebSlide = () => {
             className="object-contain"
             src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/therfect_entire_robot.png`}
             priority
-            alt="entire_robot_env"
-            width={100}
-            height={100}
-          />
-          <NewImage
-            className="object-contain"
-            src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/therfect_entire_robot.png`}
-            priority
             fill
             alt="entire_robot_env"
-          />
-
-          <Image
-            className="object-contain"
-            src={
-              "https://images.unsplash.com/photo-1682685797140-c17807f8f217?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-            }
-            width={100}
-            height={100}
-            alt="entire_robot_env"
+            loader={(res) => {
+              console.log("res", res);
+              return res.src;
+            }}
           />
         </div>
       </div>
