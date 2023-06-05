@@ -1,7 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["d3gurpvil0se70.cloudfront.net", "images.unsplash.com"],
+    domains: [
+      "d3gurpvil0se70.cloudfront.net",
+      "images.unsplash.com",
+      "www.ysmedi.click",
+    ],
   },
   async rewrites() {
     return [
