@@ -71,6 +71,16 @@ export const SecondWebSlide = () => {
             fill
             alt="entire_robot_env"
           />
+
+          <Image
+            className="object-contain"
+            src={
+              "https://images.unsplash.com/photo-1682685797140-c17807f8f217?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+            }
+            width={100}
+            height={100}
+            alt="entire_robot_env"
+          />
         </div>
       </div>
     </section>
