@@ -94,7 +94,11 @@ export const FirstWebSlide = () => {
           </div>
         </InviewComponent>
         <div className="relative z-[20] h-[83dvh] w-[41dvw]">
-          <Image src={therfectRobot} fill alt="therfect_robot" />
+          <Image
+            src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/therfect_robot_half.svg`}
+            fill
+            alt="therfect_robot"
+          />
         </div>
         <InviewComponent animationClassName={"animate-smoothUpSecond_therfect"}>
           <div className="relative top-[-10dvh] flex flex-col gap-[17px]">
