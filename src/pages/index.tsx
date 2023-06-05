@@ -122,7 +122,7 @@ export default function Home({
 }) {
   const [renderedPageInfo] = useState(PAGE_INFOS[pageIdentity]);
 
-  const { Component, faviconPath, title } = PAGE_INFOS[PAGE_IDENTITY.YS_MEDI];
+  const { Component, faviconPath, title } = PAGE_INFOS[PAGE_IDENTITY.LALA_PEEL];
 
   return (
     <>
