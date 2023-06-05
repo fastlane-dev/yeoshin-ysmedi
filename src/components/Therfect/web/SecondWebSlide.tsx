@@ -1,4 +1,5 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
+import NewImage from "next/image";
 import React from "react";
 
 import entireRobot from "../../../../public/img/therfect/therfect_entire_robot.png";
@@ -65,6 +66,14 @@ export const SecondWebSlide = () => {
         </div>
         <div className="absolute right-[-19dvw] h-screen w-screen">
           <Image
+            className="object-contain"
+            src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/therfect_entire_robot.png`}
+            priority
+            alt="entire_robot_env"
+            width={100}
+            height={100}
+          />
+          <NewImage
             className="object-contain"
             src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/therfect_entire_robot.png`}
             priority
