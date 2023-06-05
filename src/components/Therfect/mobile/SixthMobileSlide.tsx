@@ -1,8 +1,8 @@
 import React from "react";
 
-import ntts from "../../../../public/img/therfect/ntts.svg";
 import Image from "next/image";
 import { InviewComponent } from "../common/InviewComponent";
+import { loadSrc } from "@/utils/loadSrc";
 
 const Square = () => (
   <div className="h-[11dvw] w-[11dvw] bg-main-orange msm:h-[9dvw] msm:w-[9dvw] mmd:h-[7dvw] mmd:w-[7dvw]"></div>
@@ -23,7 +23,14 @@ export const SixthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
           animationClassName={"animate-smoothUpFirst_therfect"}
         >
           <div className="flex-center mb-[32px]">
-            <Image width={157} height={40} src={ntts} alt="ntts" priority />
+            <Image
+              width={157}
+              height={40}
+              src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/ntts.svg`}
+              alt="ntts"
+              priority
+              loader={loadSrc}
+            />
           </div>
         </InviewComponent>
         <InviewComponent animationClassName={"animate-smoothUpSecond_therfect"}>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 // nineth mobile
 export const NinethMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
@@ -22,8 +23,13 @@ export const NinethMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
       </div>
       <div className="mt-[64px]  font-[400]">
         <p className="item-center flex justify-between">
-          <div className="h-[23px] w-[123px]">
-            <img src={"/img/therfect/ys_medi_logo.svg"} alt="ys_medi_logo" />
+          <div>
+            <Image
+              src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/ys_medi_logo.svg`}
+              alt="ys_medi_logo"
+              height={23}
+              width={123}
+            />
           </div>
           <div className="flex-center gap-[7px] font-faktumTest text-[16px] leading-[20px] tracking-[0.02em]">
             <div className="text-main-orange">KR</div>

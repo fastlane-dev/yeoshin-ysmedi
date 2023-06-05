@@ -4,7 +4,7 @@ import Image from "next/image";
 import { InView } from "react-intersection-observer";
 import { InviewComponent } from "../common/InviewComponent";
 
-import bigNozzle from "../../../../public/img/therfect/big_nozzle.png";
+import { loadSrc } from "@/utils/loadSrc";
 
 export const ThirdMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
   return (
@@ -63,13 +63,14 @@ export const ThirdMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
           </InviewComponent>
         </div>
         <InviewComponent animationClassName="animate-smoothUpThird_therfect">
-          <div className="absolute right-[-14px] h-screen w-[400px] mshs:bottom-[-33dvh] mshs:right-[-22px] mshs:w-[400px] mshm:w-[450px] mmhd:w-[500px]">
+          <div className="absolute bottom-[-25dvh] right-[-14px] h-screen w-[400px] mshs:bottom-[-33dvh] mshs:right-[-22px] mshs:w-[400px] mshm:w-[450px] mmhd:w-[500px]">
             <Image
               style={{ objectFit: "contain" }}
-              src={bigNozzle}
+              src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/big_nozzle.png`}
               priority
               fill
               alt="big_nozzle"
+              loader={loadSrc}
             />
           </div>
         </InviewComponent>

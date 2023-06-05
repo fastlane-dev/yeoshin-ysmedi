@@ -2,8 +2,8 @@ import React from "react";
 import { InView } from "react-intersection-observer";
 import { InviewComponent } from "../common/InviewComponent";
 
-import therfectRobot from "../../../../public/img/therfect/second_mobile_robot.png";
 import Image from "next/image";
+import { loadSrc } from "@/utils/loadSrc";
 
 export const SecondMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
   return (
@@ -65,11 +65,12 @@ export const SecondMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
       <InviewComponent animationClassName={"animate-smoothUpThird_therfect"}>
         <div className="relative bottom-[20dvh] z-[20] mx-auto h-[100dvh] w-[100dvw] mhmw2:bottom-[7dvh] mhmw1:bottom-[15dvh] msm:bottom-[-2dvh] mmd:bottom-[-4dvh]">
           <Image
-            src={therfectRobot}
+            src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/second_mobile_robot.png`}
             priority
             fill
             alt="therfect_robot"
             className="object-contain"
+            loader={loadSrc}
           />
         </div>
       </InviewComponent>

@@ -2,6 +2,8 @@ import React from "react";
 
 import { InView } from "react-intersection-observer";
 import { InviewComponent } from "../common/InviewComponent";
+import Image from "next/image";
+import { loadSrc } from "@/utils/loadSrc";
 // bg-[url('/img/mobile_skin_structure.png')] bg-cover bg-center bg-no-repeat
 export const FifthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
   return (
@@ -10,10 +12,11 @@ export const FifthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
       style={{ height: innerHeight }}
     >
       <div className="h-screen w-screen">
-        <img
-          src={"/img/therfect/mobile_skin_structure.png"}
-          className="h-full w-screen"
+        <Image
+          src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/mobile_skin_structure.png`}
           alt="mobile_skin_structure"
+          fill
+          loader={loadSrc}
         />
       </div>
       <div
