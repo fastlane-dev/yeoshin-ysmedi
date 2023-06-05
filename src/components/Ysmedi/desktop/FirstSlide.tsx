@@ -12,6 +12,7 @@ export const FirstSlide = () => {
           priority
           className="object-contain"
           fill
+          loader={loadSrc}
         />
       </div>
       <div className="flex-center w-full justify-between px-[9vw] pt-[80px]">
@@ -21,7 +22,7 @@ export const FirstSlide = () => {
             alt="logo"
             width={189}
             height={35}
-            loader={({ src }) => src}
+            loader={loadSrc}
           />
         </div>
         <nav className="flex-center cursor-pointer gap-[41px]">
@@ -31,6 +32,7 @@ export const FirstSlide = () => {
               alt="shopping_mall"
               width={179}
               height={36}
+              loader={loadSrc}
             />
           </a>
           <div className="flex-center gap-[10px] text-[20px] font-[200]">
