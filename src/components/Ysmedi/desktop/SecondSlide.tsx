@@ -97,14 +97,16 @@ export const SecondSlide = ({
           <div
             className={
               isFirstAnimation
-                ? "w-[4vw] animate-moveFromDownToUpStartAfter0_9s_ysmedi opacity-0"
-                : "w-[4vw]"
+                ? "h-[7vw] w-[4vw] animate-moveFromDownToUpStartAfter0_9s_ysmedi opacity-0"
+                : "h-[7vw] w-[4vw]"
             }
           >
-            <img
-              src={"/img/ysmedi/collaboration_icon.png"}
+            <Image
+              src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}ysmedi/collaboration_icon.png`}
               alt="collaboration_icon"
               style={{ objectFit: "contain" }}
+              fill
+              loader={loadSrc}
             />
           </div>
 
@@ -140,14 +142,16 @@ export const SecondSlide = ({
           <div
             className={
               isFirstAnimation
-                ? "w-[6vw] animate-moveFromDownToUpStartAfter0_9s_ysmedi opacity-0"
-                : "w-[6vw]"
+                ? "h-[6vw] w-[6vw] animate-moveFromDownToUpStartAfter0_9s_ysmedi opacity-0"
+                : "h-[6vw] w-[6vw]"
             }
           >
-            <img
-              src={"/img/ysmedi/transparency_icon.png"}
+            <Image
+              src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}ysmedi/transparency_icon.png`}
               alt="transparency_icon"
               style={{ objectFit: "contain" }}
+              fill
+              loader={loadSrc}
             />
           </div>
 
