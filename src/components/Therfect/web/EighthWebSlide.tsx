@@ -1,3 +1,4 @@
+import { loadSrc } from "@/utils/loadSrc";
 import Image from "next/image";
 import React from "react";
 
@@ -36,6 +37,7 @@ export const EighthWebSlide = () => {
             width={221}
             height={41}
             priority
+            loader={loadSrc}
           />
         </div>
       </div>

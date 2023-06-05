@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 
-import entireRobot from "../../../../public/img/therfect/therfect_entire_robot.png";
 import { InView } from "react-intersection-observer";
 import { InviewComponent } from "../common/InviewComponent";
 

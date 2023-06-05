@@ -1,6 +1,5 @@
 import React from "react";
 
-import ntts from "../../../../public/img/therfect/ntts_new.svg";
 import Image from "next/image";
 import { InviewComponent } from "../common/InviewComponent";
 
@@ -10,7 +9,7 @@ export const SixthWebSlide = () => {
       <div className="absolute  left-[50%] top-[50%] h-fit w-fit -translate-x-[46%] -translate-y-[55%]">
         <InviewComponent animationClassName={"animate-smoothUpFirst_therfect"}>
           <div className="relative mx-auto h-[13dvh] sm:w-[29dvw] md:w-[20dvw]">
-            <Image fill src={ntts} alt="ntts" priority />
+            <Image fill src={"img/therfect/ntts_new.svg"} alt="ntts" priority />
           </div>
         </InviewComponent>
         <InviewComponent animationClassName={"animate-smoothUpSecond_therfect"}>

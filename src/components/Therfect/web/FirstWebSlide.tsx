@@ -2,7 +2,6 @@ import React from "react";
 
 import Image from "next/image";
 
-import therfectRobot from "../../../../public/img/therfect/therfect_robot_half.svg";
 import { InviewComponent } from "../common/InviewComponent";
 import { loadSrc } from "@/utils/loadSrc";
 
@@ -99,6 +98,7 @@ export const FirstWebSlide = () => {
             fill
             alt="therfect_robot"
             priority
+            loader={loadSrc}
           />
         </div>
         <InviewComponent animationClassName={"animate-smoothUpSecond_therfect"}>

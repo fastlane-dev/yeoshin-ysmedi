@@ -5,7 +5,7 @@ import { InviewComponent } from "../common/InviewComponent";
 
 export const FifthWebSlide = () => {
   return (
-    <section className="relative h-screen w-screen overflow-hidden bg-white bg-[url('/img/therfect/skin_structure.png')] bg-cover bg-center bg-no-repeat font-pretendard font-[600] text-white">
+    <section className="relative h-screen w-screen overflow-hidden bg-white bg-[url('https://d3gurpvil0se70.cloudfront.net/thirds/images/therfect/skin_structure.png')] bg-cover bg-center bg-no-repeat font-pretendard font-[600] text-white">
       <div className="pl-[7dvw] pt-[15dvh]">
         <div className="flex-center justify-start gap-[20px]">
           <p className="font-sans text-[30px] font-[400] leading-[34.5px]">

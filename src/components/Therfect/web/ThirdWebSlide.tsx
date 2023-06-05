@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 
-import bigNozzle from "../../../../public/img/therfect/big_nozzle.png";
 import { InView } from "react-intersection-observer";
 import { loadSrc } from "@/utils/loadSrc";
 
