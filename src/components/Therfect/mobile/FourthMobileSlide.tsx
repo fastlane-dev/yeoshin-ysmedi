@@ -28,6 +28,7 @@ const Nozzle = ({
           alt="first_nozzle"
           fill
           loader={loadSrc}
+          priority
         />
       </div>
       <InviewComponent animationClassName={`animate-smoothUpFirst_therfect`}>
