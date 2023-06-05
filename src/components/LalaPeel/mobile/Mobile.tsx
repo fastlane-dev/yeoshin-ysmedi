@@ -15,6 +15,7 @@ const Mobile = () => {
             src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}lalaPeel/logo.png`}
             width={67}
             height={17}
+            loader={loadSrc}
           />
           <div className="relative h-[120px] w-screen">
             <div className="absolute animate-mainLogoAppear_lala font-pretendard text-[50px] font-[300] leading-[59.67px] opacity-0">
