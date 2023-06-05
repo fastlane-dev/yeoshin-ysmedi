@@ -3,14 +3,7 @@ const nextConfig = {
   images: {
     domains: ["d3gurpvil0se70.cloudfront.net"],
   },
-  async rewrites() {
-    return [
-      {
-        destination: "https://d3gurpvil0se70.cloudfront.net/:path*",
-        source: "/:path*",
-      },
-    ];
-  },
+
   async headers() {
     return [
       {
