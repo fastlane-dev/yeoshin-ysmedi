@@ -1,6 +1,6 @@
 import Head from "next/head";
 import localFont from "next/font/local";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import { PAGE_IDENTITY, PAGE_INFOS, PAGE_URL } from "@/constants/pageInfos";
 import { GetServerSideProps } from "next";
@@ -119,16 +119,10 @@ export default function Home({
 }: {
   pageIdentity: valueOf<typeof PAGE_IDENTITY>;
 }) {
-  // const [renderedPageInfo] = useState(PAGE_INFOS[pageIdentity]);
-  const [url, setUrl] = useState("");
+  const [renderedPageInfo] = useState(PAGE_INFOS[pageIdentity]);
 
   const { Component, faviconPath, title } = PAGE_INFOS[PAGE_IDENTITY.THERFECT];
 
-  console.log("url", url);
-
-  useEffect(() => {
-    setUrl(window.location.href);
-  }, []);
   return (
     <>
       <Head>
@@ -146,25 +140,25 @@ export default function Home({
   );
 }
 
-// export const getServerSideProps: GetServerSideProps = async (context) => {
-//   const absoluteUrl = context.req.headers.host;
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const absoluteUrl = context.req.headers.host;
 
-//   const getIdentityByUrl = (url: string) => {
-//     switch (true) {
-//       case url.includes(PAGE_URL.YS_MEDI):
-//         return PAGE_IDENTITY.YS_MEDI;
-//       case url.includes(PAGE_URL.LALA_PEEL):
-//         return PAGE_IDENTITY.LALA_PEEL;
-//       case url.includes(PAGE_URL.THERFECT):
-//         return PAGE_IDENTITY.THERFECT;
-//       default:
-//         return PAGE_IDENTITY.YS_MEDI;
-//     }
-//   };
+  const getIdentityByUrl = (url: string) => {
+    switch (true) {
+      case url.includes(PAGE_URL.YS_MEDI):
+        return PAGE_IDENTITY.YS_MEDI;
+      case url.includes(PAGE_URL.LALA_PEEL):
+        return PAGE_IDENTITY.LALA_PEEL;
+      case url.includes(PAGE_URL.THERFECT):
+        return PAGE_IDENTITY.THERFECT;
+      default:
+        return PAGE_IDENTITY.YS_MEDI;
+    }
+  };
 
-//   return {
-//     props: {
-//       pageIdentity: getIdentityByUrl(absoluteUrl as string),
-//     },
-//   };
-// };
+  return {
+    props: {
+      pageIdentity: getIdentityByUrl(absoluteUrl as string),
+    },
+  };
+};
