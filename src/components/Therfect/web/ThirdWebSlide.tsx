@@ -3,6 +3,7 @@ import React from "react";
 
 import bigNozzle from "../../../../public/img/therfect/big_nozzle.png";
 import { InView } from "react-intersection-observer";
+import { loadSrc } from "@/utils/loadSrc";
 
 export const ThirdWebSlide = () => {
   return (
@@ -73,6 +74,7 @@ export const ThirdWebSlide = () => {
             fill
             alt="bigNozzle"
             className="object-contain"
+            loader={loadSrc}
           />
         </div>
       </div>
