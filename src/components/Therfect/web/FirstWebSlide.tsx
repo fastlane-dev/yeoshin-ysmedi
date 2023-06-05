@@ -2,9 +2,7 @@ import React from "react";
 
 import Image from "next/image";
 
-import logoSvg from "../../../../public/img/therfect/therfect_logo.svg";
 import therfectRobot from "../../../../public/img/therfect/therfect_robot_half.svg";
-import ball from "../../../../public/img/therfect/ball.svg";
 import { InviewComponent } from "../common/InviewComponent";
 import { loadSrc } from "@/utils/loadSrc";
 
@@ -96,7 +94,7 @@ export const FirstWebSlide = () => {
           </div>
         </InviewComponent>
         <div className="relative z-[20] h-[83dvh] w-[41dvw]">
-          <Image src={therfectRobot} priority fill alt="therfect_robot" />
+          <Image src={therfectRobot} fill alt="therfect_robot" />
         </div>
         <InviewComponent animationClassName={"animate-smoothUpSecond_therfect"}>
           <div className="relative top-[-10dvh] flex flex-col gap-[17px]">
