@@ -53,6 +53,7 @@ export const SecondSlide = ({
               alt="reliability_icon"
               style={{ objectFit: "contain" }}
               fill
+              loader={loadSrc}
             />
           </div>
 

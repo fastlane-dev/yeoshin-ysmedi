@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import mobilePlanet from "../../../../public/img/ysmedi/mobile_planet.svg";
+import { loadSrc } from "@/utils/loadSrc";
 
 export const FirstMobileSlide = () => {
   return (
@@ -8,18 +9,20 @@ export const FirstMobileSlide = () => {
       <div className="absolute top-[-22%] z-[-1] h-[82vh] w-[152vw] rotate-[5.7deg] opacity-[0.7]">
         <Image
           className="absolute"
-          src={mobilePlanet}
+          src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}ysmedi/mobile_planet.svg`}
           alt="planet"
           fill
           priority
+          loader={loadSrc}
         />
       </div>
       <div className="pl-[31px] pt-[44px]">
         <Image
-          src={"/img/ysmedi/logo.png"}
+          src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}ysmedi/logo.png`}
           alt="logo"
           width={108}
           height={20}
+          loader={loadSrc}
         />
       </div>
       <div className="flex-center-column ml-[23px] mt-[50vh] items-start gap-[2.7vh] mmd:mt-[35vh] mmd:gap-[6vh]">
