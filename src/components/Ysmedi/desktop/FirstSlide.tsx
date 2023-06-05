@@ -1,3 +1,4 @@
+import { loadSrc } from "@/utils/loadSrc";
 import Image from "next/image";
 import React from "react";
 
@@ -16,16 +17,17 @@ export const FirstSlide = () => {
       <div className="flex-center w-full justify-between px-[9vw] pt-[80px]">
         <div>
           <Image
-            src={"/img/ysmedi/logo.png"}
+            src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}ysmedi/logo.png`}
             alt="logo"
             width={189}
             height={35}
+            loader={({ src }) => src}
           />
         </div>
         <nav className="flex-center cursor-pointer gap-[41px]">
           <a href="https://mall.ysmedi.kr/" target="_blank">
             <Image
-              src={"/img/ysmedi/shopping_mall.svg"}
+              src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}ysmedi/shopping_mall.svg`}
               alt="shopping_mall"
               width={179}
               height={36}

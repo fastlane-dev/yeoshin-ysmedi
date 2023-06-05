@@ -70,10 +70,7 @@ export const SecondWebSlide = () => {
             priority
             fill
             alt="entire_robot_env"
-            loader={(res) => {
-              console.log("res", res);
-              return res.src;
-            }}
+            loader={({ src }) => src}
           />
         </div>
       </div>

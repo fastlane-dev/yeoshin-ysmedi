@@ -1,3 +1,6 @@
+import { loadSrc } from "@/utils/loadSrc";
+import Image from "next/image";
+
 export const SecondSlide = ({
   isFirstAnimation,
 }: {
@@ -34,21 +37,22 @@ export const SecondSlide = ({
           <span
             className={
               isFirstAnimation
-                ? "animate-lineAppear_ysmedi absolute bottom-0 left-0 h-full w-full border-r-[1px] border-r-[#666666]"
+                ? "absolute bottom-0 left-0 h-full w-full animate-lineAppear_ysmedi border-r-[1px] border-r-[#666666]"
                 : "absolute bottom-0 left-0 h-full w-full border-r-[1px] border-r-[#666666] "
             }
           ></span>
           <div
             className={
               isFirstAnimation
-                ? "w-[7vw] animate-moveFromDownToUpStartAfter0_9s_ysmedi opacity-0"
-                : "w-[7vw]"
+                ? "h-[7vw] w-[7vw] animate-moveFromDownToUpStartAfter0_9s_ysmedi opacity-0"
+                : "h-[7vw] w-[7vw]"
             }
           >
-            <img
-              src={"/img/ysmedi/reliability_icon.png"}
+            <Image
+              src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}ysmedi/reliability_icon.png`}
               alt="reliability_icon"
               style={{ objectFit: "contain" }}
+              fill
             />
           </div>
 
@@ -86,7 +90,7 @@ export const SecondSlide = ({
           <span
             className={
               isFirstAnimation
-                ? "animate-lineAppear_ysmedi absolute bottom-0 left-0 h-full w-full border-r-[1px] border-r-[#666666] "
+                ? "absolute bottom-0 left-0 h-full w-full animate-lineAppear_ysmedi border-r-[1px] border-r-[#666666] "
                 : "absolute bottom-0 left-0 h-full w-full border-r-[1px] border-r-[#666666] "
             }
           ></span>
