@@ -362,7 +362,7 @@ const Mobile = () => {
         <p className="item-center flex justify-between">
           <div>
             <Image
-              src={"/img/lalaPeel/logo_black.png"}
+              src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}lalaPeel/logo_black.png`}
               alt="logo_black"
               width={123}
               height={23}
