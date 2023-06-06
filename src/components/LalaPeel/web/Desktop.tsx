@@ -231,7 +231,7 @@ const Desktop = () => {
             </div>
             <div
               ref={bubbleImageSetRefs}
-              className={`absolute bottom-0 right-0 z-[1] h-[33vw] w-[27vw] opacity-0 ${
+              className={`absolute bottom-0 right-0 z-[1] h-[35vw] w-[28vw] opacity-0 ${
                 bubbleImageInview ? " animate-smoothAppear_lala" : ""
               }`}
             >
