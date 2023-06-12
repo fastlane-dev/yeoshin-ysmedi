@@ -1,8 +1,4 @@
-import React, { useEffect, useReducer, useRef, useState } from "react";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-
-import { FreeMode, Mousewheel, Scrollbar } from "swiper";
+import React, { useEffect, useRef, useState } from "react";
 
 import { FirstMobileSlide } from "./FirstMobileSlide";
 import { SecondMobileSlide } from "./SecondMobileSlide";
