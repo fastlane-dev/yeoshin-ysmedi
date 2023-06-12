@@ -15,7 +15,6 @@ import { SixthMobildSlide } from "./SixthMobildSlide";
 import { SeventhMobildSlide } from "./SeventhMobildSlide";
 import { EighthMobildSlide } from "./EighthMobildSlide";
 
-import shoppingImgPath from "../../../../public/img/ysmedi/shopping_mall.svg";
 import { loadSrc } from "@/utils/loadSrc";
 
 const Mobile = () => {

@@ -1,5 +1,4 @@
 import Head from "next/head";
-import localFont from "next/font/local";
 import React, { useState } from "react";
 
 import { PAGE_IDENTITY, PAGE_INFOS, PAGE_URL } from "@/constants/pageInfos";
