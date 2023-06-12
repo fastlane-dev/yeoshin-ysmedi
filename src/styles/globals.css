@@ -1,4 +1,5 @@
-@import "font.css";
+@import url("https://d3gurpvil0se70.cloudfront.net/thirds/css/ysmedi/font_20230607122900.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
