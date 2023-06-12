@@ -69,7 +69,7 @@ const Mobile = () => {
       <SwiperSlide>
         <SecondMobileSlide innerHeight={innerHeight} />
       </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide style={{ height: "20dvh" }}>
         <Swiper
           className="bg-[#F9F9F9]"
           direction={"vertical"}
@@ -77,7 +77,6 @@ const Mobile = () => {
           scrollbar={true}
           mousewheel={true}
           modules={[FreeMode, Scrollbar]}
-          autoHeight={true}
         >
           <SwiperSlide>
             <ThirdMobileSlide />

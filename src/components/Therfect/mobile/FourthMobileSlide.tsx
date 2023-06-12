@@ -43,7 +43,7 @@ const Nozzle = ({
 
 export const FourthMobileSlide = () => {
   return (
-    <section className="relative top-[1dvh] w-screen bg-[#F9F9F9] text-center font-pretendard font-[700]">
+    <section className="relative w-screen bg-[#F9F9F9] text-center font-pretendard font-[700]">
       <div className=" w-screen px-[31px]">
         <div className="mb-[34px] flex justify-center gap-[12dvw]">
           <Nozzle
