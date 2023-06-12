@@ -18,10 +18,10 @@ const Mobile = () => {
             loader={loadSrc}
           />
           <div className="relative h-[120px] w-screen">
-            <div className="absolute animate-mainLogoAppear_lala font-pretendard text-[50px] font-[300] leading-[59.67px] opacity-0">
+            <div className="absolute animate-mainLogoAppear_lala font-pretendard text-[50px] font-[200] leading-[59.67px] opacity-0">
               {"4세대 필링\n라라필"}
             </div>
-            <div className="absolute animate-mainLogoDisappear_lala font-pretendard text-[50px] font-[300] leading-[59.67px]">
+            <div className="absolute animate-mainLogoDisappear_lala font-pretendard text-[50px] font-[200] leading-[59.67px]">
               {"벗기지 않고\n채워주는"}
             </div>
           </div>
@@ -77,7 +77,7 @@ const Mobile = () => {
                 {({ inView, ref }) => (
                   <p
                     ref={ref}
-                    className={`font-pretendard text-[16px] font-[400] leading-[28.8px] opacity-0 ${
+                    className={`font-pretendard text-[16px] font-[300] leading-[28.8px] opacity-0 ${
                       inView ? "animate-smoothAppear_lala" : ""
                     }`}
                   >
@@ -219,7 +219,7 @@ const Mobile = () => {
                 <p className="mb-[32px] text-[30px] font-[300] leading-[40px]">
                   LHA
                 </p>
-                <p className="font-pretendard text-[16px] font-[400] leading-[24px]">
+                <p className="font-pretendard text-[16px] font-[300] leading-[24px]">
                   {
                     "표피 세포 사이를 통과하는 작은 LHA 성분은 진피까지 깊숙이 도달하여 진피층 재생을 유도하고, 자극 없이 피부 장벽을 보호합니다."
                   }
@@ -250,7 +250,7 @@ const Mobile = () => {
                     TM
                   </span>
                 </div>
-                <p className="font-pretendard text-[16px] font-[400] leading-[24px]">
+                <p className="font-pretendard text-[16px] font-[300] leading-[24px]">
                   {
                     "특허받은 알칼리 성분 P-sol은 섬유아세포를 활성화해 콜라겐과 피부 지지 구조의 복원을 돕고, LHA와 결합하여 멜라닌을 녹여 피부 투명도를 개선해줍니다."
                   }
@@ -273,7 +273,7 @@ const Mobile = () => {
                 <p className="mb-[32px] text-[30px] font-[300] leading-[40px]">
                   Lipids
                 </p>
-                <p className="font-pretendard text-[16px] font-[400] leading-[24px]">
+                <p className="font-pretendard text-[16px] font-[300] leading-[24px]">
                   {
                     "Lipids 성분은 각질층과 비슷한 천연 피부 구조체로 손상된 피부를 보호하여 회복을 돕습니다."
                   }
@@ -325,7 +325,7 @@ const Mobile = () => {
             loader={loadSrc}
           />
         </div>
-        <article className="flex-start-column  gap-[20px] px-[39px] text-[16px] font-[400] leading-[22.4px]">
+        <article className="flex-start-column  gap-[20px] px-[39px] text-[16px] font-[300] leading-[22.4px]">
           <p className="w-full">세계 최초 4세대 필링제 LHALAPEEL 개발 </p>
           <p className="w-full">
             {

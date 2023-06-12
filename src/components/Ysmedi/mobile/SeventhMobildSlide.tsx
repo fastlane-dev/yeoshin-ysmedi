@@ -16,13 +16,11 @@ export const SeventhMobildSlide = () => {
         />
       </div>
       <div className="flex-center-column  absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] items-center gap-[21px]">
-        <div className="h-[15vw] w-[31vw]">
-          <Image
+        <div className="w-[31vw]">
+          <img
             src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}ysmedi/lala_word.png`}
             alt="lala_word"
             style={{ objectFit: "contain" }}
-            loader={loadSrc}
-            fill
           />
         </div>
         <p className="text-[5vw] font-[400] leading-[15px]">COMING SOON</p>

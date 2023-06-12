@@ -56,7 +56,7 @@ export const SecondMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
               className={`pr-[30px] font-pretendard text-[16px] font-[400] leading-[30px]`}
             >
               {
-                "식약처 허가와 논문, 그리고 12년간 검증된 고성능 고주파 열 에너지. 자사 장비를 전세계 22개국에서 12년 동안 유통하며 효과적인 고주파를 연구,개발하였습니다."
+                "식약처 허가와 논문, 그리고 12년간 검증된 고성능 고주파 열 에너지. 자사 장비를 전세계 22개국에서 12년 동안 유통하며 효과적인 고주파를 연구, 개발하였습니다."
               }
             </p>
           </div>

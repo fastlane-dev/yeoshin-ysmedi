@@ -43,7 +43,7 @@ export const FirstSlide = () => {
         </nav>
       </div>
       <div className="flex-center-column absolute bottom-[317px] left-[160px]  items-start gap-[40px]">
-        <p className="animate-smoothUpStartFirst_ysmedi whitespace-pre-wrap text-[100px] font-[100] leading-[100px] tracking-[-0.02em]  opacity-0">
+        <p className="animate-smoothUpStartFirst_ysmedi whitespace-pre-wrap text-[100px] font-[400] leading-[100px] tracking-[-0.02em]  opacity-0">
           {"Your beauty,\nour priority"}
         </p>
         <p className="animate-smoothUpStartSecond_ysmedi whitespace-pre-wrap font-pretendard text-[26px] font-[100] leading-[33px] tracking-[-0.02em]  opacity-0">
