@@ -71,7 +71,7 @@ export const FourthMobileSlide = () => {
             subTitle={"강력한 고주파\n에너지를 깊게"}
           />
         </div>
-        <div className="mb-[34px] flex justify-center gap-[15dvw]">
+        <div className="flex justify-center gap-[15dvw] pb-[34px]">
           <Nozzle
             imgClass="relative mb-[20px] w-[18dvw] h-[18dvw]"
             titleClass="mb-[0.8dvh] text-[3.5dvw] mmd:text-[3dvw]"

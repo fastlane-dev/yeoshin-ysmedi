@@ -8,8 +8,8 @@ import { loadSrc } from "@/utils/loadSrc";
 
 export const ThirdMobileSlide = () => {
   return (
-    <section className="relative w-screen bg-[#F9F9F9]">
-      <div className="mt-[5dvh] self-start pl-[30px]">
+    <section className="relative h-[100dvh] w-screen bg-[#F9F9F9]">
+      <div className="self-start pl-[30px] pt-[5dvh]">
         <div className="mb-[7.8dvh] flex items-center justify-start gap-[12px]">
           <p className="font-sans text-[20px] font-[400] leading-[23px]">
             Cartridge
@@ -59,14 +59,10 @@ export const ThirdMobileSlide = () => {
         </InviewComponent>
       </div>
       <InviewComponent animationClassName="animate-smoothUpThird_therfect">
-        <div className="absolute right-[0] top-[22dvh] h-screen w-[400px] mshs:bottom-[-33dvh] mshs:right-[-22px] mshs:w-[400px] mshm:w-[450px] mmhd:w-[500px]">
-          <Image
-            style={{ objectFit: "contain" }}
+        <div className="absolute bottom-[10dvh] right-[0] h-[168px] w-[370px]">
+          <img
             src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/big_nozzle.png`}
-            priority
-            fill
             alt="big_nozzle"
-            loader={loadSrc}
           />
         </div>
       </InviewComponent>

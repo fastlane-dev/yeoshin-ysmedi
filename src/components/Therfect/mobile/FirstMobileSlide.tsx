@@ -1,13 +1,21 @@
 import Image from "next/image";
-import React from "react";
+import React, { forwardRef } from "react";
 
 import { loadSrc } from "@/utils/loadSrc";
 
-export const FirstMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
+interface FirstMobileSlideProps {
+  innerHeight: number;
+}
+
+export const FirstMobileSlide = forwardRef<
+  HTMLDivElement,
+  FirstMobileSlideProps
+>((props, ref) => {
+  const { innerHeight } = props;
   return (
     <section
+      ref={ref}
       className="relative w-screen overflow-hidden bg-main-orange font-futura text-[80px] font-[500] text-white"
-      style={{ height: innerHeight }}
     >
       <div className="absolute right-[16dvw] top-[78px] h-[9.3dvw] w-[9.3dvw]">
         <Image
@@ -69,7 +77,7 @@ export const FirstMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
         </div>
       </div>
 
-      <div className="relative bottom-[3dvh] mx-auto h-[70dvh] w-[100dvw] msm:bottom-[-4dvh] msm:h-[70dvh] mmd:bottom-[-6dvw]">
+      <div className="relative bottom-[0] mx-auto h-[70dvh] w-[100dvw] msm:bottom-[-4dvh] msm:h-[70dvh] mmd:bottom-[-6dvw]">
         <Image
           src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/first_mobile_robot.png`}
           priority
@@ -81,4 +89,4 @@ export const FirstMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
       </div>
     </section>
   );
-};
+});
