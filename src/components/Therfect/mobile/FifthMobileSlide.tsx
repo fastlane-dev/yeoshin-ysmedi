@@ -2,6 +2,8 @@ import React from "react";
 
 import { InView } from "react-intersection-observer";
 import { InviewComponent } from "../common/InviewComponent";
+import Image from "next/image";
+import { loadSrc } from "@/utils/loadSrc";
 // bg-[url('/img/mobile_skin_structure.png')] bg-cover bg-center bg-no-repeat
 export const FifthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
   return (
@@ -10,17 +12,18 @@ export const FifthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
       style={{ height: innerHeight }}
     >
       <div className="h-screen w-screen">
-        <img
-          src={"/img/therfect/mobile_skin_structure.png"}
-          className="h-full w-screen"
+        <Image
+          src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/mobile_skin_structure.png`}
           alt="mobile_skin_structure"
+          fill
+          loader={loadSrc}
         />
       </div>
       <div
         className="absolute pl-[30px]"
         style={{ bottom: "calc(80px + env(safe-area-inset-bottom))" }}
       >
-        <div className="mb-[8.7dvh] flex items-center justify-start gap-[12px]">
+        <div className="mb-[7.8dvh] flex items-center justify-start gap-[12px]">
           <p className="font-sans text-[20px] font-[300] leading-[23px]">
             Principle
           </p>
@@ -56,7 +59,7 @@ export const FifthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
             <p className="mb-[0.1dvh] font-futura text-[30px] font-[700]">
               피부 속까지
             </p>
-            <p className="mb-[36px] font-pretendard text-[30px] font-[700]">
+            <p className="mb-[3.9dvh] font-pretendard text-[30px] font-[700]">
               고주파 에너지
             </p>
           </div>
@@ -64,7 +67,7 @@ export const FifthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
         <InviewComponent animationClassName="animate-smoothUpSecond_therfect">
           <div>
             <p
-              className={`mt-[4.3dvh] pr-[30px] font-pretendard text-[16px] font-[400] leading-[30px]`}
+              className={`pr-[30px] font-pretendard text-[16px] font-[400] leading-[30px]`}
             >
               {
                 "강력한 고주파 에너지로 조직의 응고를 일으켜 피부탄력에 도움을 줍니다.\n고주파 전달 > 피부속 깊이 고주파 전달 > 피부 저항 및 열 발생 > 피부응고 및 재생 > 피부탄력 도움"

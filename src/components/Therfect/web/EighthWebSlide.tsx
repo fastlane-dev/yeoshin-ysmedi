@@ -1,3 +1,4 @@
+import { loadSrc } from "@/utils/loadSrc";
 import Image from "next/image";
 import React from "react";
 
@@ -5,7 +6,7 @@ export const EighthWebSlide = () => {
   return (
     <footer className=" relative h-screen w-screen bg-white font-faktumTest font-[400]">
       <div>
-        <div className="mx-[150px] mb-[72px] pt-[112px] font-pretendard text-[20px] font-[200] leading-[36px] text-[#555555]">
+        <div className="mx-[150px] mb-[72px] pt-[112px] font-pretendard text-[20px] font-[300] leading-[36px] text-[#555555]">
           <p className="mb-[36px]">{"지금 바로 병원에서 만나보세요."}</p>
           <p>
             {
@@ -31,11 +32,12 @@ export const EighthWebSlide = () => {
         </div>
         <div className="h-full">
           <Image
-            src={"/img/therfect/ys_medi_logo.svg"}
+            src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/ys_medi_logo.svg`}
             alt="logo"
             width={221}
             height={41}
             priority
+            loader={loadSrc}
           />
         </div>
       </div>

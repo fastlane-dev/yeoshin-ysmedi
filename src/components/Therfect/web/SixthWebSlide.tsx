@@ -1,8 +1,8 @@
 import React from "react";
 
-import ntts from "../../../../public/img/therfect/ntts.svg";
 import Image from "next/image";
 import { InviewComponent } from "../common/InviewComponent";
+import { loadSrc } from "@/utils/loadSrc";
 
 export const SixthWebSlide = () => {
   return (
@@ -10,11 +10,17 @@ export const SixthWebSlide = () => {
       <div className="absolute  left-[50%] top-[50%] h-fit w-fit -translate-x-[46%] -translate-y-[55%]">
         <InviewComponent animationClassName={"animate-smoothUpFirst_therfect"}>
           <div className="relative mx-auto h-[13dvh] sm:w-[29dvw] md:w-[20dvw]">
-            <Image fill src={ntts} alt="ntts" priority />
+            <Image
+              fill
+              src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/ntts_new.svg`}
+              loader={loadSrc}
+              alt="ntts_new"
+              priority
+            />
           </div>
         </InviewComponent>
         <InviewComponent animationClassName={"animate-smoothUpSecond_therfect"}>
-          <p className="relative left-[-9px] text-center font-pretendard font-[400] sm:text-[2dvw] sm:leading-[4dvw] md:text-[1.3dvw] md:leading-[2dvw]">
+          <p className="relative left-[-9px] text-center font-pretendard font-[400] leading-[46px] sm:text-[2dvw] md:text-[1.3dvw]">
             {"심부열을 효과적으로 전달하는 자체\n개발한 독특한 열전달 구조"}
           </p>
         </InviewComponent>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { InviewComponent } from "../common/InviewComponent";
+import { loadSrc } from "@/utils/loadSrc";
 
 export const FourthWebSlide = () => {
   return (
@@ -16,8 +17,9 @@ export const FourthWebSlide = () => {
               33dvw"
                 fill
                 priority
-                src="/img/therfect/first_nozzle.png"
+                src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/first_nozzle.png`}
                 alt="first_nozzle"
+                loader={loadSrc}
               />
             </div>
             <InviewComponent animationClassName="animate-smoothUpSecond_therfect">
@@ -43,8 +45,9 @@ export const FourthWebSlide = () => {
               33dvw"
                   fill
                   priority
-                  src="/img/therfect/second_nozzle.png"
+                  src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/second_nozzle.png`}
                   alt="second_nozzle"
+                  loader={loadSrc}
                 />
               </div>
               <InviewComponent
@@ -73,8 +76,9 @@ export const FourthWebSlide = () => {
               33dvw"
                   fill
                   priority
-                  src="/img/therfect/third_nozzle.png"
+                  src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/third_nozzle.png`}
                   alt="third_nozzle"
+                  loader={loadSrc}
                 />
               </div>
               <InviewComponent
@@ -104,8 +108,9 @@ export const FourthWebSlide = () => {
               33dvw"
                 fill
                 priority
-                src="/img/therfect/fourth_nozzle.png"
+                src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/fourth_nozzle.png`}
                 alt="first_nozzle"
+                loader={loadSrc}
               />
             </div>
             <InviewComponent
@@ -132,8 +137,9 @@ export const FourthWebSlide = () => {
               33dvw"
                 fill
                 priority
-                src="/img/therfect/fifth_nozzle.png"
+                src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/fifth_nozzle.png`}
                 alt="first_nozzle"
+                loader={loadSrc}
               />
             </div>
             <InviewComponent

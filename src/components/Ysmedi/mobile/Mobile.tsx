@@ -15,7 +15,7 @@ import { SixthMobildSlide } from "./SixthMobildSlide";
 import { SeventhMobildSlide } from "./SeventhMobildSlide";
 import { EighthMobildSlide } from "./EighthMobildSlide";
 
-import shoppingImgPath from "../../../../public/img/ysmedi/shopping_mall.svg";
+import { loadSrc } from "@/utils/loadSrc";
 
 const Mobile = () => {
   const [scrollSectionHeight, setScrollSectionHeight] = useState(0);
@@ -76,10 +76,11 @@ const Mobile = () => {
       <div className="fixed bottom-[22px] right-[22px] z-10 cursor-pointer">
         <a href="https://mall.ysmedi.kr/" target="_blank">
           <Image
-            src={shoppingImgPath}
+            src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}ysmedi/shopping_mall.svg`}
             alt="shopping_mall"
             width={179}
             height={36}
+            loader={loadSrc}
           />
         </a>
       </div>

@@ -1,20 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "d3gurpvil0se70.cloudfront.net",
-        port: "",
-        pathname: "/thirds/**",
-      },
-    ],
+    domains: ["d3gurpvil0se70.cloudfront.net"],
   },
-  reactStrictMode: true,
+
   async headers() {
     return [
       {
-        // matching all API routes
         source: "/",
         headers: [
           { key: "Access-Control-Allow-Credentials", value: "true" },
@@ -32,6 +24,8 @@ const nextConfig = {
       },
     ];
   },
+  reactStrictMode: false,
+  swcMinify: true,
 };
 
 module.exports = nextConfig;

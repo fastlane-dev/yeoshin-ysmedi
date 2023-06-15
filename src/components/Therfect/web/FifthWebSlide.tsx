@@ -2,13 +2,23 @@ import React from "react";
 
 import { InView } from "react-intersection-observer";
 import { InviewComponent } from "../common/InviewComponent";
+import Image from "next/image";
+import { loadSrc } from "@/utils/loadSrc";
 
 export const FifthWebSlide = () => {
   return (
-    <section className="relative h-screen w-screen overflow-hidden bg-white bg-[url('/img/therfect/skin_structure.png')] bg-cover bg-center bg-no-repeat font-pretendard font-[600] text-white">
+    <section className="relative h-screen w-screen overflow-hidden bg-white bg-no-repeat font-pretendard font-[600] text-white">
+      <div className="absolute h-screen w-screen">
+        <Image
+          src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/skin_structure.png`}
+          alt="mobile_skin_structure"
+          fill
+          loader={loadSrc}
+        />
+      </div>
       <div className="pl-[7dvw] pt-[15dvh]">
         <div className="flex-center justify-start gap-[20px]">
-          <p className="font-sans text-[30px] font-[400] leading-[34.5px]">
+          <p className="z-10 font-sans text-[30px] font-[400] leading-[34.5px]">
             Principle
           </p>
           <InView triggerOnce>
@@ -39,7 +49,7 @@ export const FifthWebSlide = () => {
           </InView>
         </div>
         <InviewComponent animationClassName={"animate-smoothUpFirst_therfect"}>
-          <p className="text-shadow mt-[106px] text-[4dvw] leading-[6.5dvh] md:leading-[8.5dvh] xlg:text-[100px] xlg:leading-[120px]">
+          <p className="text-shadow mt-[110px] text-[4dvw] leading-[6.5dvh] md:leading-[8.5dvh] xlg:text-[100px] xlg:leading-[120px]">
             {"피부 속까지\n고주파 에너지"}
           </p>
         </InviewComponent>

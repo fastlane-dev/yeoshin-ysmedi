@@ -1,9 +1,10 @@
+import Image from "next/image";
 import React from "react";
 // nineth mobile
 export const NinethMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
   return (
     <footer
-      className="h-screen w-screen border-t-[1px] border-[#C0C0C0] bg-[white] px-[30px] pt-[60px]"
+      className="h-screen w-screen bg-[white] px-[30px] pt-[60px]"
       style={{ height: innerHeight }}
     >
       <div className="relative pb-[60px] text-[10px] font-[300] leading-[18px] text-[#555555]">
@@ -23,7 +24,12 @@ export const NinethMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
       <div className="mt-[64px]  font-[400]">
         <p className="item-center flex justify-between">
           <div className="h-[23px] w-[123px]">
-            <img src={"/img/therfect/ys_medi_logo.svg"} alt="ys_medi_logo" />
+            <Image
+              src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/ys_medi_logo.svg`}
+              alt="ys_medi_logo"
+              height={23}
+              width={123}
+            />
           </div>
           <div className="flex-center gap-[7px] font-faktumTest text-[16px] leading-[20px] tracking-[0.02em]">
             <div className="text-main-orange">KR</div>
@@ -31,13 +37,13 @@ export const NinethMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
             <div className="text-[#CCCCCC]">EN</div>
           </div>
         </p>
-        <p className="flex-start-column mt-[106px] gap-[24px] font-faktumTest text-[12px] leading-[16.07px] text-[#000000]">
-          <div className="flex-start-column gap-[6px] tracking-[0.04em]">
+        <p className="mt-[106px] font-faktumTest text-[12px] leading-[16.07px] text-[#000000]">
+          <div className="tracking-[0.04em]">
             <p className="mb-[6px]">TEL. 070-4858-4686</p>
             <p className="mb-[24px]">Email. beauty@ysmedi.kr</p>
           </div>
 
-          <div className="flex-start-column gap-[6px]">
+          <div>
             <p className="mb-[6px] font-pretendard font-[300]">
               경기도 용인시 기흥구 동백중앙로 191, 8층 A8323호
             </p>

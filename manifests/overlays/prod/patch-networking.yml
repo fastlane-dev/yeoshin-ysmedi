@@ -8,6 +8,8 @@ spec:
   hosts:
     - "www.ysmedi.kr"
     - "www.lhalala.kr"
+    - "www.therfect.com"
+    - "therfect.com"
   http:
     - timeout: 15s
       route:

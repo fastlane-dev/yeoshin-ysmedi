@@ -1,127 +1,16 @@
 import Head from "next/head";
-import localFont from "next/font/local";
-import React, { useState } from "react";
 
 import { PAGE_IDENTITY, PAGE_INFOS, PAGE_URL } from "@/constants/pageInfos";
 import { GetServerSideProps } from "next";
 
 type valueOf<T> = T[keyof T];
 
-const FaktumTest = localFont({
-  variable: "--font-faktumTest",
-  src: [
-    {
-      path: "../../public/fonts/FaktumTest/Faktum_Test_Thin.otf",
-      weight: "100",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/FaktumTest/Faktum_Test_Light.otf",
-      weight: "200",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/FaktumTest/Faktum_Test_Regular.otf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/FaktumTest/Faktum_Test_Bold.otf",
-      weight: "700",
-      style: "normal",
-    },
-  ],
-});
-const Futura = localFont({
-  variable: "--font-futura",
-  src: [
-    {
-      path: "../../public/fonts/Futura/Futura-Light.ttf",
-      weight: "100",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/Futura/Futura-ExtraLight.ttf",
-      weight: "200",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/Futura/Futura-Medium.ttf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/Futura/Futura-SemiBold.ttf",
-      weight: "700",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/Futura/Futura-Bold.ttf",
-      weight: "800",
-      style: "normal",
-    },
-  ],
-});
-
-const Pretendard = localFont({
-  variable: "--font-pretendard",
-  src: [
-    {
-      path: "../../public/fonts/Pretendard/Pretendard-Thin.woff",
-      weight: "100",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/Pretendard/Pretendard-ExtraLight.woff",
-      weight: "200",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/Pretendard/Pretendard-Light.woff",
-      weight: "300",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/Pretendard/Pretendard-Regular.woff",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/Pretendard/Pretendard-Medium.woff",
-      weight: "500",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/Pretendard/Pretendard-SemiBold.woff",
-      weight: "600",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/Pretendard/Pretendard-Bold.woff",
-      weight: "700",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/Pretendard/Pretendard-ExtraBold.woff",
-      weight: "800",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/Pretendard/Pretendard-Black.woff",
-      weight: "900",
-      style: "normal",
-    },
-  ],
-});
-
 export default function Home({
   pageIdentity,
 }: {
   pageIdentity: valueOf<typeof PAGE_IDENTITY>;
 }) {
-  const [renderedPageInfo] = useState(PAGE_INFOS[pageIdentity]);
-
-  const { Component, faviconPath, title } = PAGE_INFOS[PAGE_IDENTITY.YS_MEDI];
+  const { Component, faviconPath, title } = PAGE_INFOS[pageIdentity];
 
   return (
     <>
@@ -131,9 +20,7 @@ export default function Home({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href={faviconPath} />
       </Head>
-      <div
-        className={`whitespace-pre-wrap ${FaktumTest.variable} ${Pretendard.variable} ${Futura.variable}`}
-      >
+      <div className={`whitespace-pre-wrap`}>
         <Component />
       </div>
     </>

@@ -21,8 +21,8 @@ export const SeventhMobileSlide = ({
       <div className="absolute  left-[50%] top-[50%] h-[5.3dvh] w-[79dvw] -translate-x-[49%] -translate-y-[355%] font-[400]">
         <InviewComponent animationClassName={"animate-smoothUpFirst_therfect"}>
           <div className="flex-center-column mb-[20px]">
-            <div className="font-sans text-[45px] font-[300] leading-[40px]">
-              Active
+            <div className="font-sans text-[45px] font-[400] leading-[40px]">
+              ACTIVE
             </div>
             <div className="text-[20px] leading-[40px]">온도 컨트롤</div>
           </div>
@@ -33,7 +33,7 @@ export const SeventhMobileSlide = ({
           </p>
         </InviewComponent>
         <InviewComponent animationClassName={"animate-smoothUpThird_therfect"}>
-          <p className="relative font-pretendard text-[13px] font-[400] leading-[30px] text-[#696969] mshs:leading-[24px]">
+          <p className="relative text-center font-pretendard text-[13px] font-[400] leading-[30px] text-[#696969] mshs:leading-[24px]">
             {
               "부드럽고 강력한 4MHz 고주파를 롱펄스 패턴으로 조사하여 통증은 줄이고, 즉각적으로 피부 온도를 측정하여 화상의 위험을 줄였습니다."
             }

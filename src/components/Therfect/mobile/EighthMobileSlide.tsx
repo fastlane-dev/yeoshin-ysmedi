@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
-import table from "../../../../public/img/therfect/table.svg";
+import { loadSrc } from "@/utils/loadSrc";
 
 export const EighthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
   const [mounted, setMounted] = useState(false);
@@ -22,15 +22,22 @@ export const EighthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
             priority
             width={122}
             height={26}
-            src="img/therfect/therfect_logo_black.svg"
+            src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/therfect_logo_black.svg`}
             alt="therfect_logo_black"
+            loader={loadSrc}
           />
         </div>
       </div>
       {isSafari ? (
         <div className="relative flex items-start">
           <div className="h-[89dvw] w-[100dvw]">
-            <Image src={table} alt="table" className="object-contain" fill />
+            <Image
+              src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/table.svg`}
+              alt="table"
+              className="object-contain"
+              fill
+              loader={loadSrc}
+            />
           </div>
         </div>
       ) : (

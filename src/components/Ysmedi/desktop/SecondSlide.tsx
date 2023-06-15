@@ -1,3 +1,6 @@
+import { loadSrc } from "@/utils/loadSrc";
+import Image from "next/image";
+
 export const SecondSlide = ({
   isFirstAnimation,
 }: {
@@ -34,21 +37,23 @@ export const SecondSlide = ({
           <span
             className={
               isFirstAnimation
-                ? "animate-lineAppear_ysmedi absolute bottom-0 left-0 h-full w-full border-r-[1px] border-r-[#666666]"
+                ? "absolute bottom-0 left-0 h-full w-full animate-lineAppear_ysmedi border-r-[1px] border-r-[#666666]"
                 : "absolute bottom-0 left-0 h-full w-full border-r-[1px] border-r-[#666666] "
             }
           ></span>
           <div
             className={
               isFirstAnimation
-                ? "w-[7vw] animate-moveFromDownToUpStartAfter0_9s_ysmedi opacity-0"
-                : "w-[7vw]"
+                ? "h-[7vw] w-[7vw] animate-moveFromDownToUpStartAfter0_9s_ysmedi opacity-0"
+                : "h-[7vw] w-[7vw]"
             }
           >
-            <img
-              src={"/img/ysmedi/reliability_icon.png"}
+            <Image
+              src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}ysmedi/reliability_icon.png`}
               alt="reliability_icon"
               style={{ objectFit: "contain" }}
+              fill
+              loader={loadSrc}
             />
           </div>
 
@@ -86,21 +91,23 @@ export const SecondSlide = ({
           <span
             className={
               isFirstAnimation
-                ? "animate-lineAppear_ysmedi absolute bottom-0 left-0 h-full w-full border-r-[1px] border-r-[#666666] "
+                ? "absolute bottom-0 left-0 h-full w-full animate-lineAppear_ysmedi border-r-[1px] border-r-[#666666] "
                 : "absolute bottom-0 left-0 h-full w-full border-r-[1px] border-r-[#666666] "
             }
           ></span>
           <div
             className={
               isFirstAnimation
-                ? "w-[4vw] animate-moveFromDownToUpStartAfter0_9s_ysmedi opacity-0"
-                : "w-[4vw]"
+                ? "h-[7vw] w-[4vw] animate-moveFromDownToUpStartAfter0_9s_ysmedi opacity-0"
+                : "h-[7vw] w-[4vw]"
             }
           >
-            <img
-              src={"/img/ysmedi/collaboration_icon.png"}
+            <Image
+              src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}ysmedi/collaboration_icon.png`}
               alt="collaboration_icon"
               style={{ objectFit: "contain" }}
+              fill
+              loader={loadSrc}
             />
           </div>
 
@@ -136,14 +143,16 @@ export const SecondSlide = ({
           <div
             className={
               isFirstAnimation
-                ? "w-[6vw] animate-moveFromDownToUpStartAfter0_9s_ysmedi opacity-0"
-                : "w-[6vw]"
+                ? "h-[6vw] w-[6vw] animate-moveFromDownToUpStartAfter0_9s_ysmedi opacity-0"
+                : "h-[6vw] w-[6vw]"
             }
           >
-            <img
-              src={"/img/ysmedi/transparency_icon.png"}
+            <Image
+              src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}ysmedi/transparency_icon.png`}
               alt="transparency_icon"
               style={{ objectFit: "contain" }}
+              fill
+              loader={loadSrc}
             />
           </div>
 

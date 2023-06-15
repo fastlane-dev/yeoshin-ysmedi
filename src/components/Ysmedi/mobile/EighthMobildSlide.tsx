@@ -1,3 +1,4 @@
+import { loadSrc } from "@/utils/loadSrc";
 import Image from "next/image";
 import React from "react";
 
@@ -7,11 +8,12 @@ export const EighthMobildSlide = () => {
       <div className="flex w-full justify-between px-[22px] pt-[64px]">
         <div>
           <Image
-            src={"/img/ysmedi/logo.png"}
+            src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}ysmedi/logo.png`}
             alt="logo"
             width={123}
             height={23}
             priority
+            loader={loadSrc}
           />
         </div>
         <div className="flex gap-[7px] text-[16px]">
