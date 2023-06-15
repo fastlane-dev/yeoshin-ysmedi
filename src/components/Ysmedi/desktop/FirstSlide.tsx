@@ -36,9 +36,9 @@ export const FirstSlide = () => {
             />
           </a>
           <div className="flex-center gap-[10px] text-[20px] font-[200]">
-            <span>KR</span>
+            {/* <span>KR</span>
             <span className="text-[#888888]">|</span>
-            <span className="text-[#888888]">EN</span>
+            <span className="text-[#888888]">EN</span> */}
           </div>
         </nav>
       </div>
