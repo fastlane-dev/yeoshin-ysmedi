@@ -14,6 +14,7 @@ import { changeBodyBackground } from "../common/changeBodyBackground";
 const Mobile = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const firstRef = useRef<HTMLDivElement>(null);
+  const [childrenEle, setChildrenEle] = useState<HTMLCollection>();
 
   useEffect(() => {
     changeBodyBackground("#f68e0f");
@@ -24,15 +25,15 @@ const Mobile = () => {
     setInnerHeight(window.innerHeight);
   }, []);
 
-  console.log(containerRef.current);
+  useEffect(() => {
+    setChildrenEle(containerRef?.current?.children);
+  }, [containerRef]);
 
   return (
     <div
       ref={containerRef}
       className="overflow-auto"
-      onScroll={(event) => {
-        console.log(event);
-      }}
+      onScroll={(event) => {}}
       style={{
         height: innerHeight,
       }}
