@@ -13,7 +13,7 @@ export default function Home({
 }) {
   const [renderedPageInfo] = useState(PAGE_INFOS[pageIdentity]);
 
-  const { Component, faviconPath, title } = PAGE_INFOS[PAGE_IDENTITY.THERFECT];
+  const { Component, faviconPath, title } = renderedPageInfo;
 
   return (
     <>
