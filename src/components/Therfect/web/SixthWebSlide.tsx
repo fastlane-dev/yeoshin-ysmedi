@@ -2,6 +2,7 @@ import React from "react";
 
 import Image from "next/image";
 import { InviewComponent } from "../common/InviewComponent";
+import { loadSrc } from "@/utils/loadSrc";
 
 export const SixthWebSlide = () => {
   return (
@@ -9,7 +10,13 @@ export const SixthWebSlide = () => {
       <div className="absolute  left-[50%] top-[50%] h-fit w-fit -translate-x-[46%] -translate-y-[55%]">
         <InviewComponent animationClassName={"animate-smoothUpFirst_therfect"}>
           <div className="relative mx-auto h-[13dvh] sm:w-[29dvw] md:w-[20dvw]">
-            <Image fill src={"img/therfect/ntts_new.svg"} alt="ntts" priority />
+            <Image
+              fill
+              src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/ntts.svg`}
+              loader={loadSrc}
+              alt="ntts"
+              priority
+            />
           </div>
         </InviewComponent>
         <InviewComponent animationClassName={"animate-smoothUpSecond_therfect"}>
