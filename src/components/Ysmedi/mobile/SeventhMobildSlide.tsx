@@ -1,18 +1,13 @@
-import { loadSrc } from "@/utils/loadSrc";
-import Image from "next/image";
 import React from "react";
 
 export const SeventhMobildSlide = () => {
   return (
     <section className="flex-center relative h-screen w-screen items-end font-faktumTest tracking-[-0.02em] text-white">
       <div className="absolute h-full w-full">
-        <Image
+        <img
           src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}ysmedi/lala_background.png`}
           alt="lala_background"
-          fill
-          style={{ objectFit: "cover" }}
-          priority
-          loader={loadSrc}
+          className="absolute bottom-0 h-screen"
         />
       </div>
       <div className="flex-center-column  absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] items-center gap-[21px]">

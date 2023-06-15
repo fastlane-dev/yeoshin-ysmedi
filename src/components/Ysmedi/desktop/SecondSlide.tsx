@@ -1,6 +1,3 @@
-import { loadSrc } from "@/utils/loadSrc";
-import Image from "next/image";
-
 export const SecondSlide = ({
   isFirstAnimation,
 }: {
@@ -48,12 +45,10 @@ export const SecondSlide = ({
                 : "h-[7vw] w-[7vw]"
             }
           >
-            <Image
+            <img
               src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}ysmedi/reliability_icon.png`}
               alt="reliability_icon"
-              style={{ objectFit: "contain" }}
-              fill
-              loader={loadSrc}
+              className="object-contain"
             />
           </div>
 
@@ -102,12 +97,10 @@ export const SecondSlide = ({
                 : "h-[7vw] w-[4vw]"
             }
           >
-            <Image
+            <img
               src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}ysmedi/collaboration_icon.png`}
               alt="collaboration_icon"
-              style={{ objectFit: "contain" }}
-              fill
-              loader={loadSrc}
+              className="object-contain"
             />
           </div>
 
@@ -147,12 +140,10 @@ export const SecondSlide = ({
                 : "h-[6vw] w-[6vw]"
             }
           >
-            <Image
+            <img
               src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}ysmedi/transparency_icon.png`}
               alt="transparency_icon"
-              style={{ objectFit: "contain" }}
-              fill
-              loader={loadSrc}
+              className="object-contain"
             />
           </div>
 

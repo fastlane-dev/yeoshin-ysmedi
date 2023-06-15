@@ -1,38 +1,29 @@
-import { loadSrc } from "@/utils/loadSrc";
-import Image from "next/image";
 import React from "react";
 
 export const FirstSlide = () => {
   return (
     <section className="relative h-screen w-screen font-faktumTest text-[30px] text-white">
       <div className="absolute bottom-0 left-[373px] z-[-1] h-[60dvw] w-[85dvw] opacity-[0.7]">
-        <Image
+        <img
           src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}ysmedi/planet.png`}
           alt="planet"
-          priority
           className="object-contain"
-          fill
-          loader={loadSrc}
         />
       </div>
       <div className="flex-center w-full justify-between px-[9vw] pt-[80px]">
         <div>
-          <Image
+          <img
             src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}ysmedi/logo.png`}
             alt="logo"
-            width={189}
-            height={35}
-            loader={loadSrc}
+            className="h-[35px] w-[189px]"
           />
         </div>
         <nav className="flex-center cursor-pointer gap-[41px]">
           <a href="https://mall.ysmedi.kr/" target="_blank">
-            <Image
+            <img
               src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}ysmedi/shopping_mall.svg`}
               alt="shopping_mall"
-              width={179}
-              height={36}
-              loader={loadSrc}
+              className="h-[36px] w-[179px]"
             />
           </a>
           <div className="flex-center gap-[10px] text-[20px] font-[200]">

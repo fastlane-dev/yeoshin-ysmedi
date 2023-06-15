@@ -1,12 +1,9 @@
-import { loadSrc } from "@/utils/loadSrc";
-import Image from "next/image";
 import React, { useCallback, useEffect, useRef, useState } from "react";
 
 import { InView, useInView } from "react-intersection-observer";
 
 const Desktop = () => {
   const [cardBubbleContainerHeight, setCardBubbleContainerHeight] = useState(0);
-  const [innerWidth, setInnerWidth] = useState(0);
 
   const cardImageRef = useRef<HTMLDivElement>();
   const { ref: cardImageInViewRef, inView: cardImageInview } = useInView({
@@ -39,7 +36,6 @@ const Desktop = () => {
   );
 
   useEffect(() => {
-    setInnerWidth(window.innerWidth);
     setCardBubbleContainerHeight(
       cardBubbleContainerRef.current
         ? (cardBubbleContainerRef.current?.clientWidth / 100) * 70
@@ -72,12 +68,10 @@ const Desktop = () => {
       {/* first section - main */}
       <article>
         <div className="flex-center justify-between  pl-[8vw] pr-[10vw] pt-[60px]">
-          <Image
+          <img
             alt="logo"
             src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}lalaPeel/logo.png`}
-            width={137}
-            height={37}
-            loader={loadSrc}
+            className="h-[37px] w-[137px]"
           />
           <div className="flex-center gap-[10px] text-[20px] font-[400] leading-[24.68px] tracking-[0.02em]">
             {/* <div>KR</div>
@@ -99,12 +93,9 @@ const Desktop = () => {
             </div>
           </div>
           <div className="right-[12vw] top-0 z-[1] inline-block h-[49vw] w-[49vw] animate-imageAppear_lala opacity-0">
-            <Image
+            <img
               alt="main_image"
               src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}lalaPeel/main_image.png`}
-              fill
-              priority
-              loader={loadSrc}
             />
           </div>
 
@@ -211,7 +202,7 @@ const Desktop = () => {
         <div className="relative">
           <div
             ref={cardBubbleContainerRef}
-            className="relative mx-[19vw] mt-[100px]"
+            className="relative mx-[18vw] mt-[100px]"
             style={{ height: `${cardBubbleContainerHeight}px` }}
           >
             <div
@@ -220,13 +211,10 @@ const Desktop = () => {
                 cardImageInview ? " animate-smoothAppear_lala" : ""
               }`}
             >
-              <Image
-                style={{ objectFit: "contain" }}
+              <img
+                className="object-contain"
                 src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}lalaPeel/lala_card.png`}
                 alt="card"
-                fill
-                priority
-                loader={loadSrc}
               />
             </div>
             <div
@@ -235,13 +223,10 @@ const Desktop = () => {
                 bubbleImageInview ? " animate-smoothAppear_lala" : ""
               }`}
             >
-              <Image
-                style={{ objectFit: "contain" }}
+              <img
+                className="object-contain"
                 src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}lalaPeel/lala_bubble.png`}
                 alt="bubble"
-                fill
-                priority
-                loader={loadSrc}
               />
             </div>
           </div>
@@ -362,11 +347,9 @@ const Desktop = () => {
                   inView ? "animate-logoSpin_lala" : ""
                 }`}
               >
-                <Image
+                <img
                   src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}lalaPeel/lala_spinning_logo.png`}
                   alt="lala_spinning_logo"
-                  fill
-                  loader={loadSrc}
                 />
               </div>
               <InView triggerOnce threshold={0.4}>
@@ -388,12 +371,10 @@ const Desktop = () => {
       <section className="mt-[10px] h-fit font-pretendard">
         <div className="flex-center gap-[4vw]">
           <div className="relative h-[26vw] w-[26vw] rounded-[37px]">
-            <Image
+            <img
               className="object-contain"
               src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}lalaPeel/lala_last.png`}
               alt="lala_last"
-              fill
-              loader={loadSrc}
             />
           </div>
           <article className="flex-start-column gap-[2vw] text-[2vw] font-[300] leading-[50px]">
@@ -445,12 +426,10 @@ const Desktop = () => {
             </div>
           </div>
           <div className="relative h-[41px] w-[221px]">
-            <Image
+            <img
               className="object-contain"
               src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}lalaPeel/logo_black.png`}
               alt="logo_black"
-              fill
-              loader={loadSrc}
             />
           </div>
         </div>

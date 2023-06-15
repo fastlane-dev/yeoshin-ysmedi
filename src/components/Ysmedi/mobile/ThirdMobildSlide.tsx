@@ -1,5 +1,3 @@
-import { loadSrc } from "@/utils/loadSrc";
-import Image from "next/image";
 import React from "react";
 import { InView } from "react-intersection-observer";
 
@@ -23,16 +21,14 @@ export const ThirdMobildSlide = () => {
               <div
                 className={
                   inView
-                    ? "mb-[5vh] h-[33vw] w-[33vw] animate-mobileIconMoveFromDownToUp_ysmedi justify-self-center opacity-0"
+                    ? "mb-[4.5vh] h-[33vw] w-[33vw] animate-mobileIconMoveFromDownToUp_ysmedi justify-self-center opacity-0"
                     : "h-[7vw] w-[7vw]"
                 }
               >
-                <Image
+                <img
                   src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}ysmedi/reliability_icon.png`}
                   alt="reliability_icon"
-                  style={{ objectFit: "contain" }}
-                  loader={loadSrc}
-                  fill
+                  className="object-contain"
                 />
               </div>
 

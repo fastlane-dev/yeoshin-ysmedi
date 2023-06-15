@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 
-import Image from "next/image";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { FreeMode, Scrollbar } from "swiper";
@@ -14,8 +12,6 @@ import { FifthMobildSlide } from "./FifthMobildSlide";
 import { SixthMobildSlide } from "./SixthMobildSlide";
 import { SeventhMobildSlide } from "./SeventhMobildSlide";
 import { EighthMobildSlide } from "./EighthMobildSlide";
-
-import { loadSrc } from "@/utils/loadSrc";
 
 const Mobile = () => {
   const [scrollSectionHeight, setScrollSectionHeight] = useState(0);
@@ -75,12 +71,10 @@ const Mobile = () => {
     <>
       <div className="fixed bottom-[22px] right-[22px] z-10 cursor-pointer">
         <a href="https://mall.ysmedi.kr/" target="_blank">
-          <Image
+          <img
             src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}ysmedi/shopping_mall.svg`}
             alt="shopping_mall"
-            width={179}
-            height={36}
-            loader={loadSrc}
+            className="h-[36px] w-[179px]"
           />
         </a>
       </div>

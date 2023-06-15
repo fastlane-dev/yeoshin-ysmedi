@@ -1,6 +1,4 @@
 import { calculateTopValue } from "@/utils/calculateTopValue";
-import { loadSrc } from "@/utils/loadSrc";
-import Image from "next/image";
 import React from "react";
 import { InView } from "react-intersection-observer";
 
@@ -10,12 +8,10 @@ const Mobile = () => {
       {/* first section - main */}
       <article>
         <div className="flex-start-column gap-[69px] pl-[31px] pt-[44px]">
-          <Image
+          <img
             alt="logo"
             src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}lalaPeel/logo.png`}
-            width={67}
-            height={17}
-            loader={loadSrc}
+            className="h-[17px] w-[67px]"
           />
           <div className="relative h-[120px] w-screen">
             <div className="absolute animate-mainLogoAppear_lala font-pretendard text-[50px] font-[200] leading-[59.67px] opacity-0">
@@ -31,13 +27,10 @@ const Mobile = () => {
             LHALHA PEEL
           </div>
           <div className="absolute right-[calc(0%-29px)] top-0 z-[1] inline-block animate-imageAppear_lala">
-            <Image
-              priority
+            <img
               alt="main_image"
               src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}lalaPeel/main_image.png`}
-              width={328}
-              height={328}
-              loader={loadSrc}
+              className="h-[328px] w-[328px]"
             />
           </div>
           <div className="absolute top-[85%] w-[100%] origin-left -rotate-[9deg] animate-lineAppear_lala border-b-[1px] border-[#FE3B1F]"></div>
@@ -145,11 +138,9 @@ const Mobile = () => {
                   inView ? "animate-smoothAppear_lala" : ""
                 } relative left-[30px] h-[210px]  w-[280px] opacity-0`}
               >
-                <Image
+                <img
                   src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}lalaPeel/lala_card.png`}
                   alt="card"
-                  fill
-                  loader={loadSrc}
                 />
               </div>
             )}
@@ -163,11 +154,9 @@ const Mobile = () => {
                     inView ? "animate-smoothAppear_lala" : ""
                   } absolute right-[30px] top-[48px] z-[1] h-[264px] w-[210px]`}
                 >
-                  <Image
+                  <img
                     src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}lalaPeel/lala_bubble.png`}
                     alt="bubble"
-                    fill
-                    loader={loadSrc}
                   />
                 </div>
               )}
@@ -294,12 +283,10 @@ const Mobile = () => {
                   inView ? "animate-mobileLogoSpin_lala" : ""
                 } absolute right-[30px] z-10 -rotate-45`}
               >
-                <Image
+                <img
                   src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}lalaPeel/lala_spinning_logo.png`}
                   alt="lala_spinning_logo"
-                  width={210}
-                  height={216}
-                  loader={loadSrc}
+                  className="h-[216px] w-[210px]"
                 />
               </div>
               <div
@@ -316,13 +303,10 @@ const Mobile = () => {
       {/* fifth section - news title */}
       <section className="mt-[60px] h-fit font-pretendard">
         <div className="flex-center mb-[32px]">
-          <Image
-            className="rounded-[37px]"
+          <img
             src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}lalaPeel/lala_last.png`}
             alt="lala_last"
-            width={315}
-            height={315}
-            loader={loadSrc}
+            className="h-[315px] w-[315px] rounded-[37px]"
           />
         </div>
         <article className="flex-start-column  gap-[20px] px-[39px] text-[16px] font-[300] leading-[22.4px]">
@@ -361,12 +345,10 @@ const Mobile = () => {
       <footer className="mt-[60px] h-[418px] border-t-[1px] border-[#C0C0C0] px-[30px] pt-[65px]">
         <p className="item-center flex justify-between">
           <div>
-            <Image
+            <img
               src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}lalaPeel/logo_black.png`}
               alt="logo_black"
-              width={123}
-              height={23}
-              loader={loadSrc}
+              className="h-[23px] w-[123px]"
             />
           </div>
           <div className="flex-center gap-[6px] text-[16px] font-[400] leading-[20px] tracking-[0.02em]">
