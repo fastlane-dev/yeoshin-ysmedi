@@ -1,4 +1,5 @@
 const winston = require("winston");
+
 const levels = {
   error: 0,
   warn: 1,
@@ -34,17 +35,17 @@ const format = winston.format.combine(
 const transports = [
   new winston.transports.Console(),
   new winston.transports.File({
-    filename: "/tmp/winston/error.log",
+    filename: "error.log",
     level: "error",
   }),
-  new winston.transports.File({ filename: "/tmp/winston/all.log" }),
+  new winston.transports.File({ filename: "all.log" }),
 ];
 
-const Logger = winston.createLogger({
+const customorLogger = winston.createLogger({
   level: level(),
   levels,
   format,
   transports,
 });
 
-export { Logger };
+export { customorLogger };
