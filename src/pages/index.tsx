@@ -3,7 +3,7 @@ import Head from "next/head";
 import { PAGE_IDENTITY, PAGE_INFOS } from "@/constants/pageInfos";
 import { GetServerSideProps } from "next";
 
-import { Logger } from "../logger/logger";
+import { customorLogger } from "../logger/logger";
 
 type valueOf<T> = T[keyof T];
 
@@ -13,7 +13,6 @@ export default function Home({
   pageIdentity: valueOf<typeof PAGE_IDENTITY>;
 }) {
   const { Component, faviconPath, title } = PAGE_INFOS[pageIdentity];
-
   return (
     <>
       <Head>
@@ -30,6 +29,8 @@ export default function Home({
 }
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
+  const { req } = context;
+  customorLogger.info(req);
   try {
     const absoluteUrl = context.req.headers.host;
 
@@ -52,8 +53,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
       },
     };
   } catch (error) {
-    console.error(new Error("server error from console log: " + error));
-    Logger.error(new Error("server error from winston logger: " + error));
+    customorLogger.error(error);
     return {
       props: {},
     };
