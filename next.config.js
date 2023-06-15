@@ -2,6 +2,7 @@
 const nextConfig = {
   images: {
     domains: ["d3gurpvil0se70.cloudfront.net"],
+    unoptimized: true,
   },
 
   async headers() {
