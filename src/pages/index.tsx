@@ -30,9 +30,31 @@ export default function Home({
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const { req } = context;
-  customorLogger.info(req);
+
+  const essentialLogs = {
+    accessLog: {
+      ip:
+        req.headers["x-real-ip"] ||
+        req.headers["x-forwarded-for"] ||
+        req.connection.remoteAddress,
+      hostname: req.headers.host,
+      method: req.method,
+      source: req.url,
+    },
+    status: {
+      code: req.statusCode,
+      message: req.statusMessage,
+    },
+    session: {
+      userAgent: req.headers["user-agent"] || navigator.userAgent,
+      cookie: req.cookies,
+    },
+  };
+
+  customorLogger.info(essentialLogs);
+
   try {
-    const absoluteUrl = context.req.headers.host;
+    const absoluteUrl = req.headers.host;
 
     const getIdentityByUrl = (url: string) => {
       switch (true) {
