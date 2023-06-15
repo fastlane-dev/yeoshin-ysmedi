@@ -52,8 +52,8 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
       },
     };
   } catch (error) {
-    console.log("server error from console log: ", error);
-    Logger.error("server error from winston logger: ", error);
+    console.error(new Error("server error from console log: " + error));
+    Logger.error(new Error("server error from winston logger: " + error));
     return {
       props: {},
     };
