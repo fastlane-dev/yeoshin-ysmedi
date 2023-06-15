@@ -12,9 +12,9 @@ export const SixthWebSlide = () => {
           <div className="relative mx-auto h-[13dvh] sm:w-[29dvw] md:w-[20dvw]">
             <Image
               fill
-              src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/ntts.svg`}
+              src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/ntts_new.svg`}
               loader={loadSrc}
-              alt="ntts"
+              alt="ntts_new"
               priority
             />
           </div>

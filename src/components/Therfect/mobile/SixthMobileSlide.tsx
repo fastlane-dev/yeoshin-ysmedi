@@ -26,8 +26,8 @@ export const SixthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
             <Image
               width={157}
               height={40}
-              src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/ntts.svg`}
-              alt="ntts"
+              src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/ntts_new.svg`}
+              alt="ntts_new"
               priority
               loader={loadSrc}
             />
