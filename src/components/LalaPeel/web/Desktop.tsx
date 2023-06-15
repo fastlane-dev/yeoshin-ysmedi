@@ -439,7 +439,9 @@ const Desktop = () => {
               <p className="font-pretendard text-[18px] font-[300] leading-[24.1px]">
                 경기도 용인시 기흥구 동백중앙로 191, 8층 A8323호
               </p>
-              <p className="text-[20px] leading-[26.78px]">Ⓒ Ysmedi Co. Ltd.</p>
+              <p className="text-[20px] leading-[26.78px]">
+                Ⓒ Ysmedi Co., Ltd.
+              </p>
             </div>
           </div>
           <div className="relative h-[41px] w-[221px]">

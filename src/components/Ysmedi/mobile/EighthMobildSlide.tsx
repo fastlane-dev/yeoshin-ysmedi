@@ -32,7 +32,7 @@ export const EighthMobildSlide = () => {
             경기도 용인시 기흥구 동백중앙로 191 (중동, 씨티프라자) 8층
             에이8323호
           </p>
-          <p className="font-[200]">Ⓒ Ysmedi Co. Ltd.</p>
+          <p className="font-[200]">Ⓒ Ysmedi Co., Ltd.</p>
         </div>
       </div>
     </footer>

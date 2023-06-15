@@ -385,7 +385,7 @@ const Mobile = () => {
             <p className="font-pretendard font-[300]">
               경기도 용인시 기흥구 동백중앙로 191, 8층 A8323호
             </p>
-            <p>Ⓒ Ysmedi Co. Ltd.</p>
+            <p>Ⓒ Ysmedi Co., Ltd.</p>
           </div>
         </p>
       </footer>
