@@ -1,5 +1,4 @@
 import Head from "next/head";
-import React, { useState } from "react";
 
 import { PAGE_IDENTITY, PAGE_INFOS, PAGE_URL } from "@/constants/pageInfos";
 import { GetServerSideProps } from "next";
@@ -11,9 +10,7 @@ export default function Home({
 }: {
   pageIdentity: valueOf<typeof PAGE_IDENTITY>;
 }) {
-  const [renderedPageInfo] = useState(PAGE_INFOS[pageIdentity]);
-
-  const { Component, faviconPath, title } = renderedPageInfo;
+  const { Component, faviconPath, title } = PAGE_INFOS[pageIdentity];
 
   return (
     <>
