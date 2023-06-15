@@ -1,5 +1,4 @@
-import React from "react";
-// Import Swiper React components
+import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { Mousewheel } from "swiper";
@@ -13,9 +12,17 @@ import { SixthWebSlide } from "./SixthWebSlide";
 import { SixthWebSlideBlue } from "./SixthWebSlideBlue";
 import { SeventhWebSlide } from "./SeventhWebSlide";
 import { EighthWebSlide } from "./EighthWebSlide";
-import { changeBodyBackground } from "../common/changeBodyBackground";
 
 export default function Web() {
+  useEffect(() => {
+    document.body.style.cssText = `
+    background-color: #F68E0F;
+    max-width: 1920px;
+    margin: 0 auto !important;
+    display: flex;
+    justify-content: center;
+    `;
+  }, []);
   return (
     <>
       <Swiper
@@ -28,14 +35,6 @@ export default function Web() {
         modules={[Mousewheel]}
         className="mySwiper"
         speed={800}
-        onSlideChangeTransitionEnd={(swiper) => {
-          const currentSlideNum = swiper.activeIndex + 1;
-          if (currentSlideNum === 6 || currentSlideNum === 7) {
-            changeBodyBackground("black");
-          } else {
-            changeBodyBackground("transparent");
-          }
-        }}
       >
         <SwiperSlide>
           <FirstWebSlide />

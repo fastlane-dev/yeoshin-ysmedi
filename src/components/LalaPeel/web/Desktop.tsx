@@ -80,9 +80,9 @@ const Desktop = () => {
             loader={loadSrc}
           />
           <div className="flex-center gap-[10px] text-[20px] font-[400] leading-[24.68px] tracking-[0.02em]">
-            <div>KR</div>
+            {/* <div>KR</div>
             <div className="text-[#CCCCCC]">|</div>
-            <div className="text-[#CCCCCC]">EN</div>
+            <div className="text-[#CCCCCC]">EN</div> */}
           </div>
         </div>
 

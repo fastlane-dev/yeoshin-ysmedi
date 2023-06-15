@@ -80,9 +80,9 @@ export const FirstWebSlide = () => {
           />
         </div>
         <div className="flex items-center gap-[10px] font-faktumTest font-[400]">
-          <span className="text-[20px] tracking-[0.02em]">KR</span>
+          {/* <span className="text-[20px] tracking-[0.02em]">KR</span>
           <span className="text-[20px] opacity-40">|</span>
-          <span className="text-[20px] tracking-[0.02em] opacity-40">EN</span>
+          <span className="text-[20px] tracking-[0.02em] opacity-40">EN</span> */}
         </div>
       </nav>
       <div className="flex-center absolute bottom-0 w-screen font-pretendard text-[4dvw] leading-[4dvw]">
