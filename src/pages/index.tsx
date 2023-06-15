@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import { PAGE_IDENTITY, PAGE_INFOS, PAGE_URL } from "@/constants/pageInfos";
+import { PAGE_IDENTITY, PAGE_INFOS } from "@/constants/pageInfos";
 import { GetServerSideProps } from "next";
 
 type valueOf<T> = T[keyof T];
@@ -32,11 +32,11 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 
   const getIdentityByUrl = (url: string) => {
     switch (true) {
-      case url.includes(PAGE_URL.YS_MEDI):
+      case url.includes(PAGE_IDENTITY.YS_MEDI):
         return PAGE_IDENTITY.YS_MEDI;
-      case url.includes(PAGE_URL.LALA_PEEL):
+      case url.includes(PAGE_IDENTITY.LALA_PEEL):
         return PAGE_IDENTITY.LALA_PEEL;
-      case url.includes(PAGE_URL.THERFECT):
+      case url.includes(PAGE_IDENTITY.THERFECT):
         return PAGE_IDENTITY.THERFECT;
       default:
         return PAGE_IDENTITY.YS_MEDI;
