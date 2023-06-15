@@ -8,12 +8,6 @@ export const PAGE_IDENTITY = {
   THERFECT: "therfect",
 } as const;
 
-export const PAGE_URL = {
-  YS_MEDI: "www.ysmedi",
-  LALA_PEEL: "www.lhalala",
-  THERFECT: "www.therfect",
-} as const;
-
 export const PAGE_INFOS = {
   [PAGE_IDENTITY.YS_MEDI]: {
     title: "YS MEDI",
