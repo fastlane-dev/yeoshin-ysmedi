@@ -22,7 +22,8 @@
     "styled-components": "^5.3.9",
     "swiper": "^9.2.0",
     "typescript": "5.0.3",
-    "winston": "^3.9.0"
+    "winston": "^3.9.0",
+    "winston-daily-rotate-file": "^4.7.1"
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.26",
