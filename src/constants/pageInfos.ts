@@ -17,11 +17,11 @@ export const PAGE_INFOS = {
   [PAGE_IDENTITY.LALA_PEEL]: {
     title: "LHALALA",
     Component: LalaPeel,
-    faviconPath: "/lala_peel.ico",
+    faviconPath: "/lhalala_peel_favicon.ico",
   },
   [PAGE_IDENTITY.THERFECT]: {
     title: "Therfect",
     Component: Therfect,
-    faviconPath: "/ys_medi_favicon.ico",
+    faviconPath: "/therfect_favicon.ico",
   },
 };
