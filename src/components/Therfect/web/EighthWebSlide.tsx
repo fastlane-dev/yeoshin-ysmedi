@@ -1,5 +1,3 @@
-import { loadSrc } from "@/utils/loadSrc";
-import Image from "next/image";
 import React from "react";
 
 export const EighthWebSlide = () => {
@@ -31,13 +29,10 @@ export const EighthWebSlide = () => {
           </div>
         </div>
         <div className="h-full">
-          <Image
+          <img
             src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/ys_medi_logo.svg`}
             alt="logo"
-            width={221}
-            height={41}
-            priority
-            loader={loadSrc}
+            className="h-[41px] w-[221px]"
           />
         </div>
       </div>

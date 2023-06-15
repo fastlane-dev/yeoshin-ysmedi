@@ -1,21 +1,16 @@
 import React from "react";
 
-import Image from "next/image";
 import { InviewComponent } from "../common/InviewComponent";
-import { loadSrc } from "@/utils/loadSrc";
 
 export const SixthWebSlide = () => {
   return (
     <section className="relative h-screen w-screen overflow-hidden bg-black text-white">
       <div className="absolute  left-[50%] top-[50%] h-fit w-fit -translate-x-[46%] -translate-y-[55%]">
         <InviewComponent animationClassName={"animate-smoothUpFirst_therfect"}>
-          <div className="relative mx-auto h-[13dvh] sm:w-[29dvw] md:w-[20dvw]">
-            <Image
-              fill
+          <div className="flex-center relative mx-auto h-[13dvh] w-[10dvw] sm:w-[29dvw] md:w-[20dvw]">
+            <img
               src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/ntts_202306151000.svg`}
-              loader={loadSrc}
               alt="ntts_new"
-              priority
             />
           </div>
         </InviewComponent>
