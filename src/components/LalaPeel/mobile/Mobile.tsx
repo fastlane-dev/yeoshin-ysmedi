@@ -370,9 +370,9 @@ const Mobile = () => {
             />
           </div>
           <div className="flex-center gap-[6px] text-[16px] font-[400] leading-[20px] tracking-[0.02em]">
-            <div>KR</div>
+            {/* <div>KR</div>
             <div className="text-[#CCCCCC]">|</div>
-            <div className="text-[#CCCCCC]">EN</div>
+            <div className="text-[#CCCCCC]">EN</div> */}
           </div>
         </p>
         <p className="flex-start-column mt-[106px] gap-[24px] font-faktumTest text-[12px] font-[400] leading-[16.07px] text-[#000000]">

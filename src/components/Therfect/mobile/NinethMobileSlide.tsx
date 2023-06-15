@@ -32,9 +32,9 @@ export const NinethMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
             />
           </div>
           <div className="flex-center gap-[7px] font-faktumTest text-[16px] leading-[20px] tracking-[0.02em]">
-            <div className="text-main-orange">KR</div>
+            {/* <div className="text-main-orange">KR</div>
             <div className="text-[#CCCCCC]">|</div>
-            <div className="text-[#CCCCCC]">EN</div>
+            <div className="text-[#CCCCCC]">EN</div> */}
           </div>
         </p>
         <p className="mt-[106px] font-faktumTest text-[12px] leading-[16.07px] text-[#000000]">

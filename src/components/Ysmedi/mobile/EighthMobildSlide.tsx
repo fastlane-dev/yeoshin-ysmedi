@@ -17,9 +17,9 @@ export const EighthMobildSlide = () => {
           />
         </div>
         <div className="flex gap-[7px] text-[16px]">
-          <span>KR</span>
+          {/* <span>KR</span>
           <span className="text-[#888888]">|</span>
-          <span className="text-[#888888]">EN</span>
+          <span className="text-[#888888]">EN</span> */}
         </div>
       </div>
       <div className="flex-center-column mt-[128px] items-start gap-[24px] pl-[22px] text-[12px] leading-[16px]">
