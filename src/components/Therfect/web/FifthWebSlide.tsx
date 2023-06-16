@@ -10,6 +10,7 @@ export const FifthWebSlide = () => {
         <img
           src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/skin_structure.png`}
           alt="mobile_skin_structure"
+          className="h-screen w-screen"
         />
       </div>
       <div className="pl-[7dvw] pt-[15dvh]">

@@ -1,7 +1,5 @@
 import React from "react";
 import { InviewComponent } from "../common/InviewComponent";
-import Image from "next/image";
-import { loadSrc } from "@/utils/loadSrc";
 
 type NozzleType = Record<
   "title" | "subTitle" | "imgSrc" | "imgClass" | "titleClass" | "subTitleClass",
@@ -19,16 +17,13 @@ const Nozzle = ({
   return (
     <div className="flex-center-column">
       <div className={imgClass}>
-        <Image
+        <img
           sizes="(max-width: 768px) 100dvw,
           (max-width: 1200px) 50dvw,
           33dvw"
           className="object-contain"
           src={imgSrc}
           alt="first_nozzle"
-          fill
-          loader={loadSrc}
-          priority
         />
       </div>
       <InviewComponent animationClassName={`animate-smoothUpFirst_therfect`}>

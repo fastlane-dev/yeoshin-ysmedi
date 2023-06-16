@@ -1,8 +1,6 @@
 import React from "react";
 
-import Image from "next/image";
 import { InviewComponent } from "../common/InviewComponent";
-import { loadSrc } from "@/utils/loadSrc";
 
 const Square = () => (
   <div className="h-[11dvw] w-[11dvw] bg-main-orange msm:h-[9dvw] msm:w-[9dvw] mmd:h-[7dvw] mmd:w-[7dvw]"></div>
@@ -17,19 +15,31 @@ export const SixthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
         height: innerHeight,
       }}
     >
-      <div className="absolute  left-[50%] top-[50%] h-[5.3dvh] w-[79dvw] -translate-x-[49%] -translate-y-[328%]">
+      <div className="flex  flex-col gap-[34px]">
+        <div className="flex justify-between">
+          <Square />
+          <Square />
+          <Square />
+          <Square />
+        </div>
+        <div className="flex justify-between">
+          <Square />
+          <Square />
+          <Square />
+          <Square />
+        </div>
+      </div>
+      <div>
         <InviewComponent
           threshold={0}
           animationClassName={"animate-smoothUpFirst_therfect"}
         >
           <div className="flex-center mb-[1px]">
-            <Image
+            <img
               width={157}
               height={40}
               src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/ntts_202306151000.svg`}
               alt="ntts_new"
-              priority
-              loader={loadSrc}
             />
           </div>
         </InviewComponent>
@@ -46,21 +56,6 @@ export const SixthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
           </p>
         </InviewComponent>
       </div>
-      <div className="flex  flex-col gap-[34px]">
-        <div className="flex justify-between">
-          <Square />
-          <Square />
-          <Square />
-          <Square />
-        </div>
-        <div className="flex justify-between">
-          <Square />
-          <Square />
-          <Square />
-          <Square />
-        </div>
-      </div>
-
       <div className="flex flex-col  gap-[34px]">
         <div className="flex justify-between">
           <Square />

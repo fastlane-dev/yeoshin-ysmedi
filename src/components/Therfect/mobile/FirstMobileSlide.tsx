@@ -1,7 +1,4 @@
-import Image from "next/image";
 import React, { forwardRef } from "react";
-
-import { loadSrc } from "@/utils/loadSrc";
 
 interface FirstMobileSlideProps {
   innerHeight: number;
@@ -19,51 +16,37 @@ export const FirstMobileSlide = forwardRef<
       className="relative w-screen overflow-hidden bg-main-orange font-futura text-[80px] font-[500] text-white"
     >
       <div className="absolute right-[16dvw] top-[78px] h-[9.3dvw] w-[9.3dvw]">
-        <Image
+        <img
           src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/ball.svg`}
-          priority
-          fill
-          style={{ objectFit: "contain" }}
+          className="object-contain"
           alt="therfect_logo"
-          loader={loadSrc}
         />
       </div>
       <div className="absolute left-[17dvw] top-[248px] h-[9.3dvw] w-[9.3dvw]">
-        <Image
+        <img
           src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/ball.svg`}
-          priority
-          fill
-          style={{ objectFit: "contain" }}
+          className="object-contain"
           alt="therfect_logo"
-          loader={loadSrc}
         />
       </div>
       <div className="absolute right-[0] top-[273px] h-[20dvw] w-[20dvw]">
-        <Image
+        <img
           src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/ball.svg`}
-          priority
-          fill
-          style={{ objectFit: "contain" }}
+          className="object-contain"
           alt="therfect_logo"
-          loader={loadSrc}
         />
       </div>
-      <div className="absolute bottom-[25px] left-[-9dvw] h-[62dvw] w-[62dvw]">
-        <Image
+      <div className="absolute bottom-[25px] left-[-9dvw] h-[234px] w-[234px]">
+        <img
           src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/ball.svg`}
-          priority
-          fill
-          style={{ objectFit: "contain" }}
+          className="object-contain"
           alt="therfect_logo"
-          loader={loadSrc}
         />
       </div>
       <div className="relative ml-[8dvw] mt-[5dvh] h-[18px] w-[87px]">
-        <Image
+        <img
           src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/therfect_logo.svg`}
-          fill
           alt="therfect_logo"
-          loader={loadSrc}
         />
       </div>
       <div className="relative ml-[8dvw] mt-[10dvh]  h-[30dvh] w-screen font-pretendard text-[13dvw] leading-[13dvw]">
@@ -78,14 +61,11 @@ export const FirstMobileSlide = forwardRef<
         </div>
       </div>
 
-      <div className="relative bottom-[0] mx-auto h-[70dvh] w-[100dvw] msm:bottom-[-4dvh] msm:h-[70dvh] mmd:bottom-[-6dvw]">
-        <Image
+      <div className="relative bottom-[5dvh] mx-auto h-[70dvh] w-[70dvw] msm:bottom-[-4dvh] msm:h-[60dvh] msm:w-[50dvw] mmd:bottom-[-6dvw] mmd:w-[40dvw]">
+        <img
           src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/first_mobile_robot.png`}
-          priority
           className="object-contain"
-          fill
           alt="therfect_robot"
-          loader={loadSrc}
         />
       </div>
     </section>

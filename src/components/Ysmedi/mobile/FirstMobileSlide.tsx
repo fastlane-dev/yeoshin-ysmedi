@@ -1,5 +1,4 @@
 import React from "react";
-import { loadSrc } from "@/utils/loadSrc";
 
 export const FirstMobileSlide = () => {
   return (
