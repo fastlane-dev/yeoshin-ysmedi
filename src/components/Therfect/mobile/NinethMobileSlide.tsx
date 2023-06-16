@@ -1,7 +1,17 @@
-import React from "react";
-export const NinethMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
+import React, { forwardRef } from "react";
+
+interface NinethMobileSlideProps {
+  innerHeight: number;
+}
+
+export const NinethMobileSlide = forwardRef<
+  HTMLElement,
+  NinethMobileSlideProps
+>((props, ref) => {
+  const { innerHeight } = props;
   return (
     <footer
+      ref={ref}
       className="h-screen w-screen bg-[white] px-[30px] pt-[60px]"
       style={{ height: innerHeight }}
     >
@@ -51,4 +61,4 @@ export const NinethMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
       </div>
     </footer>
   );
-};
+});
