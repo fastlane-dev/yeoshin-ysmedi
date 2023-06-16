@@ -12,6 +12,7 @@ import { SixthWebSlide } from "./SixthWebSlide";
 import { SixthWebSlideBlue } from "./SixthWebSlideBlue";
 import { SeventhWebSlide } from "./SeventhWebSlide";
 import { EighthWebSlide } from "./EighthWebSlide";
+import { changeBodyBackground } from "../common/changeBodyBackground";
 
 export default function Web() {
   useEffect(() => {
@@ -31,6 +32,14 @@ export default function Web() {
         mousewheel={true}
         pagination={{
           clickable: true,
+        }}
+        onTransitionEnd={(swiper) => {
+          const nthOfCurrentSlide = swiper.activeIndex + 1;
+          if (nthOfCurrentSlide === 6 || nthOfCurrentSlide === 7) {
+            changeBodyBackground("black");
+          } else {
+            changeBodyBackground("#F68E0F");
+          }
         }}
         modules={[Mousewheel]}
         className="mySwiper"
