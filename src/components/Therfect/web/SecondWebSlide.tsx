@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 
 import { InView } from "react-intersection-observer";
@@ -62,14 +61,11 @@ export const SecondWebSlide = () => {
             </div>
           </InviewComponent>
         </div>
-        <div className="absolute right-[-19dvw] h-screen w-screen">
-          <Image
-            className="object-contain"
+        <div className="absolute right-[-10dvw] h-screen lg:right-[0dvw]">
+          <img
+            className="h-[100dvh]"
             src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/therfect_entire_robot.png`}
-            priority
-            fill
             alt="entire_robot_env"
-            loader={({ src }) => src}
           />
         </div>
       </div>

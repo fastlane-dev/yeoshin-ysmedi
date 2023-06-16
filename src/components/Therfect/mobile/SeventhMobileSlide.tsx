@@ -18,7 +18,21 @@ export const SeventhMobileSlide = ({
         height: innerHeight,
       }}
     >
-      <div className="absolute  left-[50%] top-[50%] h-[5.3dvh] w-[79dvw] -translate-x-[49%] -translate-y-[355%] font-[400]">
+      <div className="flex  flex-col gap-[34px]">
+        <div className="flex justify-between">
+          <Square />
+          <Square />
+          <Square />
+          <Square />
+        </div>
+        <div className="flex justify-between">
+          <Square />
+          <Square />
+          <Square />
+          <Square />
+        </div>
+      </div>
+      <div>
         <InviewComponent animationClassName={"animate-smoothUpFirst_therfect"}>
           <div className="flex-center-column mb-[20px]">
             <div className="font-sans text-[45px] font-[400] leading-[40px]">
@@ -40,21 +54,6 @@ export const SeventhMobileSlide = ({
           </p>
         </InviewComponent>
       </div>
-      <div className="flex  flex-col gap-[34px]">
-        <div className="flex justify-between">
-          <Square />
-          <Square />
-          <Square />
-          <Square />
-        </div>
-        <div className="flex justify-between">
-          <Square />
-          <Square />
-          <Square />
-          <Square />
-        </div>
-      </div>
-
       <div className="flex flex-col  gap-[34px]">
         <div className="flex justify-between">
           <Square />

@@ -47,6 +47,9 @@ jobs:
           tags: |
             type=ref,event=branch,enable=true,priority=1000,prefix=,suffix=-{{sha}}-{{date 'YYMMDDHHmmss'}},format=short
             type=ref,event=branch,enable=true,priority=1000,prefix=,suffix=-{{sha}},format=short
+          flavor: |
+            latest=auto
+
       - name: Build and Push
         uses: fastlane-dev/actions-build-push-action@master
         with:

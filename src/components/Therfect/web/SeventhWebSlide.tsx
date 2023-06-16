@@ -1,5 +1,3 @@
-import { loadSrc } from "@/utils/loadSrc";
-import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 export const SeventhWebSlide = () => {
@@ -14,13 +12,10 @@ export const SeventhWebSlide = () => {
       <div className="pl-[8dvw] pt-[14dvh]">
         <div className="text-[30px] font-[400]">Specifications</div>
         <div className="mb-[6dvh] mt-[16dvh]">
-          <Image
-            priority
-            width={249}
-            height={53}
+          <img
+            className="h-[53px] w-[249px]"
             src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/therfect_logo_black.svg`}
             alt="therfect_logo_black"
-            loader={loadSrc}
           />
         </div>
       </div>

@@ -1,8 +1,6 @@
-import Image from "next/image";
 import React from "react";
 
 import { InView } from "react-intersection-observer";
-import { loadSrc } from "@/utils/loadSrc";
 
 export const ThirdWebSlide = () => {
   return (
@@ -66,14 +64,11 @@ export const ThirdWebSlide = () => {
             )}
           </InView>
         </div>
-        <div className="absolute right-0 top-[30dvh] h-[60dvh] w-[66dvw] lg:w-[50dvw]">
-          <Image
+        <div className="absolute right-0 top-[35dvh] h-[60dvh] w-[66dvw] lg:w-[50dvw]">
+          <img
             src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/big_nozzle.png`}
-            priority
-            fill
             alt="bigNozzle"
             className="object-contain"
-            loader={loadSrc}
           />
         </div>
       </div>

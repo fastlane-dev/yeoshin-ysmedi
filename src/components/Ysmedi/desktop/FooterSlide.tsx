@@ -1,5 +1,3 @@
-import { loadSrc } from "@/utils/loadSrc";
-import Image from "next/image";
 import React from "react";
 
 export const FooterSlide = () => {
@@ -19,13 +17,11 @@ export const FooterSlide = () => {
             <p className="font-[200]">Ⓒ Ysmedi Co., Ltd.</p>
           </div>
         </div>
-        <div className="relative h-[25vw] w-[25vw]">
-          <Image
+        <div className="relative flex h-[25vw] w-[25vw] items-center justify-center">
+          <img
             src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}ysmedi/logo.png`}
             alt="logo"
-            fill
             className="object-contain"
-            loader={loadSrc}
           />
         </div>
       </div>

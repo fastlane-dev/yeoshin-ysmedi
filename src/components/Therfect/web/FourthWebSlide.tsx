@@ -1,7 +1,5 @@
-import Image from "next/image";
 import React from "react";
 import { InviewComponent } from "../common/InviewComponent";
-import { loadSrc } from "@/utils/loadSrc";
 
 export const FourthWebSlide = () => {
   return (
@@ -10,16 +8,13 @@ export const FourthWebSlide = () => {
         <div className="flex-center items-start gap-[11dvw]">
           <div className="flex-center-column">
             <div className="relative mb-[10px] h-[21dvh] w-[17dvw] lg:w-[13dvw] xlg:mb-[40px]">
-              <Image
+              <img
                 className="object-contain"
                 sizes="(max-width: 768px) 100dvw,
               (max-width: 1200px) 50dvw,
               33dvw"
-                fill
-                priority
                 src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/first_nozzle.png`}
                 alt="first_nozzle"
-                loader={loadSrc}
               />
             </div>
             <InviewComponent animationClassName="animate-smoothUpSecond_therfect">
@@ -38,16 +33,13 @@ export const FourthWebSlide = () => {
           <div>
             <div className="flex-center-column">
               <div className="relative mb-[10px] h-[21dvh] w-[16dvw] lg:w-[12dvw] xlg:mb-[40px]">
-                <Image
+                <img
                   className="object-contain"
                   sizes="(max-width: 768px) 100dvw,
               (max-width: 1200px) 50dvw,
               33dvw"
-                  fill
-                  priority
                   src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/second_nozzle.png`}
                   alt="second_nozzle"
-                  loader={loadSrc}
                 />
               </div>
               <InviewComponent
@@ -69,16 +61,13 @@ export const FourthWebSlide = () => {
           <div>
             <div className="flex-center-column">
               <div className="relative mb-[10px] h-[21dvh] w-[16dvw] lg:w-[12dvw] xlg:mb-[40px]">
-                <Image
+                <img
                   className="object-contain"
                   sizes="(max-width: 768px) 100dvw,
               (max-width: 1200px) 50dvw,
               33dvw"
-                  fill
-                  priority
                   src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/third_nozzle.png`}
                   alt="third_nozzle"
-                  loader={loadSrc}
                 />
               </div>
               <InviewComponent
@@ -101,16 +90,13 @@ export const FourthWebSlide = () => {
         <div className="flex justify-around">
           <div className="flex-center-column">
             <div className="relative mb-[10px] h-[21dvh] w-[16dvw] lg:w-[12dvw] xlg:mb-[40px]">
-              <Image
+              <img
                 className="object-contain"
                 sizes="(max-width: 768px) 100dvw,
               (max-width: 1200px) 50dvw,
               33dvw"
-                fill
-                priority
                 src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/fourth_nozzle.png`}
                 alt="first_nozzle"
-                loader={loadSrc}
               />
             </div>
             <InviewComponent
@@ -130,16 +116,13 @@ export const FourthWebSlide = () => {
           </div>
           <div className="flex-center-column">
             <div className="relative mb-[10px] h-[21dvh] w-[16dvw] lg:w-[12dvw] xlg:mb-[40px]">
-              <Image
+              <img
                 className="object-contain"
                 sizes="(max-width: 768px) 100dvw,
               (max-width: 1200px) 50dvw,
               33dvw"
-                fill
-                priority
                 src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/fifth_nozzle.png`}
                 alt="first_nozzle"
-                loader={loadSrc}
               />
             </div>
             <InviewComponent

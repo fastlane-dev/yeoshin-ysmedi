@@ -2,18 +2,15 @@ import React from "react";
 
 import { InView } from "react-intersection-observer";
 import { InviewComponent } from "../common/InviewComponent";
-import Image from "next/image";
-import { loadSrc } from "@/utils/loadSrc";
 
 export const FifthWebSlide = () => {
   return (
     <section className="relative h-screen w-screen overflow-hidden bg-white bg-no-repeat font-pretendard font-[600] text-white">
       <div className="absolute h-screen w-screen">
-        <Image
+        <img
           src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/skin_structure.png`}
           alt="mobile_skin_structure"
-          fill
-          loader={loadSrc}
+          className="h-screen w-screen"
         />
       </div>
       <div className="pl-[7dvw] pt-[15dvh]">

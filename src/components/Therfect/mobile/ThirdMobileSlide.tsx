@@ -1,10 +1,7 @@
 import React from "react";
-import Image from "next/image";
 
 import { InView } from "react-intersection-observer";
 import { InviewComponent } from "../common/InviewComponent";
-
-import { loadSrc } from "@/utils/loadSrc";
 
 export const ThirdMobileSlide = () => {
   return (

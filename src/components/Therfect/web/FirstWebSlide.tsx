@@ -1,82 +1,59 @@
 import React from "react";
 
-import Image from "next/image";
-
 import { InviewComponent } from "../common/InviewComponent";
-import { loadSrc } from "@/utils/loadSrc";
 
 export const FirstWebSlide = () => {
   return (
     <section className="relative h-screen w-screen overflow-hidden bg-[#f68e0f] font-futura text-[80px] font-[500] text-white">
       <div className="absolute left-[26dvw] top-[78px] h-[2dvw] w-[2dvw]">
-        <Image
+        <img
           src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/ball.svg`}
-          priority
-          fill
-          style={{ objectFit: "contain" }}
+          className="object-contain"
           alt="therfect_logo"
-          loader={loadSrc}
         />
       </div>
       <div className="absolute left-[52dvw] top-[66.04px] h-[4dvw] w-[4dvw]">
-        <Image
+        <img
           src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/ball.svg`}
-          priority
-          fill
-          style={{ objectFit: "contain" }}
+          className="object-contain"
           alt="therfect_logo"
-          loader={loadSrc}
         />
       </div>
 
       <div className="absolute left-[9dvw] top-[229px] h-[6.3dvw] w-[6.3dvw]">
-        <Image
+        <img
           src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/ball.svg`}
-          priority
-          fill
-          style={{ objectFit: "contain" }}
+          className="object-contain"
           alt="therfect_logo"
-          loader={loadSrc}
         />
       </div>
       <div className="absolute left-[70dvw] top-[250px] h-[6.5dvw] w-[6.5dvw]">
-        <Image
+        <img
           src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/ball.svg`}
-          priority
-          fill
-          style={{ objectFit: "contain" }}
+          className="object-contain"
           alt="therfect_logo"
-          loader={loadSrc}
         />
       </div>
       <div className="absolute bottom-[85px] left-[15dvw] h-[14.5dvw] w-[14.5dvw]">
-        <Image
+        <img
           src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/ball.svg`}
-          priority
-          fill
-          style={{ objectFit: "contain" }}
+          className="object-contain"
           alt="therfect_logo"
-          loader={loadSrc}
         />
       </div>
       <div className="absolute bottom-[-13dvw] left-[60dvw] h-[27dvw] w-[27dvw]">
-        <Image
+        <img
           src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/ball.svg`}
-          priority
-          fill
-          style={{ objectFit: "contain" }}
+          className="object-contain"
           alt="therfect_logo"
-          loader={loadSrc}
         />
       </div>
       <nav className="flex-center mt-[64px] justify-between px-[162px]">
         <div className=" z-[20]">
-          <Image
+          <img
             src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/therfect_logo.svg`}
-            height={33}
-            width={160}
+            className="h-[33px] w-[160px]"
             alt="therfect_logo"
-            loader={loadSrc}
           />
         </div>
         <div className="flex items-center gap-[10px] font-faktumTest font-[400]">
@@ -93,12 +70,10 @@ export const FirstWebSlide = () => {
           </div>
         </InviewComponent>
         <div className="relative z-[20] h-[83dvh] w-[41dvw]">
-          <Image
+          <img
             src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/therfect_robot_half.svg`}
-            fill
+            className="h-[84dvh]"
             alt="therfect_robot"
-            priority
-            loader={loadSrc}
           />
         </div>
         <InviewComponent animationClassName={"animate-smoothUpSecond_therfect"}>

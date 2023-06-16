@@ -1,6 +1,4 @@
-import Image from "next/image";
 import React from "react";
-// nineth mobile
 export const NinethMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
   return (
     <footer
@@ -24,7 +22,7 @@ export const NinethMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
       <div className="mt-[64px]  font-[400]">
         <p className="item-center flex justify-between">
           <div className="h-[23px] w-[123px]">
-            <Image
+            <img
               src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/ys_medi_logo.svg`}
               alt="ys_medi_logo"
               height={23}
