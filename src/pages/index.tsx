@@ -45,7 +45,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 
   return {
     props: {
-      pageIdentity: getIdentityByUrl(absoluteUrl as string),
+      pageIdentity: getIdentityByUrl("therfect.com" as string),
     },
   };
 };
