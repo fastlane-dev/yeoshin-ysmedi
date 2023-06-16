@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { Mousewheel } from "swiper";
@@ -15,17 +15,16 @@ import { EighthWebSlide } from "./EighthWebSlide";
 import { changeBodyBackground } from "../common/changeBodyBackground";
 
 export default function Web() {
-  useEffect(() => {
-    document.body.style.cssText = `
-    background-color: #F68E0F;
-    max-width: 1920px;
-    margin: 0 auto !important;
-    display: flex;
-    justify-content: center;
-    `;
-  }, []);
   return (
     <>
+      {/* 5번째 피부 슬라이드에서 배경이 피부이미지로 바뀌어야함. */}
+      {/* <div className="absolute z-10 h-screen w-screen">
+        <img
+          src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/skin_structure.png`}
+          alt="mobile_skin_structure"
+          className="h-screen w-screen"
+        />
+      </div> */}
       <Swiper
         direction={"vertical"}
         slidesPerView={1}
@@ -35,10 +34,28 @@ export default function Web() {
         }}
         onTransitionEnd={(swiper) => {
           const nthOfCurrentSlide = swiper.activeIndex + 1;
-          if (nthOfCurrentSlide === 6 || nthOfCurrentSlide === 7) {
-            changeBodyBackground("black");
-          } else {
-            changeBodyBackground("#F68E0F");
+          switch (nthOfCurrentSlide) {
+            case 1:
+              changeBodyBackground("white");
+              break;
+            case 2:
+            case 9:
+              changeBodyBackground("white");
+              break;
+            case 3:
+            case 4:
+            case 8:
+              changeBodyBackground("#F9F9F9");
+              break;
+            case 5:
+              changeBodyBackground("");
+              break;
+            case 6:
+            case 7:
+              changeBodyBackground("black");
+              break;
+            default:
+              break;
           }
         }}
         modules={[Mousewheel]}
