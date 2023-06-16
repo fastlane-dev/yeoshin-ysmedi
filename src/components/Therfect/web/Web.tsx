@@ -33,14 +33,6 @@ export default function Web() {
         pagination={{
           clickable: true,
         }}
-        onTransitionEnd={(swiper) => {
-          const nthOfCurrentSlide = swiper.activeIndex + 1;
-          if (nthOfCurrentSlide === 6 || nthOfCurrentSlide === 7) {
-            changeBodyBackground("black");
-          } else {
-            changeBodyBackground("#F68E0F");
-          }
-        }}
         modules={[Mousewheel]}
         className="mySwiper"
         speed={800}
