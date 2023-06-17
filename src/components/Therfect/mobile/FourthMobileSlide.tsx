@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import React from "react";
 import { InviewComponent } from "../common/InviewComponent";
 
 type NozzleType = Record<
@@ -36,12 +36,9 @@ const Nozzle = ({
   );
 };
 
-export const FourthMobileSlide = forwardRef<HTMLElement>((_, ref) => {
+export const FourthMobileSlide = () => {
   return (
-    <section
-      ref={ref}
-      className="relative w-screen bg-[#F9F9F9] text-center font-pretendard font-[700]"
-    >
+    <section className="relative w-screen bg-[#F9F9F9] text-center font-pretendard font-[700]">
       <div className=" w-screen px-[31px]">
         <div className="mb-[34px] flex justify-center gap-[12dvw]">
           <Nozzle
@@ -90,4 +87,4 @@ export const FourthMobileSlide = forwardRef<HTMLElement>((_, ref) => {
       </div>
     </section>
   );
-});
+};

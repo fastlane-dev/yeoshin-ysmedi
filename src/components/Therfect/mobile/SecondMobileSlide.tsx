@@ -1,20 +1,10 @@
-import React, { forwardRef } from "react";
+import React from "react";
 import { InView } from "react-intersection-observer";
 import { InviewComponent } from "../common/InviewComponent";
 
-interface SecondMobileSlideProps {
-  innerHeight?: number;
-}
-
-export const SecondMobileSlide = forwardRef<
-  HTMLElement,
-  SecondMobileSlideProps
->((props, ref) => {
+export const SecondMobileSlide = () => {
   return (
-    <section
-      ref={ref}
-      className="relative h-[100dvh] w-screen overflow-hidden bg-white"
-    >
+    <section className="relative h-[100dvh] w-screen overflow-hidden bg-white">
       <div className="relative z-[30] mt-[5dvh] self-start pl-[30px]">
         <div className="mb-[7.8dvh] flex items-center justify-start gap-[12px]">
           <p className="font-sans text-[20px] font-[400] leading-[23px]">
@@ -77,4 +67,4 @@ export const SecondMobileSlide = forwardRef<
       </InviewComponent>
     </section>
   );
-});
+};

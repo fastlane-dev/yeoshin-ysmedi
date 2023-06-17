@@ -1,11 +1,11 @@
-import React, { forwardRef } from "react";
+import React from "react";
 
 import { InView } from "react-intersection-observer";
 import { InviewComponent } from "../common/InviewComponent";
 
-export const ThirdMobileSlide = forwardRef<HTMLElement>((_, ref) => {
+export const ThirdMobileSlide = () => {
   return (
-    <section ref={ref} className="relative h-[100dvh] w-screen bg-[#F9F9F9]">
+    <section className="relative h-[100dvh] w-screen bg-[#F9F9F9]">
       <div className="self-start pl-[30px] pt-[5dvh]">
         <div className="mb-[7.8dvh] flex items-center justify-start gap-[12px]">
           <p className="font-sans text-[20px] font-[400] leading-[23px]">
@@ -65,4 +65,4 @@ export const ThirdMobileSlide = forwardRef<HTMLElement>((_, ref) => {
       </InviewComponent>
     </section>
   );
-});
+};
