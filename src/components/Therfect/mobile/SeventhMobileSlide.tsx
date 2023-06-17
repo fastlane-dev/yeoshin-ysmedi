@@ -2,7 +2,7 @@ import React, { forwardRef } from "react";
 import { InviewComponent } from "../common/InviewComponent";
 
 interface SeventhMobileSlideProps {
-  innerHeight: number;
+  innerHeight?: number;
 }
 
 export const Square = () => (
@@ -13,11 +13,10 @@ export const SeventhMobileSlide = forwardRef<
   HTMLElement,
   SeventhMobileSlideProps
 >((props, ref) => {
-  const { innerHeight } = props;
   return (
     <section
       ref={ref}
-      className="relative flex h-screen w-screen flex-col justify-between overflow-hidden bg-black px-[47px] pt-[30px] font-pretendard font-[400] text-white"
+      className="relative flex h-[100dvh] w-[100dvw] flex-col justify-between overflow-hidden bg-black px-[47px] pt-[30px] font-pretendard font-[400] text-white"
       style={{
         paddingBottom: "calc(30px + env(safe-area-inset-bottom))",
         height: innerHeight,

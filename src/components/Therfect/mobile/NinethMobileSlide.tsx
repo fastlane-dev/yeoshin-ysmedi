@@ -1,19 +1,17 @@
 import React, { forwardRef } from "react";
 
 interface NinethMobileSlideProps {
-  innerHeight: number;
+  innerHeight?: number;
 }
 
 export const NinethMobileSlide = forwardRef<
   HTMLElement,
   NinethMobileSlideProps
 >((props, ref) => {
-  const { innerHeight } = props;
   return (
     <footer
       ref={ref}
-      className="h-screen w-screen bg-[white] px-[30px] pt-[60px]"
-      style={{ height: innerHeight }}
+      className="h-[100dvh] w-screen bg-[white] px-[30px] pt-[60px]"
     >
       <div className="relative pb-[60px] text-[10px] font-[300] leading-[18px] text-[#555555]">
         <div className="absolute bottom-0 left-[-30px] w-screen border-b-[1px] border-[#C0C0C0]"></div>

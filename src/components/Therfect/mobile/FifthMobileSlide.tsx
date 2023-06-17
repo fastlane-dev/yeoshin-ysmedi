@@ -4,17 +4,15 @@ import { InView } from "react-intersection-observer";
 import { InviewComponent } from "../common/InviewComponent";
 
 interface FifthMobileSlideProps {
-  innerHeight: number;
+  innerHeight?: number;
 }
 
 export const FifthMobileSlide = forwardRef<HTMLElement, FifthMobileSlideProps>(
   (props, ref) => {
-    const { innerHeight } = props;
     return (
       <section
         ref={ref}
-        className="relative w-screen overflow-hidden  font-pretendard font-[600] text-white"
-        style={{ height: innerHeight }}
+        className="relative h-[100dvh] w-screen overflow-hidden  font-pretendard font-[600] text-white"
       >
         <div>
           <img

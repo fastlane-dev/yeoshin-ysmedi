@@ -3,19 +3,17 @@ import { InView } from "react-intersection-observer";
 import { InviewComponent } from "../common/InviewComponent";
 
 interface SecondMobileSlideProps {
-  innerHeight: number;
+  innerHeight?: number;
 }
 
 export const SecondMobileSlide = forwardRef<
   HTMLElement,
   SecondMobileSlideProps
 >((props, ref) => {
-  const { innerHeight } = props;
   return (
     <section
       ref={ref}
-      className="relative w-screen overflow-hidden bg-white"
-      style={{ height: innerHeight }}
+      className="relative h-[100dvh] w-screen overflow-hidden bg-white"
     >
       <div className="relative z-[30] mt-[5dvh] self-start pl-[30px]">
         <div className="mb-[7.8dvh] flex items-center justify-start gap-[12px]">

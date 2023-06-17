@@ -1,16 +1,14 @@
 import React, { forwardRef } from "react";
 
 interface FirstMobileSlideProps {
-  innerHeight: number;
+  innerHeight?: number;
 }
 
 export const FirstMobileSlide = forwardRef<HTMLElement, FirstMobileSlideProps>(
   (props, ref) => {
-    const { innerHeight } = props;
     return (
       <section
         ref={ref}
-        style={{ height: innerHeight }}
         className="relative w-screen overflow-hidden bg-main-orange font-futura text-[80px] font-[500] text-white"
       >
         <div className="absolute right-[16dvw] top-[78px] h-[9.3dvw] w-[9.3dvw]">

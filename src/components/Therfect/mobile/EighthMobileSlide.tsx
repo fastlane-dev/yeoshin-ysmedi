@@ -1,19 +1,17 @@
 import { forwardRef } from "react";
 
 interface EighthMobileSlideProps {
-  innerHeight: number;
+  innerHeight?: number;
 }
 
 export const EighthMobileSlide = forwardRef<
   HTMLElement,
   EighthMobileSlideProps
 >((props, ref) => {
-  const { innerHeight } = props;
   return (
     <section
       ref={ref}
-      className="relative w-screen overflow-hidden bg-[#F9F9F9] font-sans  text-[80px] font-[700]"
-      style={{ height: innerHeight }}
+      className="relative h-[100dvh] w-screen overflow-hidden bg-[#F9F9F9] font-sans  text-[80px] font-[700]"
     >
       <div className="mt-[12dvh] pl-[30px]">
         <div className="text-[20px] font-[400]">Specifications</div>
