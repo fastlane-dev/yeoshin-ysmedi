@@ -1,10 +1,6 @@
-import React from "react";
-export const NinethMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
+export const NinethMobileSlide = () => {
   return (
-    <footer
-      className="h-screen w-screen bg-[white] px-[30px] pt-[60px]"
-      style={{ height: innerHeight }}
-    >
+    <footer className="h-[100dvh] w-screen bg-[white] px-[30px] pt-[60px]">
       <div className="relative pb-[60px] text-[10px] font-[300] leading-[18px] text-[#555555]">
         <div className="absolute bottom-0 left-[-30px] w-screen border-b-[1px] border-[#C0C0C0]"></div>
         <p className="mb-[10px]">지금 바로 병원에서 만나보세요.</p>

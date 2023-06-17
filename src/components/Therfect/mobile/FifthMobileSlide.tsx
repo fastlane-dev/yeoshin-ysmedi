@@ -2,13 +2,10 @@ import React from "react";
 
 import { InView } from "react-intersection-observer";
 import { InviewComponent } from "../common/InviewComponent";
-// bg-[url('/img/mobile_skin_structure.png')] bg-cover bg-center bg-no-repeat
-export const FifthMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
+
+export const FifthMobileSlide = () => {
   return (
-    <section
-      className="relative w-screen overflow-hidden  font-pretendard font-[600] text-white"
-      style={{ height: innerHeight }}
-    >
+    <section className="relative h-[100dvh] w-screen overflow-hidden  font-pretendard font-[600] text-white">
       <div>
         <img
           className="w-screen object-contain"

@@ -1,18 +1,13 @@
-import React from "react";
 import { InviewComponent } from "../common/InviewComponent";
 
 export const Square = () => (
   <div className="h-[11dvw] w-[11dvw] bg-[#CBF9FF] msm:h-[9dvw] msm:w-[9dvw] mmd:h-[7dvw] mmd:w-[7dvw]"></div>
 );
 
-export const SeventhMobileSlide = ({
-  innerHeight,
-}: {
-  innerHeight: number;
-}) => {
+export const SeventhMobileSlide = () => {
   return (
     <section
-      className="relative flex h-screen w-screen flex-col justify-between overflow-hidden bg-black px-[47px] pt-[30px] font-pretendard font-[400] text-white"
+      className="relative flex h-[100dvh] w-[100dvw] flex-col justify-between overflow-hidden bg-black px-[47px] pt-[30px] font-pretendard font-[400] text-white"
       style={{
         paddingBottom: "calc(30px + env(safe-area-inset-bottom))",
         height: innerHeight,

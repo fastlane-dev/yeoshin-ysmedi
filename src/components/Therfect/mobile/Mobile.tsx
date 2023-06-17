@@ -1,4 +1,8 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import { FreeMode, Mousewheel, Scrollbar } from "swiper";
 
 import { FirstMobileSlide } from "./FirstMobileSlide";
 import { SecondMobileSlide } from "./SecondMobileSlide";
@@ -12,42 +16,78 @@ import { NinethMobileSlide } from "./NinethMobileSlide";
 import { changeBodyBackground } from "../common/changeBodyBackground";
 
 const Mobile = () => {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const firstRef = useRef<HTMLDivElement>(null);
-  const [childrenEle, setChildrenEle] = useState<HTMLCollection>();
-
-  useEffect(() => {
-    changeBodyBackground("#f68e0f");
-  }, []);
-  const [innerHeight, setInnerHeight] = useState(0);
-
-  useEffect(() => {
-    setInnerHeight(window.innerHeight);
-  }, []);
-
-  useEffect(() => {
-    setChildrenEle(containerRef?.current?.children);
-  }, [containerRef]);
-
   return (
-    <div
-      ref={containerRef}
-      className="overflow-auto"
-      onScroll={(event) => {}}
-      style={{
-        height: innerHeight,
+    <Swiper
+      direction={"vertical"}
+      mousewheel={true}
+      modules={[Mousewheel]}
+      className="mySwiper"
+      speed={800}
+      autoHeight
+      onSlideChangeTransitionEnd={(swiper) => {
+        switch (swiper.activeIndex) {
+          case 0:
+            changeBodyBackground("#f68e0f");
+            break;
+          case 1:
+          case 7:
+            changeBodyBackground("white");
+            break;
+          case 2:
+          case 6:
+            changeBodyBackground("#F9F9F9");
+            break;
+          case 3:
+            changeBodyBackground("#ecddd7");
+            break;
+          case 4:
+          case 5:
+            changeBodyBackground("black");
+            break;
+
+          default:
+            break;
+        }
       }}
     >
-      <FirstMobileSlide ref={firstRef} innerHeight={innerHeight} />
-      <SecondMobileSlide innerHeight={innerHeight} />
-      <ThirdMobileSlide />
-      <FourthMobileSlide />
-      <FifthMobileSlide innerHeight={innerHeight} />
-      <SixthMobileSlide innerHeight={innerHeight} />
-      <SeventhMobileSlide innerHeight={innerHeight} />
-      <EighthMobileSlide innerHeight={innerHeight} />
-      <NinethMobileSlide innerHeight={innerHeight} />
-    </div>
+      <SwiperSlide>
+        <FirstMobileSlide />
+      </SwiperSlide>
+      <SwiperSlide>
+        <SecondMobileSlide />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Swiper
+          className="process-slider bg-[#F9F9F9] "
+          direction={"vertical"}
+          freeMode={true}
+          modules={[FreeMode, Scrollbar]}
+          slidesPerView="auto"
+        >
+          <SwiperSlide>
+            <ThirdMobileSlide />
+          </SwiperSlide>
+          <SwiperSlide className="bg-[#F9F9F9]">
+            <FourthMobileSlide />
+          </SwiperSlide>
+        </Swiper>
+      </SwiperSlide>
+      <SwiperSlide>
+        <FifthMobileSlide />
+      </SwiperSlide>
+      <SwiperSlide>
+        <SixthMobileSlide />
+      </SwiperSlide>
+      <SwiperSlide>
+        <SeventhMobileSlide />
+      </SwiperSlide>
+      <SwiperSlide>
+        <EighthMobileSlide />
+      </SwiperSlide>
+      <SwiperSlide>
+        <NinethMobileSlide />
+      </SwiperSlide>
+    </Swiper>
   );
 };
 

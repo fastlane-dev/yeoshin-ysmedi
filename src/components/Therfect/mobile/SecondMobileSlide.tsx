@@ -2,12 +2,9 @@ import React from "react";
 import { InView } from "react-intersection-observer";
 import { InviewComponent } from "../common/InviewComponent";
 
-export const SecondMobileSlide = ({ innerHeight }: { innerHeight: number }) => {
+export const SecondMobileSlide = () => {
   return (
-    <section
-      className="relative w-screen overflow-hidden bg-white"
-      style={{ height: innerHeight }}
-    >
+    <section className="relative h-[100dvh] w-screen overflow-hidden bg-white">
       <div className="relative z-[30] mt-[5dvh] self-start pl-[30px]">
         <div className="mb-[7.8dvh] flex items-center justify-start gap-[12px]">
           <p className="font-sans text-[20px] font-[400] leading-[23px]">
