@@ -12,7 +12,6 @@ export const SixthMobileSlide = () => {
       className="relative flex h-[100dvh] w-[100dvw] flex-col justify-between overflow-hidden bg-black px-[47px] pt-[30px] font-pretendard font-[400] text-white"
       style={{
         paddingBottom: "calc(30px + env(safe-area-inset-bottom))",
-        height: innerHeight,
       }}
     >
       <div className="flex  flex-col gap-[34px]">
