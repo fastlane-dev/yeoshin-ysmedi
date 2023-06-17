@@ -24,6 +24,7 @@ const Mobile = () => {
       className="mySwiper"
       speed={800}
       autoHeight
+      height={window.innerHeight}
       onSlideChangeTransitionEnd={(swiper) => {
         switch (swiper.activeIndex) {
           case 0:
