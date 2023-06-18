@@ -3,9 +3,9 @@ import React from "react";
 export const FirstSlide = () => {
   return (
     <section className="relative h-screen w-screen font-faktumTest text-[30px] text-white">
-      <div className="absolute bottom-0 left-[373px] z-[-1] h-[60dvw] w-[85dvw] opacity-[0.7]">
+      <div className="absolute right-[23px] top-[-300px] z-[-1] h-[1100px] w-[1100px] opacity-[0.7]">
         <img
-          src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}ysmedi/planet.png`}
+          src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}ysmedi/mobile_planet.svg`}
           alt="planet"
           className="object-contain"
         />
@@ -33,7 +33,7 @@ export const FirstSlide = () => {
           </div>
         </nav>
       </div>
-      <div className="flex-center-column absolute bottom-[317px] left-[160px]  items-start gap-[40px]">
+      <div className="flex-center-column relative mt-[337px] items-start gap-[40px]  px-[9vw] sh:mt-[100px]">
         <p className="animate-smoothUpStartFirst_ysmedi whitespace-pre-wrap text-[100px] font-[400] leading-[100px] tracking-[-0.02em]  opacity-0">
           {"Your beauty,\nour priority"}
         </p>

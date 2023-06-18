@@ -28,6 +28,8 @@ module.exports = {
         mmd: { raw: "(min-width: 768px)" },
         mlg: { raw: "(min-width: 992px)" },
 
+        sh: { raw: "(max-height: 800px)" },
+
         sm: { raw: "(min-width: 800px)" },
         md: { raw: "(min-width: 992px)" },
         lg: { raw: "(min-width: 1200px)" },
