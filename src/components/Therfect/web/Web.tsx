@@ -62,31 +62,31 @@ export default function Web() {
         className="mySwiper"
         speed={800}
       >
-        <SwiperSlide>
+        <SwiperSlide className="flex-center">
           <FirstWebSlide />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="flex-center">
           <SecondWebSlide />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="flex-center">
           <ThirdWebSlide />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="flex-center">
           <FourthWebSlide />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="flex-center">
           <FifthWebSlide />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="flex-center">
           <SixthWebSlide />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="flex-center">
           <SixthWebSlideBlue />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="flex-center">
           <SeventhWebSlide />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="flex-center">
           <EighthWebSlide />
         </SwiperSlide>
       </Swiper>
