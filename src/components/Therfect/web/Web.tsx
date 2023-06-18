@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { Mousewheel } from "swiper";
@@ -15,6 +15,9 @@ import { EighthWebSlide } from "./EighthWebSlide";
 import { changeBodyBackground } from "../common/changeBodyBackground";
 
 export default function Web() {
+  useEffect(() => {
+    changeBodyBackground("#f68e0f");
+  }, []);
   return (
     <>
       {/* 5번째 피부 슬라이드에서 배경이 피부이미지로 바뀌어야함. */}
@@ -36,7 +39,7 @@ export default function Web() {
           const nthOfCurrentSlide = swiper.activeIndex + 1;
           switch (nthOfCurrentSlide) {
             case 1:
-              changeBodyBackground("white");
+              changeBodyBackground("#f68e0f");
               break;
             case 2:
             case 9:
