@@ -2,7 +2,7 @@ import React from "react";
 
 export const FirstSlide = () => {
   return (
-    <section className="relative h-screen w-screen font-faktumTest text-[30px] text-white">
+    <section className="relative h-screen w-screen overflow-hidden font-faktumTest text-[30px] text-white">
       <div className="absolute right-[23px] top-[-300px] z-[-1] h-[1100px] w-[1100px] opacity-[0.7]">
         <img
           src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}ysmedi/mobile_planet.svg`}

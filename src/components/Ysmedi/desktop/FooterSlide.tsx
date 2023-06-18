@@ -2,7 +2,7 @@ import React from "react";
 
 export const FooterSlide = () => {
   return (
-    <footer className="flex-center relative h-screen w-screen items-end font-faktumTest font-[400]  text-white">
+    <footer className="flex-center relative h-screen w-screen items-end overflow-hidden font-faktumTest font-[400]  text-white">
       <div className="flex-center absolute top-[196px] h-[110px] w-full justify-between px-[8.3vw]">
         <div className="flex-center-column items-start gap-[30px] text-[18px] leading-[24px]">
           <div className="flex-center gap-[50px] font-[200]">

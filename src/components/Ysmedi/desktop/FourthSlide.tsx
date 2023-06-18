@@ -2,7 +2,7 @@ import React from "react";
 
 export const FourthSlide = () => {
   return (
-    <section className="flex-center relative h-screen w-screen font-faktumTest tracking-[-0.02em] text-white">
+    <section className="flex-center relative h-screen w-screen overflow-hidden font-faktumTest tracking-[-0.02em] text-white">
       <div className="absolute h-screen w-screen">
         <img
           src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}ysmedi/lala_background.png`}
