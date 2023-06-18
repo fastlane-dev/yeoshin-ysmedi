@@ -8,7 +8,7 @@ export const FourthWebSlide = () => {
       <div className="flex h-[74dvh] w-[62dvw] flex-col justify-between xxlg:gap-[120px]">
         <div className="flex-center items-start gap-[11dvw] xxlg:gap-[240px]">
           <Nozzle
-            imgClass="relative mb-[10px] h-[21dvh] w-[17dvw] lg:w-[13dvw] xlg:mb-[40px] xxlg:w-[250px] xxlg:h-[226px]"
+            imgClass="sh:mb-[44px] relative mb-[10px] h-[21dvh] w-[17dvw] lg:w-[13dvw] xlg:mb-[40px] xxlg:w-[250px] xxlg:h-[226px]"
             imgSrc={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/first_nozzle.png`}
             titleClass="mb-[12px] text-[2.5dvw] lg:text-[1.5dvw] xlg:text-[30px]"
             title="써말아이"
@@ -18,7 +18,7 @@ export const FourthWebSlide = () => {
 
           <div>
             <Nozzle
-              imgClass="relative mb-[10px] h-[21dvh] w-[16dvw] lg:w-[12dvw] xlg:mb-[40px] xxlg:w-[233px] xxlg:h-[226px]"
+              imgClass="sh:mb-[44px] relative mb-[10px] h-[21dvh] w-[16dvw] lg:w-[12dvw] xlg:mb-[40px] xxlg:w-[233px] xxlg:h-[226px]"
               imgSrc={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/second_nozzle.png`}
               titleClass="mb-[12px] text-[2.5dvw] lg:text-[1.5dvw] xlg:text-[30px]"
               title="써말 러빙"
@@ -28,7 +28,7 @@ export const FourthWebSlide = () => {
           </div>
           <div>
             <Nozzle
-              imgClass="relative mb-[10px] h-[21dvh] w-[16dvw] lg:w-[12dvw] xlg:mb-[40px] xxlg:w-[233px] xxlg:h-[226px]"
+              imgClass="sh:mb-[44px] relative mb-[10px] h-[21dvh] w-[16dvw] lg:w-[12dvw] xlg:mb-[40px] xxlg:w-[233px] xxlg:h-[226px]"
               imgSrc={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/third_nozzle.png`}
               titleClass="mb-[12px] text-[2.5dvw] lg:text-[1.5dvw] xlg:text-[30px]"
               title=" 써말 스탬프"
@@ -39,7 +39,7 @@ export const FourthWebSlide = () => {
         </div>
         <div className="flex-center items-start gap-[11dvw] xxlg:gap-[240px]">
           <Nozzle
-            imgClass="relative mb-[10px] h-[21dvh] w-[16dvw] lg:w-[12dvw] xlg:mb-[40px] xxlg:w-[233px] xxlg:h-[226px]"
+            imgClass="sh:mb-[44px] relative mb-[10px] h-[21dvh] w-[16dvw] lg:w-[12dvw] xlg:mb-[40px] xxlg:w-[233px] xxlg:h-[226px]"
             imgSrc={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/fourth_nozzle.png`}
             titleClass="mb-[12px] text-[2.5dvw] lg:text-[1.5dvw] xlg:text-[30px]"
             title="프락셔널 64P"
@@ -47,7 +47,7 @@ export const FourthWebSlide = () => {
             subTitle="비교적 깊은 모공과 흉터에 시술"
           />
           <Nozzle
-            imgClass="relative mb-[10px] h-[21dvh] w-[16dvw] lg:w-[12dvw] xlg:mb-[40px] xxlg:w-[233px] xxlg:h-[226px]"
+            imgClass="sh:mb-[44px] relative mb-[10px] h-[21dvh] w-[16dvw] lg:w-[12dvw] xlg:mb-[40px] xxlg:w-[233px] xxlg:h-[226px]"
             imgSrc={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/fifth_nozzle.png`}
             titleClass="mb-[12px] text-[2.5dvw] lg:text-[1.5dvw] xlg:text-[30px]"
             title="프락셔널 100P"

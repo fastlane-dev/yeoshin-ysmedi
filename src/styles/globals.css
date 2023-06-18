@@ -74,6 +74,11 @@ td {
   padding-top: 30px;
   padding-bottom: 30px;
   vertical-align: baseline;
+
+  @media (max-height: 800px) {
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
 }
 
 table.mobile td {
