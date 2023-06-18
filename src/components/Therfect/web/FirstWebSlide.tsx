@@ -63,7 +63,7 @@ export const FirstWebSlide = () => {
             <p className="font-[600]">효과적으로</p>
           </div>
         </InviewComponent>
-        <div className="relative z-[20] h-[52dvw] w-[52dvw] md:h-[52dvw] md:w-[52dvw]  lg:h-[789px] lg:w-[789px]">
+        <div className="relative z-[20] h-[52dvw] w-[52dvw] md:h-[42dvw] md:w-[42dvw] sh:h-[30vw] sh:w-[30vw] xxlg:h-[789px] xxlg:w-[789px]">
           <img
             src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/therfect_robot_half.svg`}
             className="h-[inherit] w-[inherit]"

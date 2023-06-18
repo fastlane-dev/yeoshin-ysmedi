@@ -56,7 +56,7 @@ export const SixthWebSlideBlue = () => {
         threshold={0.4}
         animationClassName={"animate-smoothUpThird_therfect"}
       >
-        <div className="flex-center relative top-[-80px] font-pretendard text-[1.3dvw] font-[400] leading-[2dvw] text-[#696969] xxlg:text-[26px] xxlg:leading-[40px]">
+        <div className="flex-center relative top-[-80px] font-pretendard text-[1.3dvw] font-[400] leading-[2dvw] text-[#696969] sh:top-[-48px] xxlg:text-[26px] xxlg:leading-[40px]">
           부드럽고 강력한 4MHz 고주파를 롱펄스 패턴으로 조사하여 통증은 줄이고,
           즉각적으로 피부 온도를 측정하여 화상의 위험을 줄였습니다.
         </div>
