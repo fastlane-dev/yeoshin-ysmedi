@@ -8,10 +8,10 @@ export const SeventhWebSlide = () => {
   }, []);
 
   return mounted ? (
-    <section className="relative h-screen w-screen overflow-hidden bg-[#F9F9F9] font-sans  text-[80px] font-[700]">
-      <div className="pl-[8dvw] pt-[14dvh]">
+    <section className="flex-column-center relative h-screen w-screen max-w-[1920px] overflow-hidden bg-[#F9F9F9] font-sans  text-[80px] font-[700]">
+      <div className="pl-[8dvw] pt-[14dvh]   xlg:pl-[160px] xlg:pt-[160px]">
         <div className="text-[30px] font-[400]">Specifications</div>
-        <div className="mb-[6dvh] mt-[16dvh]">
+        <div className="mb-[6dvh] mt-[16dvh] xxlg:mb-[63px] xxlg:mt-[110px]">
           <img
             className="h-[53px] w-[249px]"
             src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/therfect_logo_black.svg`}
@@ -19,8 +19,8 @@ export const SeventhWebSlide = () => {
           />
         </div>
       </div>
-      <div className="flex items-start gap-[6dvw] px-[8dvw]">
-        <table className="w-[90%] text-[1.2dvw] leading-[2.5dvh]">
+      <div className="flex items-start gap-[6dvw] px-[8dvw] xxlg:gap-[128px] xxlg:px-[160px]">
+        <table className="w-[90%] text-[1.2dvw] leading-[2.5dvh] xxlg:text-[23px] xxlg:leading-[27px]">
           <tbody>
             <tr>
               <td className="">Type</td>
@@ -45,7 +45,7 @@ export const SeventhWebSlide = () => {
             </tr>
           </tbody>
         </table>
-        <table className="w-[90%] text-[1.2dvw] leading-[2.5dvh]">
+        <table className="w-[90%] text-[1.2dvw] leading-[2.5dvh] xxlg:text-[23px] xxlg:leading-[27px]">
           <tbody>
             <tr>
               <td>Type of tip</td>
@@ -65,7 +65,7 @@ export const SeventhWebSlide = () => {
           </tbody>
         </table>
       </div>
-      <div className="absolute bottom-0 h-[17px] w-screen bg-main-orange" />
+      <div className="absolute bottom-0 mx-auto h-[17px] w-full  bg-main-orange xxlg:ml-[148px] xxlg:w-[84%]" />
     </section>
   ) : (
     <></>

@@ -32,6 +32,7 @@ module.exports = {
         md: { raw: "(min-width: 992px)" },
         lg: { raw: "(min-width: 1200px)" },
         xlg: { raw: "(min-width: 1400px)" },
+        xxlg: { raw: "(min-width: 1920px)" },
       },
       fontFamily: {
         sans: [...fontFamily.sans],
