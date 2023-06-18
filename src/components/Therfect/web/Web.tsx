@@ -51,7 +51,7 @@ export default function Web() {
               changeBodyBackground("#F9F9F9");
               break;
             case 5:
-              changeBodyBackground("");
+              changeBodyBackground("transparent");
               break;
             case 6:
             case 7:
