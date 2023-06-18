@@ -4,9 +4,9 @@ import { InView } from "react-intersection-observer";
 
 export const ThirdWebSlide = () => {
   return (
-    <section className="relative h-screen w-screen overflow-hidden bg-[#F9F9F9]">
+    <section className="relative h-screen w-screen max-w-[1920px] overflow-hidden bg-[#F9F9F9]">
       <div className="flex justify-between">
-        <div className="self-start pl-[8.3dvw] pt-[15dvh]">
+        <div className="self-start pl-[8.3dvw] pt-[15dvh]  xlg:pl-[160px] xlg:pt-[160px]">
           <div className="mb-[110px] flex items-center justify-start gap-[20px]">
             <p className="font-sans text-[30px] font-[400] leading-[40px]">
               Catridge
@@ -52,7 +52,7 @@ export const ThirdWebSlide = () => {
                   </p>
                 </div>
                 <p
-                  className={`font-pretendard text-[1.3dvw] font-[300] leading-[4.5dvh] sm:text-[1.5dvw] sm:leading-[3dvh] md:leading-[3.5dvh] lg:leading-[4.5dvh] xlg:leading-[5dvh] ${
+                  className={`font-pretendard text-[1.3dvw] font-[300] leading-[4.5dvh] sm:text-[1.5dvw] sm:leading-[3dvh] md:leading-[3.5dvh] lg:leading-[4.5dvh] xxlg:text-[26px] xxlg:leading-[46px] ${
                     inView ? "animate-smoothUpSecond_therfect" : ""
                   } opacity-0`}
                 >
@@ -64,7 +64,7 @@ export const ThirdWebSlide = () => {
             )}
           </InView>
         </div>
-        <div className="absolute right-0 top-[35dvh] h-[60dvh] w-[66dvw] lg:w-[50dvw]">
+        <div className="absolute right-0 top-[35dvh] h-[60dvh] w-[66dvw] lg:w-[50dvw] xlg:h-[520px] xlg:w-[1000px]">
           <img
             src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/big_nozzle.png`}
             alt="bigNozzle"

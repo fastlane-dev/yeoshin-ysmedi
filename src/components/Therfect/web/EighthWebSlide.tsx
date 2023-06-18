@@ -2,7 +2,7 @@ import React from "react";
 
 export const EighthWebSlide = () => {
   return (
-    <footer className=" relative h-screen w-screen bg-white font-faktumTest font-[400]">
+    <footer className="relative h-screen w-screen max-w-[1920px] bg-white font-faktumTest font-[400]">
       <div>
         <div className="mx-[150px] mb-[72px] pt-[112px] font-pretendard text-[20px] font-[300] leading-[36px] text-[#555555]">
           <p className="mb-[36px]">{"지금 바로 병원에서 만나보세요."}</p>

@@ -5,9 +5,9 @@ import { InviewComponent } from "../common/InviewComponent";
 
 export const SecondWebSlide = () => {
   return (
-    <section className="relative h-screen w-screen overflow-hidden bg-white">
+    <section className="relative h-screen w-screen max-w-[1920px] overflow-hidden bg-white">
       <div className="flex justify-between">
-        <div className="self-start pl-[8.3dvw] pt-[15dvh]">
+        <div className="self-start pl-[8.3dvw] pt-[15dvh] xlg:pl-[160px] xlg:pt-[160px]">
           <div className="mb-[110px] flex items-center justify-start gap-[20px]">
             <p className="font-sans text-[30px] font-[400] leading-[40px]">
               Product

@@ -5,15 +5,16 @@ import { InviewComponent } from "../common/InviewComponent";
 
 export const FifthWebSlide = () => {
   return (
-    <section className="relative h-screen w-screen overflow-hidden bg-white bg-no-repeat font-pretendard font-[600] text-white">
-      <div className="absolute h-screen w-screen">
+    <section className="relative h-screen w-screen max-w-[1920px] overflow-hidden bg-white bg-no-repeat font-pretendard font-[600] text-white">
+      <div className="absolute h-full w-full">
         <img
           src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/skin_structure.png`}
           alt="mobile_skin_structure"
           className="h-screen w-screen"
         />
       </div>
-      <div className="pl-[7dvw] pt-[15dvh]">
+
+      <div className="pl-[7dvw] pt-[15dvh] xlg:pl-[160px] xlg:pt-[160px]">
         <div className="flex-center justify-start gap-[20px]">
           <p className="z-10 font-sans text-[30px] font-[400] leading-[34.5px]">
             Principle
