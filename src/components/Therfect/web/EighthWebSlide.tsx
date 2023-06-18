@@ -13,8 +13,8 @@ export const EighthWebSlide = () => {
           </p>
         </div>
       </div>
-      <div className="mb-[110px] border-t-[1px] border-[#C0C0C0]"></div>
-      <div className="flex-center h-[110px] w-full justify-between px-[165px]">
+      <div className="mb-[110px] w-full border-t-[1px] border-[#C0C0C0] xxlg:ml-[148px] xxlg:w-[84%]"></div>
+      <div className="flex h-[110px] w-full justify-between px-[165px]">
         <div className="flex-center-column items-start gap-[30px] text-[18px] leading-[24px]">
           <div className="flex-center gap-[50px] font-[200]">
             <p>TEL. 070-4858-4686</p>
