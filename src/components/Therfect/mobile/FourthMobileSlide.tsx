@@ -6,7 +6,7 @@ type NozzleType = Record<
   string
 >;
 
-const Nozzle = ({
+export const Nozzle = ({
   imgSrc,
   title,
   subTitle,
