@@ -1,11 +1,10 @@
 import React from "react";
-import { InviewComponent } from "../common/InviewComponent";
 import { Nozzle } from "../mobile/FourthMobileSlide";
 
 export const FourthWebSlide = () => {
   return (
     <section className="flex-center relative h-screen w-screen max-w-[1920px] overflow-hidden bg-[#F9F9F9] text-center font-pretendard font-[600]">
-      <div className="flex w-[62dvw] flex-col justify-between xxlg:gap-[100px]">
+      <div className="flex w-[62dvw] flex-col justify-between gap-[100px] sh:gap-[10px]">
         <div className="flex-center items-start gap-[11dvw] xxlg:gap-[240px]">
           <Nozzle
             imgClass="sh:mb-[44px] relative mb-[10px] h-[21dvh] w-[17dvw] lg:w-[13dvw] xlg:mb-[40px] xxlg:w-[250px] xxlg:h-[226px]"
