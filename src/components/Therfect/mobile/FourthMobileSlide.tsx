@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { InviewComponent } from "../common/InviewComponent";
 
 type NozzleType = Record<
@@ -37,9 +37,23 @@ export const Nozzle = ({
 };
 
 export const FourthMobileSlide = () => {
+  const nozzleContainer = useRef<HTMLDivElement>(null);
+  const [nozzleContainerHeight, setNozzleContainerHeight] = useState<number>();
+
+  useEffect(() => {
+    setNozzleContainerHeight(
+      window.innerHeight < 500
+        ? (nozzleContainer.current?.clientHeight as number) + 150
+        : (nozzleContainer.current?.clientHeight as number) + 100
+    );
+  }, [nozzleContainer]);
   return (
-    <section className="relative top-[-5dvh] w-screen bg-[#F9F9F9] text-center font-pretendard font-[700]">
-      <div className=" w-screen px-[31px]">
+    <section className="relative top-[30px] w-screen bg-[#F9F9F9] text-center font-pretendard font-[700]">
+      <div
+        ref={nozzleContainer}
+        className=" w-screen px-[31px]"
+        style={{ height: nozzleContainerHeight }}
+      >
         <div className="mb-[34px] flex justify-center gap-[12dvw]">
           <Nozzle
             imgClass="relative mb-[20px] w-[18dvw] h-[18dvw]"

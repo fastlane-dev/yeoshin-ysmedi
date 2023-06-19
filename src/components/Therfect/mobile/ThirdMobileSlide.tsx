@@ -56,7 +56,7 @@ export const ThirdMobileSlide = () => {
         </InviewComponent>
       </div>
       <InviewComponent animationClassName="animate-smoothUpThird_therfect">
-        <div className="absolute bottom-[18dvh] right-[0] h-[168px] w-[370px]">
+        <div className="absolute bottom-[12dvh] right-[0] h-[168px] w-[370px]">
           <img
             src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/big_nozzle.png`}
             alt="big_nozzle"
