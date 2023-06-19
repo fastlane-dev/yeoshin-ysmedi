@@ -61,7 +61,7 @@ export const FifthMobileSlide = () => {
         <InviewComponent animationClassName="animate-smoothUpSecond_therfect">
           <div>
             <p
-              className={`pr-[30px] font-pretendard text-[16px] font-[400] leading-[30px]`}
+              className={`pr-[30px] font-pretendard text-[16px] font-[500] leading-[30px]`}
             >
               {
                 "강력한 고주파 에너지로 조직의 응고를 일으켜 피부탄력에 도움을 줍니다.\n고주파 전달 > 피부속 깊이 고주파 전달 > 피부 저항 및 열 발생 > 피부응고 및 재생 > 피부탄력 도움"
