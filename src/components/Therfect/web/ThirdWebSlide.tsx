@@ -52,7 +52,7 @@ export const ThirdWebSlide = () => {
                   </p>
                 </div>
                 <p
-                  className={`xxxlg:text-[26px] xxxlg:leading-[46px] font-pretendard text-[1.3dvw] font-[300] leading-[4.5dvh] sm:text-[1.5dvw] sm:leading-[3dvh] md:leading-[3.5dvh] lg:leading-[4.5dvh] ${
+                  className={`font-pretendard text-[1.3dvw] font-[300] leading-[4.5dvh] sm:text-[1.5dvw] sm:leading-[3dvh] md:leading-[3.5dvh] lg:leading-[4.5dvh] xxlg:text-[26px] xxlg:leading-[46px] ${
                     inView ? "animate-smoothUpSecond_therfect" : ""
                   } opacity-0`}
                 >
