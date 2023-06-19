@@ -9,7 +9,7 @@ export const SeventhWebSlide = () => {
 
   return mounted ? (
     <section className="flex-column-center relative h-screen w-screen max-w-[1920px] overflow-hidden bg-[#F9F9F9] font-sans  text-[80px] font-[700]">
-      <div className="pl-[8dvw] pt-[14dvh]   xlg:pl-[160px] xlg:pt-[160px]">
+      <div className="pl-[8dvw] pt-[14dvh]   xxlg:pl-[160px] xxlg:pt-[160px]">
         <div className="text-[30px] font-[400]">Specifications</div>
         <div className="mb-[6dvh] mt-[16dvh] sh:mt-[6dvh] xxlg:mb-[63px] xxlg:mt-[110px]">
           <img
@@ -20,7 +20,7 @@ export const SeventhWebSlide = () => {
         </div>
       </div>
       <div className="flex items-start gap-[6dvw] px-[8dvw] xxlg:gap-[128px] xxlg:px-[160px]">
-        <table className="w-[90%] text-[1.2dvw] leading-[2.5dvh] sh:text-[0.2dvw] xxlg:text-[23px] xxlg:leading-[27px]">
+        <table className="w-[90%] text-[1.2dvw] leading-[2.5dvh] sh:text-[1dvw] xxlg:text-[23px] xxlg:leading-[27px]">
           <tbody>
             <tr>
               <td className="">Type</td>
@@ -45,7 +45,7 @@ export const SeventhWebSlide = () => {
             </tr>
           </tbody>
         </table>
-        <table className="w-[90%] text-[1.2dvw] leading-[2.5dvh] sh:text-[0.2dvw] xxlg:text-[23px] xxlg:leading-[27px]">
+        <table className="w-[90%] text-[1.2dvw] leading-[2.5dvh] sh:text-[1dvw] xxlg:text-[23px] xxlg:leading-[27px]">
           <tbody>
             <tr>
               <td>Type of tip</td>
