@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { InviewComponent } from "../common/InviewComponent";
 
 type NozzleType = Record<
@@ -37,14 +37,28 @@ export const Nozzle = ({
 };
 
 export const FourthMobileSlide = () => {
+  const nozzleContainer = useRef<HTMLDivElement>(null);
+  const [nozzleContainerHeight, setNozzleContainerHeight] = useState<number>();
+
+  useEffect(() => {
+    setNozzleContainerHeight(
+      window.innerHeight < 500
+        ? (nozzleContainer.current?.clientHeight as number) + 150
+        : (nozzleContainer.current?.clientHeight as number) + 100
+    );
+  }, [nozzleContainer]);
   return (
-    <section className="relative top-[-5dvh] w-screen bg-[#F9F9F9] text-center font-pretendard font-[700]">
-      <div className=" w-screen px-[31px]">
+    <section className="relative top-[30px] w-screen bg-[#F9F9F9] text-center font-pretendard font-[700]">
+      <div
+        ref={nozzleContainer}
+        className=" w-screen px-[31px]"
+        style={{ height: nozzleContainerHeight }}
+      >
         <div className="mb-[34px] flex justify-center gap-[12dvw]">
           <Nozzle
             imgClass="relative mb-[20px] w-[18dvw] h-[18dvw]"
             titleClass="mb-[0.8dvh] text-[3.5dvw] mmd:text-[3dvw]"
-            subTitleClass="text-[2.5dvw] mmd:text-[2dvw] font-[600] leading-[14px] msm:leading-[20px] mmd:leading-[25px]"
+            subTitleClass="text-[2.5dvw] mmd:text-[2dvw] font-[500] leading-[14px] msm:leading-[20px] mmd:leading-[25px]"
             imgSrc={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/first_nozzle.png`}
             title="써말아이"
             subTitle={"팔자, 눈가주름을\n타이트닝"}
@@ -52,7 +66,7 @@ export const FourthMobileSlide = () => {
           <Nozzle
             imgClass="relative mb-[20px] w-[18dvw] h-[18dvw]"
             titleClass="mb-[0.8dvh] text-[3.5dvw] mmd:text-[3dvw]"
-            subTitleClass="text-[2.5dvw] mmd:text-[2dvw] font-[600] leading-[14px] msm:leading-[20px] mmd:leading-[25px]"
+            subTitleClass="text-[2.5dvw] mmd:text-[2dvw] font-[500] leading-[14px] msm:leading-[20px] mmd:leading-[25px]"
             imgSrc={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/second_nozzle.png`}
             title="써말 러빙"
             subTitle={"처짐, 얼굴윤곽을\n자극하여 얼굴선 정리"}
@@ -60,7 +74,7 @@ export const FourthMobileSlide = () => {
           <Nozzle
             imgClass="relative  mb-[20px] w-[18dvw] h-[18dvw]"
             titleClass="mb-[0.8dvh] text-[3.5dvw] mmd:text-[3dvw]"
-            subTitleClass="text-[2.5dvw] mmd:text-[2dvw] font-[600] leading-[14px] msm:leading-[20px] mmd:leading-[25px]"
+            subTitleClass="text-[2.5dvw] mmd:text-[2dvw] font-[500] leading-[14px] msm:leading-[20px] mmd:leading-[25px]"
             imgSrc={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/third_nozzle.png`}
             title="써말 스탬프"
             subTitle={"강력한 고주파\n에너지를 깊게"}
@@ -70,7 +84,7 @@ export const FourthMobileSlide = () => {
           <Nozzle
             imgClass="relative mb-[20px] w-[18dvw] h-[18dvw]"
             titleClass="mb-[0.8dvh] text-[3.5dvw] mmd:text-[3dvw]"
-            subTitleClass="text-[2.5dvw] mmd:text-[2dvw] font-[600] leading-[14px] msm:leading-[20px] mmd:leading-[25px]"
+            subTitleClass="text-[2.5dvw] mmd:text-[2dvw] font-[500] leading-[14px] msm:leading-[20px] mmd:leading-[25px]"
             imgSrc={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/fourth_nozzle.png`}
             title="프락셔널 64P"
             subTitle={"비교적 깊은 모공과\n흉터에 시술"}
@@ -78,7 +92,7 @@ export const FourthMobileSlide = () => {
           <Nozzle
             imgClass="relative  mb-[20px] w-[18dvw] h-[18dvw]"
             titleClass="mb-[0.8dvh] text-[3.5dvw] mmd:text-[3dvw]"
-            subTitleClass="text-[2.5dvw] mmd:text-[2dvw] font-[600] leading-[14px] msm:leading-[20px] mmd:leading-[25px]"
+            subTitleClass="text-[2.5dvw] mmd:text-[2dvw] font-[500] leading-[14px] msm:leading-[20px] mmd:leading-[25px]"
             imgSrc={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/fifth_nozzle.png`}
             title="프락셔널 100P"
             subTitle={"비교적 깊은 모공과\n흉터에 시술"}
