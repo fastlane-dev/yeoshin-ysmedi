@@ -33,7 +33,7 @@ export const SixthMobileSlide = () => {
           threshold={0}
           animationClassName={"animate-smoothUpFirst_therfect"}
         >
-          <div className="flex-center mb-[1px]">
+          <div className="flex-center">
             <img
               width={157}
               height={40}
@@ -48,7 +48,7 @@ export const SixthMobileSlide = () => {
           </p>
         </InviewComponent>
         <InviewComponent animationClassName={"animate-smoothUpThird_therfect"}>
-          <p className="relative text-center font-pretendard text-[13px] font-[400] leading-[30px] text-[#696969] mshs:leading-[24px]">
+          <p className="relative text-center font-pretendard text-[16px] font-[400] leading-[30px] text-[#696969]">
             {
               "Non-pole Therma Transmission Structures 자사에서 직접 개발한 독특한 열전달 구조로, 효과적으로 고주파 에너지를 표피와 진피에 전달합니다."
             }

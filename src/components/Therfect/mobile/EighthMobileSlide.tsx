@@ -2,7 +2,9 @@ export const EighthMobileSlide = () => {
   return (
     <section className="relative h-[100dvh] w-screen overflow-hidden bg-[#F9F9F9] font-sans  text-[80px] font-[700]">
       <div className="mt-[12dvh] pl-[30px]">
-        <div className="text-[20px] font-[400]">Specifications</div>
+        <div className="text-[20px] font-[400] leading-[23px]">
+          Specifications
+        </div>
         <div className="my-[9dvh]">
           <img
             width={122}

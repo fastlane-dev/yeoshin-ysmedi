@@ -42,18 +42,17 @@ export const FourthMobileSlide = () => {
 
   useEffect(() => {
     setNozzleContainerHeight(
-      window.innerHeight < 500
+      window.innerHeight < 700
         ? (nozzleContainer.current?.clientHeight as number) + 150
         : (nozzleContainer.current?.clientHeight as number) + 100
     );
   }, [nozzleContainer]);
   return (
-    <section className="relative top-[30px] w-screen bg-[#F9F9F9] text-center font-pretendard font-[700]">
-      <div
-        ref={nozzleContainer}
-        className=" w-screen px-[31px]"
-        style={{ height: nozzleContainerHeight }}
-      >
+    <section
+      className="relative top-[30px] w-screen bg-[#F9F9F9] text-center font-pretendard font-[600]"
+      style={{ height: nozzleContainerHeight }}
+    >
+      <div ref={nozzleContainer} className=" w-screen px-[31px]">
         <div className="mb-[34px] flex justify-center gap-[12dvw]">
           <Nozzle
             imgClass="relative mb-[20px] w-[18dvw] h-[18dvw]"

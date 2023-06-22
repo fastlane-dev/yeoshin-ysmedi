@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -16,6 +16,9 @@ import { NinethMobileSlide } from "./NinethMobileSlide";
 import { changeBodyBackground } from "../common/changeBodyBackground";
 
 const Mobile = () => {
+  useEffect(() => {
+    changeBodyBackground("#f68e0f");
+  }, []);
   return (
     <Swiper
       direction={"vertical"}
