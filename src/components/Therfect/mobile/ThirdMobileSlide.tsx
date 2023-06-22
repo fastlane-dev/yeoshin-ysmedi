@@ -6,7 +6,7 @@ import { InviewComponent } from "../common/InviewComponent";
 export const ThirdMobileSlide = () => {
   return (
     <section className="relative h-[100dvh] w-screen bg-[#F9F9F9]">
-      <div className="self-start pl-[30px] pt-[5dvh]">
+      <div className="self-start pl-[30px] pt-[10dvh]">
         <div className="mb-[7.8dvh] flex items-center justify-start gap-[12px]">
           <p className="font-sans text-[20px] font-[400] leading-[23px]">
             Cartridge
@@ -37,8 +37,10 @@ export const ThirdMobileSlide = () => {
         </div>
         <InviewComponent animationClassName="animate-smoothUpFirst_therfect">
           <div>
-            <p className="font-pretendard text-[30px] font-[500]">5가지 팁</p>
-            <p className="mb-[3.9dvh] font-pretendard text-[30px] font-[500]">
+            <p className="font-pretendard text-[30px] font-[500] leading-[36px]">
+              5가지 팁
+            </p>
+            <p className="mb-[3.9dvh] font-pretendard text-[30px] font-[500] leading-[36px]">
               3가지 시술방법
             </p>
           </div>

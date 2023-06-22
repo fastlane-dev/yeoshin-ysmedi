@@ -31,14 +31,14 @@ export const NinethMobileSlide = () => {
             <div className="text-[#CCCCCC]">EN</div> */}
           </div>
         </p>
-        <p className="mt-[106px] font-faktumTest text-[12px] leading-[16.07px] text-[#000000]">
+        <p className="mt-[106px] font-faktumTest text-[12px] font-[400] leading-[16px] text-[#000000]">
           <div className="tracking-[0.04em]">
             <p className="mb-[6px]">TEL. 070-4858-4686</p>
             <p className="mb-[24px]">Email. beauty@ysmedi.kr</p>
           </div>
 
           <div>
-            <p className="mb-[6px] font-pretendard font-[300]">
+            <p className="mb-[6px] font-pretendard">
               경기도 용인시 기흥구 동백중앙로 191, 8층 A8323호
             </p>
             <p>Ⓒ Ysmedi Co., Ltd.</p>

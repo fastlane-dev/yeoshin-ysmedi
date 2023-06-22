@@ -5,7 +5,7 @@ import { InviewComponent } from "../common/InviewComponent";
 export const SecondMobileSlide = () => {
   return (
     <section className="relative h-[100dvh] w-screen overflow-hidden bg-white">
-      <div className="relative z-[30] mt-[5dvh] self-start pl-[30px]">
+      <div className="relative z-[30] mt-[10dvh] self-start pl-[30px]">
         <div className="mb-[7.8dvh] flex items-center justify-start gap-[12px]">
           <p className="font-sans text-[20px] font-[400] leading-[23px]">
             Product
@@ -36,10 +36,10 @@ export const SecondMobileSlide = () => {
         </div>
         <InviewComponent animationClassName="animate-smoothUpFirst_therfect">
           <div>
-            <p className="mb-[0.1dvh] font-sans text-[30px] font-[400] leading-[33px]">
+            <p className="font-sans text-[30px] font-[400] leading-[36px]">
               4MHz
             </p>
-            <p className="mb-[3.9dvh] font-pretendard text-[30px] font-[500]">
+            <p className="mb-[3.9dvh] font-pretendard text-[30px] font-[500] leading-[36px]">
               고성능 고주파
             </p>
           </div>
@@ -57,13 +57,11 @@ export const SecondMobileSlide = () => {
         </InviewComponent>
       </div>
       <InviewComponent animationClassName={"animate-smoothUpThird_therfect"}>
-        <div className="relative z-[20] mx-auto h-[80dvh] w-[100dvw] mhmw2:bottom-[-6dvh] mhmw1:bottom-[-3dvh] msm:bottom-[-2dvh] mmd:bottom-[-4dvh]">
-          <img
-            src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/second_mobile_robot.png`}
-            alt="therfect_robot"
-            className="object-contain"
-          />
-        </div>
+        <img
+          src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/second_mobile_robot.png`}
+          alt="therfect_robot"
+          className="absolute bottom-[-10dvh] z-[20] mx-auto h-[56dvh] w-[100dvw] object-contain mhmw2:bottom-[-15dvh]"
+        />
       </InviewComponent>
     </section>
   );

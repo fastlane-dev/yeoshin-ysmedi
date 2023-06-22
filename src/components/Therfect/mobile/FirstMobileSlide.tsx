@@ -2,7 +2,7 @@ import React from "react";
 
 export const FirstMobileSlide = () => {
   return (
-    <section className="relative w-screen overflow-hidden bg-main-orange font-futura text-[80px] font-[500] text-white">
+    <section className="relative h-[100dvh] w-screen overflow-hidden bg-main-orange font-futura text-[80px] font-[500] text-white">
       <div className="absolute right-[16dvw] top-[78px] h-[9.3dvw] w-[9.3dvw]">
         <img
           src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/ball.svg`}
@@ -49,7 +49,7 @@ export const FirstMobileSlide = () => {
         </div>
       </div>
 
-      <div className="relative bottom-[5dvh] mx-auto h-[70dvh] w-[70dvw] msm:bottom-[-4dvh] msm:h-[60dvh] msm:w-[50dvw] mmd:bottom-[-6dvw] mmd:w-[40dvw]">
+      <div className="relative bottom-[2dvh] mx-auto h-[70dvh] w-[70dvw] msm:bottom-[-4dvh] msm:h-[60dvh] msm:w-[50dvw] mmd:bottom-[-6dvw] mmd:w-[40dvw]">
         <img
           src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/first_mobile_robot.png`}
           className="object-contain"
