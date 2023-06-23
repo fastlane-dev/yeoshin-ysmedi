@@ -5,7 +5,7 @@ export const SeventhMobildSlide = () => {
     <section className="flex-center relative h-screen w-screen items-end overflow-hidden font-faktumTest tracking-[-0.02em] text-white">
       <div className="absolute h-screen w-screen">
         <img
-          src={"/img/ysmedi/lala_background.png"}
+          src={`${process.env.NEXT_PUBLIC_CDN_IMAGES}ysmedi/lala_background.png`}
           alt="lala_background"
           className="absolute object-contain"
         />
