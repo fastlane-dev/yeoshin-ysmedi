@@ -33,7 +33,7 @@ export const SixthMobileSlide = () => {
           threshold={0}
           animationClassName={"animate-smoothUpFirst_therfect"}
         >
-          <div className="flex-center">
+          <div className="flex-center mb-[10px]">
             <img
               width={157}
               height={40}

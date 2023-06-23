@@ -7,7 +7,7 @@ export const Square = () => (
 export const SeventhMobileSlide = () => {
   return (
     <section
-      className="relative flex h-[100dvh] w-[100dvw] flex-col justify-between overflow-hidden bg-black px-[47px] pt-[30px] font-pretendard font-[400] text-white"
+      className="relative flex h-[100dvh] w-[100dvw] flex-col justify-between overflow-hidden bg-black px-[47px] pt-[30px] font-pretendard text-white"
       style={{
         paddingBottom: "calc(30px + env(safe-area-inset-bottom))",
       }}
@@ -32,11 +32,13 @@ export const SeventhMobileSlide = () => {
             <div className="font-sans text-[45px] font-[400] leading-[40px]">
               ACTIVE
             </div>
-            <div className="text-[20px] leading-[40px]">온도 컨트롤</div>
+            <div className="text-[20px] font-[500] leading-[40px]">
+              온도 컨트롤
+            </div>
           </div>
         </InviewComponent>
         <InviewComponent animationClassName={"animate-smoothUpSecond_therfect"}>
-          <p className="relative mb-[20px] text-center font-pretendard text-[16px] font-[300] leading-[30px]">
+          <p className="relative mb-[20px] text-center font-pretendard text-[16px] font-[400] leading-[30px]">
             {"시술 목적에 따라 피부 온도를\n실시간으로 체크해 빈틈없이 시술"}
           </p>
         </InviewComponent>
