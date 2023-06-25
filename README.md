@@ -2,11 +2,9 @@
 
 # 🚀 배포주소
 
-- 운영주소: https://www.ysmedi.kr
-
-- 개발주소: https://www.ysmedi.click
-
-- ysmedi 자리에 lhalala , therfect를 넣으면 다른 페이지가 나타남
+- 와이에스메디: https://www.ysmedi.kr
+- 써팩트: https://www.therfect.com
+- 라라필: 미정
 
 ## 특이사항
 
