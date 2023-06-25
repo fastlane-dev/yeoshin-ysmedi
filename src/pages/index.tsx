@@ -3,6 +3,8 @@ import Head from "next/head";
 import { PAGE_IDENTITY, PAGE_INFOS } from "@/constants/pageInfos";
 import { GetServerSideProps } from "next";
 
+import { customorLogger } from "../logger/logger";
+
 type valueOf<T> = T[keyof T];
 
 export default function Home({
@@ -11,7 +13,6 @@ export default function Home({
   pageIdentity: valueOf<typeof PAGE_IDENTITY>;
 }) {
   const { Component, faviconPath, title } = PAGE_INFOS[pageIdentity];
-
   return (
     <>
       <Head>
@@ -28,24 +29,55 @@ export default function Home({
 }
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-  const absoluteUrl = context.req.headers.host;
+  const { req } = context;
 
-  const getIdentityByUrl = (url: string) => {
-    switch (true) {
-      case url.includes(PAGE_IDENTITY.YS_MEDI):
-        return PAGE_IDENTITY.YS_MEDI;
-      case url.includes(PAGE_IDENTITY.LALA_PEEL):
-        return PAGE_IDENTITY.LALA_PEEL;
-      case url.includes(PAGE_IDENTITY.THERFECT):
-        return PAGE_IDENTITY.THERFECT;
-      default:
-        return PAGE_IDENTITY.YS_MEDI;
-    }
-  };
-
-  return {
-    props: {
-      pageIdentity: getIdentityByUrl(absoluteUrl as string),
+  const essentialLogs = {
+    accessLog: {
+      ip:
+        req.headers["x-real-ip"] ||
+        req.headers["x-forwarded-for"] ||
+        req.connection.remoteAddress,
+      hostname: req.headers.host,
+      method: req.method,
+      source: req.url,
+    },
+    status: {
+      code: req.statusCode,
+      message: req.statusMessage,
+    },
+    session: {
+      userAgent: req.headers["user-agent"] || navigator.userAgent,
+      cookie: req.cookies,
     },
   };
+
+  customorLogger.info(essentialLogs);
+
+  try {
+    const absoluteUrl = req.headers.host;
+
+    const getIdentityByUrl = (url: string) => {
+      switch (true) {
+        case url.includes(PAGE_IDENTITY.YS_MEDI):
+          return PAGE_IDENTITY.YS_MEDI;
+        case url.includes(PAGE_IDENTITY.LALA_PEEL):
+          return PAGE_IDENTITY.LALA_PEEL;
+        case url.includes(PAGE_IDENTITY.THERFECT):
+          return PAGE_IDENTITY.THERFECT;
+        default:
+          return PAGE_IDENTITY.YS_MEDI;
+      }
+    };
+
+    return {
+      props: {
+        pageIdentity: getIdentityByUrl(absoluteUrl as string),
+      },
+    };
+  } catch (error) {
+    customorLogger.error(error);
+    return {
+      props: {},
+    };
+  }
 };

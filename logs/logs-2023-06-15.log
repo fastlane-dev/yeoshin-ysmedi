@@ -1,0 +1,165 @@
+2023-06-15 18:17:41:1741 [ [32minfo[39m ]: [32m{[39m
+[32m  accessLog: {[39m
+[32m    ip: undefined,[39m
+[32m    hostname: 'localhost:3000',[39m
+[32m    method: 'GET',[39m
+[32m    source: '/'[39m
+[32m  },[39m
+[32m  status: { code: null, message: null },[39m
+[32m  session: {[39m
+[32m    userAgent: 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36',[39m
+[32m    cookie: {[39m
+[32m      _ga: 'GA1.1.224191026.1681168806',[39m
+[32m      'ch-veil-id': '5b996a7b-06d1-4465-9e02-ab4b4a447dc9',[39m
+[32m      ACEUACS: '1679637781452013685',[39m
+[32m      ACEFCID: 'UID-643499B363741DA02D0108E8',[39m
+[32m      'ab.storage.deviceId.af4870c5-0c68-4e71-9d22-7d35fa8e8b6b': '{"g":"4f7f8014-8fa0-b77c-1cc4-59b8d6f6d08b","c":1682577153570,"l":1682577153570}',[39m
+[32m      AUFAS4A40951768157: '1680188400000000000|3|1683604972104113686|1|1679637781452013685',[39m
+[32m      ASAS4A40951768157: '1686372242518901255|1686372242518901255|1686372242518901255|1686372242518901255|bookmark',[39m
+[32m      AUAS4A40951768157: '1686372242518901255|6|1680250333863313685|1|1679637781452013685|1',[39m
+[32m      ARAS4A40951768157: 'httpslocalhost3000modalmainSearchbookmark',[39m
+[32m      ACEUCI: '1',[39m
+[32m      _fbp: 'fb.0.1686459280156.609406640',[39m
+[32m      accessToken: '8s7+LelEusQEFk9ygHYeg71zsIZ8gRG3KdO0oVnwZbmDfSUey7Pluy7ST8iXdd4y',[39m
+[32m      'ab.storage.sessionId.af4870c5-0c68-4e71-9d22-7d35fa8e8b6b': '{"g":"b8044646-0fdc-32dc-0f51-757160606ec1","e":1686491802744,"c":1686488790634,"l":1686490002744}',[39m
+[32m      amp_06b0dd: 'wHCamE3NzzKxscAknUpmba.c2lua3lvMTIzNQ==..1h2l91djm.1h2la6dad.34.1j.4n',[39m
+[32m      _ga_5V75228BPT: 'GS1.1.1686493880.28.0.1686493880.60.0.0',[39m
+[32m      _ga_01SRCCYLHT: 'GS1.1.1686493880.28.0.1686493880.60.0.0'[39m
+[32m    }[39m
+[32m  }[39m
+[32m}[39m
+2023-06-15 18:17:41:1741 [ [32minfo[39m ]: [32m{[39m
+[32m  accessLog: {[39m
+[32m    ip: undefined,[39m
+[32m    hostname: 'localhost:3000',[39m
+[32m    method: 'GET',[39m
+[32m    source: '/'[39m
+[32m  },[39m
+[32m  status: { code: null, message: null },[39m
+[32m  session: {[39m
+[32m    userAgent: 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36',[39m
+[32m    cookie: {[39m
+[32m      _ga: 'GA1.1.224191026.1681168806',[39m
+[32m      'ch-veil-id': '5b996a7b-06d1-4465-9e02-ab4b4a447dc9',[39m
+[32m      ACEUACS: '1679637781452013685',[39m
+[32m      ACEFCID: 'UID-643499B363741DA02D0108E8',[39m
+[32m      'ab.storage.deviceId.af4870c5-0c68-4e71-9d22-7d35fa8e8b6b': '{"g":"4f7f8014-8fa0-b77c-1cc4-59b8d6f6d08b","c":1682577153570,"l":1682577153570}',[39m
+[32m      AUFAS4A40951768157: '1680188400000000000|3|1683604972104113686|1|1679637781452013685',[39m
+[32m      ASAS4A40951768157: '1686372242518901255|1686372242518901255|1686372242518901255|1686372242518901255|bookmark',[39m
+[32m      AUAS4A40951768157: '1686372242518901255|6|1680250333863313685|1|1679637781452013685|1',[39m
+[32m      ARAS4A40951768157: 'httpslocalhost3000modalmainSearchbookmark',[39m
+[32m      ACEUCI: '1',[39m
+[32m      _fbp: 'fb.0.1686459280156.609406640',[39m
+[32m      accessToken: '8s7+LelEusQEFk9ygHYeg71zsIZ8gRG3KdO0oVnwZbmDfSUey7Pluy7ST8iXdd4y',[39m
+[32m      'ab.storage.sessionId.af4870c5-0c68-4e71-9d22-7d35fa8e8b6b': '{"g":"b8044646-0fdc-32dc-0f51-757160606ec1","e":1686491802744,"c":1686488790634,"l":1686490002744}',[39m
+[32m      amp_06b0dd: 'wHCamE3NzzKxscAknUpmba.c2lua3lvMTIzNQ==..1h2l91djm.1h2la6dad.34.1j.4n',[39m
+[32m      _ga_5V75228BPT: 'GS1.1.1686493880.28.0.1686493880.60.0.0',[39m
+[32m      _ga_01SRCCYLHT: 'GS1.1.1686493880.28.0.1686493880.60.0.0'[39m
+[32m    }[39m
+[32m  }[39m
+[32m}[39m
+2023-06-15 18:17:41:1741 [ [32minfo[39m ]: [32m{[39m
+[32m  accessLog: { ip: '::1', hostname: 'localhost:3000', method: 'GET', source: '/' },[39m
+[32m  status: { code: null, message: null },[39m
+[32m  session: {[39m
+[32m    userAgent: 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36',[39m
+[32m    cookie: {[39m
+[32m      _ga: 'GA1.1.224191026.1681168806',[39m
+[32m      'ch-veil-id': '5b996a7b-06d1-4465-9e02-ab4b4a447dc9',[39m
+[32m      ACEUACS: '1679637781452013685',[39m
+[32m      ACEFCID: 'UID-643499B363741DA02D0108E8',[39m
+[32m      'ab.storage.deviceId.af4870c5-0c68-4e71-9d22-7d35fa8e8b6b': '{"g":"4f7f8014-8fa0-b77c-1cc4-59b8d6f6d08b","c":1682577153570,"l":1682577153570}',[39m
+[32m      AUFAS4A40951768157: '1680188400000000000|3|1683604972104113686|1|1679637781452013685',[39m
+[32m      ASAS4A40951768157: '1686372242518901255|1686372242518901255|1686372242518901255|1686372242518901255|bookmark',[39m
+[32m      AUAS4A40951768157: '1686372242518901255|6|1680250333863313685|1|1679637781452013685|1',[39m
+[32m      ARAS4A40951768157: 'httpslocalhost3000modalmainSearchbookmark',[39m
+[32m      ACEUCI: '1',[39m
+[32m      _fbp: 'fb.0.1686459280156.609406640',[39m
+[32m      accessToken: '8s7+LelEusQEFk9ygHYeg71zsIZ8gRG3KdO0oVnwZbmDfSUey7Pluy7ST8iXdd4y',[39m
+[32m      'ab.storage.sessionId.af4870c5-0c68-4e71-9d22-7d35fa8e8b6b': '{"g":"b8044646-0fdc-32dc-0f51-757160606ec1","e":1686491802744,"c":1686488790634,"l":1686490002744}',[39m
+[32m      amp_06b0dd: 'wHCamE3NzzKxscAknUpmba.c2lua3lvMTIzNQ==..1h2l91djm.1h2la6dad.34.1j.4n',[39m
+[32m      _ga_5V75228BPT: 'GS1.1.1686493880.28.0.1686493880.60.0.0',[39m
+[32m      _ga_01SRCCYLHT: 'GS1.1.1686493880.28.0.1686493880.60.0.0'[39m
+[32m    }[39m
+[32m  }[39m
+[32m}[39m
+2023-06-15 18:17:51:1751 [ [32minfo[39m ]: [32m{[39m
+[32m  accessLog: { ip: '::1', hostname: 'localhost:3000', method: 'GET', source: '/' },[39m
+[32m  status: { code: null, message: null },[39m
+[32m  session: {[39m
+[32m    userAgent: 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36',[39m
+[32m    cookie: {[39m
+[32m      _ga: 'GA1.1.224191026.1681168806',[39m
+[32m      'ch-veil-id': '5b996a7b-06d1-4465-9e02-ab4b4a447dc9',[39m
+[32m      ACEUACS: '1679637781452013685',[39m
+[32m      ACEFCID: 'UID-643499B363741DA02D0108E8',[39m
+[32m      'ab.storage.deviceId.af4870c5-0c68-4e71-9d22-7d35fa8e8b6b': '{"g":"4f7f8014-8fa0-b77c-1cc4-59b8d6f6d08b","c":1682577153570,"l":1682577153570}',[39m
+[32m      AUFAS4A40951768157: '1680188400000000000|3|1683604972104113686|1|1679637781452013685',[39m
+[32m      ASAS4A40951768157: '1686372242518901255|1686372242518901255|1686372242518901255|1686372242518901255|bookmark',[39m
+[32m      AUAS4A40951768157: '1686372242518901255|6|1680250333863313685|1|1679637781452013685|1',[39m
+[32m      ARAS4A40951768157: 'httpslocalhost3000modalmainSearchbookmark',[39m
+[32m      ACEUCI: '1',[39m
+[32m      _fbp: 'fb.0.1686459280156.609406640',[39m
+[32m      accessToken: '8s7+LelEusQEFk9ygHYeg71zsIZ8gRG3KdO0oVnwZbmDfSUey7Pluy7ST8iXdd4y',[39m
+[32m      'ab.storage.sessionId.af4870c5-0c68-4e71-9d22-7d35fa8e8b6b': '{"g":"b8044646-0fdc-32dc-0f51-757160606ec1","e":1686491802744,"c":1686488790634,"l":1686490002744}',[39m
+[32m      amp_06b0dd: 'wHCamE3NzzKxscAknUpmba.c2lua3lvMTIzNQ==..1h2l91djm.1h2la6dad.34.1j.4n',[39m
+[32m      _ga_5V75228BPT: 'GS1.1.1686493880.28.0.1686493880.60.0.0',[39m
+[32m      _ga_01SRCCYLHT: 'GS1.1.1686493880.28.0.1686493880.60.0.0'[39m
+[32m    }[39m
+[32m  }[39m
+[32m}[39m
+2023-06-15 18:25:19:2519 [ [32minfo[39m ]: [32m{[39m
+[32m  accessLog: {[39m
+[32m    ip: '::1',[39m
+[32m    hostname: 'localhost:3000',[39m
+[32m    method: 'GET',[39m
+[32m    source: '/_next/data/development/index.json'[39m
+[32m  },[39m
+[32m  status: { code: null, message: null },[39m
+[32m  session: {[39m
+[32m    userAgent: 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36',[39m
+[32m    cookie: {[39m
+[32m      _ga: 'GA1.1.224191026.1681168806',[39m
+[32m      'ch-veil-id': '5b996a7b-06d1-4465-9e02-ab4b4a447dc9',[39m
+[32m      ACEUACS: '1679637781452013685',[39m
+[32m      ACEFCID: 'UID-643499B363741DA02D0108E8',[39m
+[32m      'ab.storage.deviceId.af4870c5-0c68-4e71-9d22-7d35fa8e8b6b': '{"g":"4f7f8014-8fa0-b77c-1cc4-59b8d6f6d08b","c":1682577153570,"l":1682577153570}',[39m
+[32m      AUFAS4A40951768157: '1680188400000000000|3|1683604972104113686|1|1679637781452013685',[39m
+[32m      ASAS4A40951768157: '1686372242518901255|1686372242518901255|1686372242518901255|1686372242518901255|bookmark',[39m
+[32m      AUAS4A40951768157: '1686372242518901255|6|1680250333863313685|1|1679637781452013685|1',[39m
+[32m      ARAS4A40951768157: 'httpslocalhost3000modalmainSearchbookmark',[39m
+[32m      ACEUCI: '1',[39m
+[32m      _fbp: 'fb.0.1686459280156.609406640',[39m
+[32m      accessToken: '8s7+LelEusQEFk9ygHYeg71zsIZ8gRG3KdO0oVnwZbmDfSUey7Pluy7ST8iXdd4y',[39m
+[32m      'ab.storage.sessionId.af4870c5-0c68-4e71-9d22-7d35fa8e8b6b': '{"g":"b8044646-0fdc-32dc-0f51-757160606ec1","e":1686491802744,"c":1686488790634,"l":1686490002744}',[39m
+[32m      amp_06b0dd: 'wHCamE3NzzKxscAknUpmba.c2lua3lvMTIzNQ==..1h2l91djm.1h2la6dad.34.1j.4n',[39m
+[32m      _ga_5V75228BPT: 'GS1.1.1686493880.28.0.1686493880.60.0.0',[39m
+[32m      _ga_01SRCCYLHT: 'GS1.1.1686493880.28.0.1686493880.60.0.0'[39m
+[32m    }[39m
+[32m  }[39m
+[32m}[39m
+2023-06-15 18:28:26:2826 [ [32minfo[39m ]: [32m{[39m
+[32m  accessLog: { ip: '::1', hostname: 'localhost:3000', method: 'GET', source: '/' },[39m
+[32m  status: { code: null, message: null },[39m
+[32m  session: {[39m
+[32m    userAgent: 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36',[39m
+[32m    cookie: {[39m
+[32m      _ga: 'GA1.1.224191026.1681168806',[39m
+[32m      'ch-veil-id': '5b996a7b-06d1-4465-9e02-ab4b4a447dc9',[39m
+[32m      ACEUACS: '1679637781452013685',[39m
+[32m      ACEFCID: 'UID-643499B363741DA02D0108E8',[39m
+[32m      'ab.storage.deviceId.af4870c5-0c68-4e71-9d22-7d35fa8e8b6b': '{"g":"4f7f8014-8fa0-b77c-1cc4-59b8d6f6d08b","c":1682577153570,"l":1682577153570}',[39m
+[32m      AUFAS4A40951768157: '1680188400000000000|3|1683604972104113686|1|1679637781452013685',[39m
+[32m      ASAS4A40951768157: '1686372242518901255|1686372242518901255|1686372242518901255|1686372242518901255|bookmark',[39m
+[32m      AUAS4A40951768157: '1686372242518901255|6|1680250333863313685|1|1679637781452013685|1',[39m
+[32m      ARAS4A40951768157: 'httpslocalhost3000modalmainSearchbookmark',[39m
+[32m      ACEUCI: '1',[39m
+[32m      _fbp: 'fb.0.1686459280156.609406640',[39m
+[32m      accessToken: '8s7+LelEusQEFk9ygHYeg71zsIZ8gRG3KdO0oVnwZbmDfSUey7Pluy7ST8iXdd4y',[39m
+[32m      'ab.storage.sessionId.af4870c5-0c68-4e71-9d22-7d35fa8e8b6b': '{"g":"b8044646-0fdc-32dc-0f51-757160606ec1","e":1686491802744,"c":1686488790634,"l":1686490002744}',[39m
+[32m      amp_06b0dd: 'wHCamE3NzzKxscAknUpmba.c2lua3lvMTIzNQ==..1h2l91djm.1h2la6dad.34.1j.4n',[39m
+[32m      _ga_5V75228BPT: 'GS1.1.1686493880.28.0.1686493880.60.0.0',[39m
+[32m      _ga_01SRCCYLHT: 'GS1.1.1686493880.28.0.1686493880.60.0.0'[39m
+[32m    }[39m
+[32m  }[39m
+[32m}[39m
