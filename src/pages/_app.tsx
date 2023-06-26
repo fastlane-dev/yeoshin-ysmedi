@@ -29,24 +29,6 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         {pageIdentity === PAGE_IDENTITY.THERFECT ? (
           <>
-            {/* <!--Googletag(gtag.js)--> */}
-            <script
-              async
-              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_TRACKING_ID}`}
-            />
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `
-  window.dataLayer=window.dataLayer||[];
-  functiongtag(){dataLayer.push(arguments);}
-  gtag('js',newDate());gtag('config','${process.env.NEXT_PUBLIC_GA_TRACKING_ID}');
-  `,
-              }}
-            />
-          </>
-        ) : null}
-        {pageIdentity === PAGE_IDENTITY.THERFECT ? (
-          <>
             {/* <!--GoogleTagManager--> */}
             <script
               dangerouslySetInnerHTML={{
@@ -61,6 +43,26 @@ export default function App({ Component, pageProps }: AppProps) {
         ) : null}
         {seoData && <meta name="keywords" content={seoData.keywords} />}
       </Head>
+      {pageIdentity === PAGE_IDENTITY.THERFECT ? (
+        <>
+          {/* <!--Googletag(gtag.js)--> */}
+
+          <script
+            id="gtag-init"
+            dangerouslySetInnerHTML={{
+              __html: `
+                  window.dataLayer=window.dataLayer||[];
+                  functiongtag(){dataLayer.push(arguments);}
+                  gtag('js',newDate());
+                  gtag('config','${process.env.NEXT_PUBLIC_GA_TRACKING_ID}');
+                  `,
+            }}
+          />
+          <script
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_TRACKING_ID}`}
+          />
+        </>
+      ) : null}
       {seoData ? <NextSeo {...seoData} /> : <></>}
       {pageIdentity === PAGE_IDENTITY.THERFECT ? (
         <>
