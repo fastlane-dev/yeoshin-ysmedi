@@ -27,57 +27,19 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        {pageIdentity === PAGE_IDENTITY.THERFECT ? (
-          <>
-            {/* <!--GoogleTagManager--> */}
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':newDate().getTime(),event:'gtm.js'});
-              varf=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
-              j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})
-              (window,document,'script','dataLayer','${process.env.NEXT_PUBLIC_GA_TRACKING_ID}');`,
-              }}
-            />
-            {/* <!--EndGoogleTagManager--> */}
-          </>
-        ) : null}
+        {/* <!--GoogleTagManager--> */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':newDate().getTime(),event:'gtm.js'});
+          varf=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+          j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})
+          (window,document,'script','dataLayer','${process.env.NEXT_PUBLIC_GA_TRACKING_ID}');`,
+          }}
+        />
+        {/* <!--EndGoogleTagManager--> */}
         {seoData && <meta name="keywords" content={seoData.keywords} />}
       </Head>
-      {pageIdentity === PAGE_IDENTITY.THERFECT ? (
-        <>
-          {/* <!--Googletag(gtag.js)--> */}
-
-          <script
-            id="gtag-init"
-            dangerouslySetInnerHTML={{
-              __html: `
-                  window.dataLayer=window.dataLayer||[];
-                  functiongtag(){dataLayer.push(arguments);}
-                  gtag('js',newDate());
-                  gtag('config','${process.env.NEXT_PUBLIC_GA_TRACKING_ID}');
-                  `,
-            }}
-          />
-          <script
-            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_TRACKING_ID}`}
-          />
-        </>
-      ) : null}
       {seoData ? <NextSeo {...seoData} /> : <></>}
-      {pageIdentity === PAGE_IDENTITY.THERFECT ? (
-        <>
-          {/* <!--GoogleTagManager(noscript)--> */}
-          <noscript>
-            <iframe
-              src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GA_TRACKING_ID}`}
-              height="0"
-              width="0"
-              style={{ display: "none", visibility: "hidden" }}
-            ></iframe>
-          </noscript>
-          {/* <!--EndGoogleTagManager(noscript)--> */}
-        </>
-      ) : null}
       <Component {...pageProps} />;
     </>
   );
