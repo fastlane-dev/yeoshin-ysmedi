@@ -2,8 +2,11 @@ import type { AppProps } from "next/app";
 import "swiper/css";
 import "@/styles/globals.css";
 import Head from "next/head";
+import { NextSeo } from "next-seo";
 
 export default function App({ Component, pageProps }: AppProps) {
+  const { seoData } = pageProps;
+
   return (
     <>
       <Head>
@@ -15,7 +18,9 @@ export default function App({ Component, pageProps }: AppProps) {
               (window,document,'script','dataLayer','${process.env.NEXT_PUBLIC_GA_TRACKING_ID}');`,
           }}
         />
+        {seoData && <meta name="keywords" content={seoData.keywords} />}
       </Head>
+      {seoData ? <NextSeo {...seoData} /> : <></>}
       <Component {...pageProps} />;
     </>
   );
