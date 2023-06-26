@@ -43,8 +43,8 @@ export const FourthMobileSlide = () => {
   useEffect(() => {
     setNozzleContainerHeight(
       window.innerHeight < 700
-        ? (nozzleContainer.current?.clientHeight as number) + 150
-        : (nozzleContainer.current?.clientHeight as number) + 100
+        ? (nozzleContainer.current?.clientHeight as number) + 200
+        : (nozzleContainer.current?.clientHeight as number) + 150
     );
   }, [nozzleContainer]);
   return (
