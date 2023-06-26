@@ -8,8 +8,7 @@ const therfectSeoInfos = () => ({
   keyword:
     "써펙트, 써펙트리프팅, 고주파, 고주파리프팅, 고성능고주파, 고주파레이저, 리프팅레이저, 탄력리프팅",
   canonical: "https://www.therfect.com",
-  ogImage:
-    "https://d10fvx8ndeqwvu.cloudfront.net/upfiles/banner/2478886297.png",
+  ogImage: "/img/therfect/therfect_og_image.jpg",
   ogTitle: "Therfect, 써펙트",
   ogDescription: "더 강력해진 고성능 고주파",
 });
