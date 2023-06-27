@@ -49,8 +49,8 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
         };
       default:
         return {
-          identity: PAGE_IDENTITY.YS_MEDI,
-          seoData: seoDataMapper(PAGE_IDENTITY.YS_MEDI),
+          identity: PAGE_IDENTITY.THERFECT,
+          seoData: seoDataMapper(PAGE_IDENTITY.THERFECT),
         };
     }
   };
