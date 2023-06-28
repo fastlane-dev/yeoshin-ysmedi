@@ -37,20 +37,21 @@ export const Nozzle = ({
 };
 
 export const FourthMobileSlide = () => {
+  const isChrome = navigator.userAgent.toUpperCase().includes("CHROME");
   const nozzleContainer = useRef<HTMLDivElement>(null);
   const [nozzleContainerHeight, setNozzleContainerHeight] = useState<number>();
 
   useEffect(() => {
     setNozzleContainerHeight(
       window.innerHeight < 700
-        ? (nozzleContainer.current?.clientHeight as number) + 200
-        : (nozzleContainer.current?.clientHeight as number) + 150
+        ? (nozzleContainer.current?.clientHeight as number) + 50
+        : (nozzleContainer.current?.clientHeight as number) + 100
     );
   }, [nozzleContainer]);
   return (
     <section
       className="relative top-[30px] w-screen bg-[#F9F9F9] text-center font-pretendard font-[600]"
-      style={{ height: nozzleContainerHeight }}
+      style={{ height: `${isChrome ? "65dvh" : "75dvh"}` }}
     >
       <div ref={nozzleContainer} className=" w-screen px-[31px]">
         <div className="mb-[34px] flex justify-center gap-[12dvw]">
