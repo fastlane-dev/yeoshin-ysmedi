@@ -3,8 +3,7 @@ import Head from "next/head";
 import { PAGE_IDENTITY, PAGE_INFOS } from "@/constants/pageInfos";
 import { GetServerSideProps } from "next";
 import { seoDataMapper } from "@/constants/seoMapper";
-
-type valueOf<T> = T[keyof T];
+import type { valueOf } from "@/utils/type";
 
 export default function Home({
   pageIdentity,
