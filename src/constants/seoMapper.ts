@@ -1,4 +1,5 @@
 import { PAGE_IDENTITY } from "./pageInfos";
+import type { valueOf } from "@/utils/type";
 
 const therfectSeoInfos = () => ({
   title: "써펙트 Therfect",
@@ -35,7 +36,7 @@ const ysmediSeoInfos = () => ({
   ogDescription: "ogDescription",
 });
 
-const anylzeSeoDataByType = (identity: string) => {
+const anylzeSeoDataByType = (identity: valueOf<typeof PAGE_IDENTITY>) => {
   switch (identity) {
     case PAGE_IDENTITY.THERFECT:
       return therfectSeoInfos();
@@ -59,7 +60,7 @@ const anylzeSeoDataByType = (identity: string) => {
   }
 };
 
-export const seoDataMapper = (identity: string) => {
+export const seoDataMapper = (identity: valueOf<typeof PAGE_IDENTITY>) => {
   const {
     title,
     description,

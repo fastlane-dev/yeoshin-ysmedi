@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import { InviewComponent } from "../common/InviewComponent";
 
 type NozzleType = Record<
@@ -39,15 +39,7 @@ export const Nozzle = ({
 export const FourthMobileSlide = () => {
   const isChrome = navigator.userAgent.toUpperCase().includes("CHROME");
   const nozzleContainer = useRef<HTMLDivElement>(null);
-  const [nozzleContainerHeight, setNozzleContainerHeight] = useState<number>();
 
-  useEffect(() => {
-    setNozzleContainerHeight(
-      window.innerHeight < 700
-        ? (nozzleContainer.current?.clientHeight as number) + 50
-        : (nozzleContainer.current?.clientHeight as number) + 100
-    );
-  }, [nozzleContainer]);
   return (
     <section
       className="relative top-[30px] w-screen bg-[#F9F9F9] text-center font-pretendard font-[600]"
@@ -95,7 +87,7 @@ export const FourthMobileSlide = () => {
             subTitleClass="text-[2.5dvw] mmd:text-[2dvw] font-[500] leading-[14px] msm:leading-[20px] mmd:leading-[25px]"
             imgSrc={`${process.env.NEXT_PUBLIC_CDN_IMAGES}therfect/fifth_nozzle.png`}
             title="프락셔널 100P"
-            subTitle={"비교적 깊은 모공과\n흉터에 시술"}
+            subTitle={"비교적 얕은 모공과\n흉터에 시술"}
           />
         </div>
       </div>
