@@ -68,17 +68,23 @@ table,
 tr {
   border-top: 1.2px solid black;
   border-bottom: 1.2px solid black;
+  border-collapse: collapse;
 }
 
 td {
   padding-top: 30px;
   padding-bottom: 30px;
   vertical-align: baseline;
+  border-collapse: collapse;
 
   @media (max-height: 800px) {
     padding-top: 17px;
     padding-bottom: 17px;
   }
+}
+
+table.mobile {
+  border-collapse: collapse;
 }
 
 table.mobile td {
