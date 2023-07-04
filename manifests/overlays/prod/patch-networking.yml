@@ -10,6 +10,8 @@ spec:
     - "www.lhalala.kr"
     - "www.therfect.com"
     - "therfect.com"
+    - "lhalala.net"
+    - "www.lhalala.net"
   http:
     - timeout: 15s
       route:
